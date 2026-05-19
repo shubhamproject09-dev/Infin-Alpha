@@ -267,11 +267,11 @@ export default function Navbar() {
                                         <Building2 size={14} />
                                         BSOF Trust
                                     </Link>
-                                    <Link href="/infin-llp" onClick={handleLinkClick} className="flex items-center gap-3 px-3 py-2.5 text-sm text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition">
+                                    <Link href="/about/infin-llp" onClick={handleLinkClick} className="flex items-center gap-3 px-3 py-2.5 text-sm text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition">
                                         <Briefcase size={14} />
                                         INFIN Alpha LLP
                                     </Link>
-                                    <Link href="/leadership" onClick={handleLinkClick} className="flex items-center gap-3 px-3 py-2.5 text-sm text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition">
+                                    <Link href="/about/leadership" onClick={handleLinkClick} className="flex items-center gap-3 px-3 py-2.5 text-sm text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition">
                                         <Users size={14} />
                                         Leadership
                                     </Link>
@@ -343,7 +343,7 @@ export default function Navbar() {
 
                         {/* LEGAL */}
                         <Link
-                            href="/disclaimers"
+                            href="/legal"
                             onClick={handleLinkClick}
                             className="flex items-center gap-3 px-4 py-3.5 mb-2 font-semibold text-gray-800 bg-white rounded-xl hover:bg-green-50 hover:text-green-600 transition-all duration-200 shadow-sm border border-gray-100"
                         >
