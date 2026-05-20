@@ -39,7 +39,7 @@ export default function InformationSecurityPage() {
 
                         </div>
 
-                        <h1 className="mt-8 text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white">
+                        <h1 className="mt-8 text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white">
 
                             Secure Handling
                             <span className="block mt-2 text-green-400">
@@ -104,7 +104,7 @@ export default function InformationSecurityPage() {
 
                                 </h3>
 
-                                <p className="mt-6 text-base leading-8 text-slate-700" style={{ color: "#000000" }}>
+                                <p className="mt-6 text-base leading-8 text-slate-700">
 
                                     {item.desc}
 
@@ -116,10 +116,10 @@ export default function InformationSecurityPage() {
                     </div>
 
                     {/* SECURITY PROCESS */}
-                    <div className="mt-20 rounded-[36px] bg-[#0b1120] px-5 py-8 sm:p-8 lg:p-10 text-white">
+                    <div className="mt-20 rounded-[36px] px-5 py-8 sm:p-8 lg:p-10 text-white">
 
                         {/* Badge */}
-                        <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-medium text-green-300" style={{ color: "#000000" }}>
+                        <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-medium text-green-700">
 
                             <Landmark size={16} />
 
@@ -195,7 +195,7 @@ export default function InformationSecurityPage() {
 
                                         </h3>
 
-                                        <p className="mt-5 text-sm sm:text-base leading-8 text-slate-300" style={{ color: "#000000" }}>
+                                        <p className="mt-5 text-sm sm:text-base leading-8 text-slate-600">
 
                                             {item.desc}
 

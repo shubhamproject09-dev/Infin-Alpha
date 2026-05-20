@@ -51,7 +51,7 @@ export default function InfinAlphaSection() {
                             </div>
 
                             {/* Heading */}
-                            <h1 className="mt-8 text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white">
+                            <h1 className="mt-8 text-3xl sm:text-3xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white">
 
                                 INFIN ALPHA
                                 <span className="block mt-2 text-green-400">
@@ -81,7 +81,7 @@ export default function InfinAlphaSection() {
             </div>
 
             {/* MAIN SECTION */}
-            <div className="relative z-10 pb-20 sm:pb-24 pt-[40px] sm:pt-[70px] lg:pt-[100px]" style={{ marginTop: "80px" }}>
+            <div className="relative z-10 pb-20 sm:pb-24 pt-[40px] sm:pt-[70px] lg:pt-[100px]">
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -231,7 +231,7 @@ export default function InfinAlphaSection() {
                         {/* RIGHT SIDE */}
                         <div className="lg:col-span-4 flex">
 
-                            <div className="relative overflow-hidden rounded-[28px] sm:rounded-[36px] bg-[#0b1120] p-5 sm:p-8 lg:p-10 text-white shadow-2xl h-full w-full">
+                            <div className="relative overflow-hidden rounded-[28px] sm:rounded-[36px] p-5 sm:p-8 lg:p-10 shadow-2xl h-full w-full">
 
                                 {/* Glow */}
                                 <div className="absolute top-0 right-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>

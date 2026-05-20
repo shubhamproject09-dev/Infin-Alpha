@@ -90,7 +90,7 @@ export default function Investor() {
 
                         </div>
 
-                        <h1 className="mt-8 text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white">
+                        <h1 className="mt-8 text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white">
 
                             Investor
                             <span className="block mt-2 text-green-400">
@@ -148,7 +148,7 @@ export default function Investor() {
 
                                 </div>
 
-                                <h2 className="mt-8 text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-[-0.04em] text-white">
+                                <h2 className="mt-8 text-3xl sm:text-5xl lg:text-5xl font-bold leading-[1.05] tracking-[-0.04em] text-white">
 
                                     Institutional-grade
                                     <span className="block mt-2 text-green-400">
@@ -203,7 +203,7 @@ export default function Investor() {
 
                                         <p
                                             className="mt-6 text-sm sm:text-base leading-8"
-                                            style={{ color: "#000000" }}
+
                                         >
 
                                             {item.desc}
@@ -274,13 +274,13 @@ export default function Investor() {
 
                                                     </div>
 
-                                                    <h4 className="mt-6 text-2xl font-bold text-white leading-tight" style={{ color: "#000000" }}>
+                                                    <h4 className="mt-6 text-2xl font-bold text-green-400 leading-tight">
 
                                                         {item.title}
 
                                                     </h4>
 
-                                                    <p className="mt-4 text-sm leading-7 text-white/80" style={{ color: "#000000" }}>
+                                                    <p className="mt-4 text-sm leading-7 text-white/80">
 
                                                         {item.desc}
 
@@ -312,7 +312,7 @@ export default function Investor() {
 
                                     <h3 className="mt-6 text-4xl sm:text-5xl font-bold leading-tight">
 
-                                        <span style={{ color: "#000000" }}>
+                                        <span>
                                             Trusted Institutional
                                         </span>
 
@@ -353,7 +353,7 @@ export default function Investor() {
 
                                             <p
                                                 className="mt-4 text-sm leading-7"
-                                                style={{ color: "#000000" }}
+
                                             >
 
                                                 Structured operational and
@@ -391,7 +391,7 @@ export default function Investor() {
 
                                             <p
                                                 className="mt-6 text-sm sm:text-base leading-8"
-                                                style={{ color: "#000000" }}
+
                                             >
 
                                                 Clear disclaimers and disclosures

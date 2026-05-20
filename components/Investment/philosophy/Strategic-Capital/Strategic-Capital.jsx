@@ -39,7 +39,7 @@ export default function StrategicCapitalPage() {
 
                         </div>
 
-                        <h1 className="mt-8 text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white">
+                        <h1 className="mt-8 text-3xl sm:text-3xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white">
 
                             Strategic Capital
                             <span className="block mt-2 text-green-400">
@@ -117,7 +117,7 @@ export default function StrategicCapitalPage() {
                     </div>
 
                     {/* EXECUTION MODEL */}
-                    <div className="mt-20 rounded-[36px] bg-[#0b1120] px-5 py-8 sm:p-8 lg:p-10 text-white">
+                    <div className="mt-20 rounded-[36px] px-5 py-8 sm:p-8 lg:p-10 ">
 
                         <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm text-green-700">
 
@@ -131,7 +131,7 @@ export default function StrategicCapitalPage() {
 
                         </h2>
 
-                        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6" style={{ marginTop: "50px" }}>
+                        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
 
                             {[
                                 "Opportunity Assessment",
@@ -151,7 +151,7 @@ export default function StrategicCapitalPage() {
                                         size={28}
                                     />
 
-                                    <h3 className="mt-6 text-2xl font-bold text-white leading-tight" style={{ color: "#000000" }}>
+                                    <h3 className="mt-6 text-2xl font-bold text-black leading-tight">
 
                                         {item}
 
@@ -180,7 +180,7 @@ export default function StrategicCapitalPage() {
 
                             </h3>
 
-                            <p className="mt-6 text-base leading-9 text-slate-700" style={{ color: "#000000" }}>
+                            <p className="mt-6 text-base leading-9 text-slate-700">
 
                                 Focused on enterprises requiring timely
                                 institutional capital support across
@@ -203,7 +203,7 @@ export default function StrategicCapitalPage() {
 
                             </h3>
 
-                            <p className="mt-6 text-base leading-9 text-slate-700" style={{ color: "#000000" }}>
+                            <p className="mt-6 text-base leading-9 text-slate-700">
 
                                 Strategic capital combined with operational
                                 execution capabilities helps unlock

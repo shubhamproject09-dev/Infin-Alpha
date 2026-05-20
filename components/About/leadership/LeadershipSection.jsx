@@ -44,7 +44,7 @@ export default function LeadershipSection() {
                         </div>
 
                         {/* HEADING */}
-                        <h1 className="mt-8 text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white">
+                        <h1 className="mt-8 text-3xl sm:text-3xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white">
 
                             Experienced Leadership
 
@@ -112,7 +112,7 @@ export default function LeadershipSection() {
                                 </div>
 
                                 {/* HEADING */}
-                                <h2 className="mt-8 text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-[-0.04em] text-white">
+                                <h2 className="mt-8 text-3xl sm:text-3xl lg:text-5xl font-bold leading-[1.05] tracking-[-0.04em] text-white">
 
                                     Experienced Leaders
 
@@ -275,7 +275,7 @@ export default function LeadershipSection() {
                             {/* IC SECTION */}
                             <div className="mt-8">
 
-                                <div className="relative overflow-hidden rounded-[36px] bg-[#0b1120] p-6 sm:p-8 lg:p-10 text-white shadow-2xl">
+                                <div className="relative overflow-hidden rounded-[36px] p-6 sm:p-8 lg:p-10 text-white shadow-2xl">
 
                                     {/* GLOW */}
                                     <div className="absolute top-0 right-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>
@@ -288,13 +288,13 @@ export default function LeadershipSection() {
                                         {/* LEFT */}
                                         <div className="lg:col-span-5">
 
-                                            <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-semibold text-green-300">
+                                            <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-semibold text-green-700">
 
                                                 Investment Committee
 
                                             </div>
 
-                                            <h3 className="mt-6 text-4xl sm:text-5xl font-bold leading-tight text-green-400">
+                                            <h3 className="mt-6 text-4xl sm:text-5xl font-bold leading-tight text-green-700">
 
                                                 IC Composition
                                                 & Governance
@@ -317,7 +317,7 @@ export default function LeadershipSection() {
                                             </p>
 
                                             {/* FEATURES */}
-                                            <div className="mt-8 grid sm:grid-cols-2 gap-4" style={{ color: "#000000" }}>
+                                            <div className="mt-8 grid sm:grid-cols-2 gap-4">
 
                                                 {[
                                                     "Institutional Governance",
@@ -335,7 +335,7 @@ export default function LeadershipSection() {
                                                             size={18}
                                                         />
 
-                                                        <p className="text-sm sm:text-base text-white/90">
+                                                        <p className="text-sm sm:text-base text-black/90">
 
                                                             {item}
 

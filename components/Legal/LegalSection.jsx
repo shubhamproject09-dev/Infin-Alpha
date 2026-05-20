@@ -48,7 +48,7 @@ export default function LegalSection() {
                             </div>
 
                             {/* Heading */}
-                            <h1 className="mt-8 text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white">
+                            <h1 className="mt-8 text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white">
 
                                 Legal
                                 <span className="block mt-2 text-green-400">
@@ -110,7 +110,7 @@ export default function LegalSection() {
                                     </h2>
 
                                     {/* Description */}
-                                    <p className="mt-6 text-base sm:text-lg leading-8 text-black" style={{ color: "#000000" }}>
+                                    <p className="mt-6 text-base sm:text-lg leading-8 text-slate-700">
 
                                         The information provided on this website
                                         is intended solely for informational purposes
@@ -143,7 +143,7 @@ export default function LegalSection() {
 
                                                     </h3>
 
-                                                    <p className="mt-3 leading-8 text-black text-sm sm:text-base" style={{ color: "#000000" }}>
+                                                    <p className="mt-3 leading-8 text-slate-700 text-sm sm:text-base">
 
                                                         Investments in distressed assets,
                                                         special situations,
@@ -180,7 +180,7 @@ export default function LegalSection() {
 
                                                     </h3>
 
-                                                    <p className="mt-3 leading-8 text-black text-sm sm:text-base" style={{ color: "#000000" }}>
+                                                    <p className="mt-3 leading-8 text-black text-sm sm:text-base">
 
                                                         Certain statements may contain
                                                         forward-looking assumptions,
@@ -218,7 +218,7 @@ export default function LegalSection() {
 
                                                     </h3>
 
-                                                    <p className="mt-3 leading-8 text-black text-sm sm:text-base" style={{ color: "#000000" }}>
+                                                    <p className="mt-3 leading-8 text-black text-sm sm:text-base">
 
                                                         Any information shared through
                                                         investor communication channels
@@ -247,7 +247,7 @@ export default function LegalSection() {
                         {/* RIGHT SIDE */}
                         <div className="lg:col-span-4">
 
-                            <div className="relative overflow-hidden rounded-[28px] sm:rounded-[36px] bg-[#0b1120] p-5 sm:p-8 lg:p-10 text-white shadow-2xl">
+                            <div className="relative overflow-hidden rounded-[28px] sm:rounded-[36px] p-5 sm:p-8 lg:p-10 shadow-2xl text-slate-300">
 
                                 {/* Glow */}
                                 <div className="absolute top-0 right-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>
@@ -265,7 +265,7 @@ export default function LegalSection() {
                                     </div>
 
                                     {/* Heading */}
-                                    <h3 className="mt-6 text-3xl sm:text-4xl font-bold leading-tight tracking-[-0.03em] text-green-400">
+                                    <h3 className="mt-6 text-3xl sm:text-4xl font-bold leading-tight tracking-[-0.03em] text-green-700">
 
                                         Investor
                                         Protection &
@@ -274,7 +274,7 @@ export default function LegalSection() {
                                     </h3>
 
                                     {/* Description */}
-                                    <p className="mt-6 text-sm sm:text-base leading-8 text-white/80" style={{ color: "#000000" }}>
+                                    <p className="mt-6 text-sm sm:text-base leading-8 text-black">
 
                                         INFIN ALPHA LLP maintains
                                         a governance-focused approach
@@ -290,13 +290,13 @@ export default function LegalSection() {
 
                                         <div className="rounded-2xl border border-white/10 bg-white/5 p-3">
 
-                                            <p className="text-sm text-white/60" style={{ color: "#000000" }}>
+                                            <p className="text-sm text-black">
 
                                                 Regulatory Focus
 
                                             </p>
 
-                                            <h4 className="mt-2 text-xl font-bold text-green-400">
+                                            <h4 className="mt-2 text-xl font-bold text-green-600">
 
                                                 Institutional Compliance
 
@@ -306,13 +306,13 @@ export default function LegalSection() {
 
                                         <div className="rounded-2xl border border-white/10 bg-white/5 p-3">
 
-                                            <p className="text-sm text-white/60" style={{ color: "#000000" }}>
+                                            <p className="text-sm text-black">
 
                                                 Communication
 
                                             </p>
 
-                                            <h4 className="mt-2 text-xl font-bold text-green-400">
+                                            <h4 className="mt-2 text-xl font-bold text-green-600">
 
                                                 Investor Transparency
 
@@ -322,13 +322,13 @@ export default function LegalSection() {
 
                                         <div className="rounded-2xl border border-white/10 bg-white/5 p-3">
 
-                                            <p className="text-sm text-white/60" style={{ color: "#000000" }}>
+                                            <p className="text-sm text-black">
 
                                                 Governance
 
                                             </p>
 
-                                            <h4 className="mt-2 text-xl font-bold text-green-400">
+                                            <h4 className="mt-2 text-xl font-bold text-green-600">
 
                                                 Ethical Investment Practices
 
@@ -345,7 +345,7 @@ export default function LegalSection() {
 
                                             <Building2 className="text-green-400 mt-1" size={20} />
 
-                                            <p className="text-sm leading-7 text-white/90" style={{ color: "#000000" }}>
+                                            <p className="text-sm leading-7 text-black">
 
                                                 Please consult your legal,
                                                 financial,

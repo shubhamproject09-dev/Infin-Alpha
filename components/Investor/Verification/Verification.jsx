@@ -43,7 +43,7 @@ export default function InvestorVerificationPage() {
                         </div>
 
                         {/* Heading */}
-                        <h1 className="mt-8 text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white">
+                        <h1 className="mt-8 text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white">
 
                             Secure Investor
                             <span className="block mt-2 text-green-400">
@@ -84,13 +84,13 @@ export default function InvestorVerificationPage() {
 
                             </div>
 
-                            <h2 className="mt-8 text-3xl font-bold text-black" style={{ color: "#000000" }}>
+                            <h2 className="mt-8 text-3xl font-bold text-black">
 
                                 Institutional Onboarding Standards
 
                             </h2>
 
-                            <p className="mt-6 text-lg leading-8 text-slate-700" style={{ color: "#000000" }}>
+                            <p className="mt-6 text-lg leading-8 text-slate-700">
 
                                 Structured KYC verification,
                                 investor suitability assessment,
@@ -111,13 +111,13 @@ export default function InvestorVerificationPage() {
 
                             </div>
 
-                            <h2 className="mt-8 text-3xl font-bold text-black" style={{ color: "#000000" }}>
+                            <h2 className="mt-8 text-3xl font-bold text-black">
 
                                 Confidential Information Handling
 
                             </h2>
 
-                            <p className="mt-6 text-lg leading-8 text-slate-700" style={{ color: "#000000" }}>
+                            <p className="mt-6 text-lg leading-8 text-slate-700">
 
                                 Investor information is managed through
                                 structured internal processes with emphasis
@@ -131,9 +131,9 @@ export default function InvestorVerificationPage() {
                     </div>
 
                     {/* PROCESS */}
-                    <div className="mt-20 rounded-[36px] bg-[#0b1120] p-10 text-white">
+                    <div className="mt-20 rounded-[36px] p-10 text-white">
 
-                        <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm text-green-300" style={{ color: "#000000" }}>
+                        <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm text-green-700">
 
                             <Landmark size={16} />
 
@@ -160,11 +160,11 @@ export default function InvestorVerificationPage() {
                                 >
 
                                     <CheckCircle2
-                                        className="text-green-400"
+                                        className="text-green-600"
                                         size={28}
                                     />
 
-                                    <h3 className="mt-5 text-2xl font-bold" style={{ color: "#000000" }}>
+                                    <h3 className="mt-5 text-2xl font-bold text-black">
 
                                         {item}
 

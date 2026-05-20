@@ -53,7 +53,7 @@ export default function ContactSection() {
                             </div>
 
                             {/* Heading */}
-                            <h1 className="mt-8 text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white">
+                            <h1 className="mt-8 text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white">
 
                                 Connect With
 
@@ -128,7 +128,7 @@ export default function ContactSection() {
                                     {/* Paragraph */}
                                     <p
                                         className="mt-5 sm:mt-6 leading-7 sm:leading-8 text-base sm:text-lg"
-                                        style={{ color: "#000" }}
+
                                     >
 
                                         For investor communication,
@@ -165,7 +165,7 @@ export default function ContactSection() {
 
                                                 <p
                                                     className="mt-3 sm:mt-4 leading-7 sm:leading-8 text-sm sm:text-base"
-                                                    style={{ color: "#000" }}
+
                                                 >
 
                                                     A-3, 1st Floor South Tower,
@@ -203,7 +203,7 @@ export default function ContactSection() {
 
                                                 <p
                                                     className="mt-3 sm:mt-4 text-base sm:text-lg"
-                                                    style={{ color: "#000" }}
+
                                                 >
 
                                                     +91 0000000000
@@ -237,7 +237,7 @@ export default function ContactSection() {
 
                                                 <p
                                                     className="mt-3 sm:mt-4 text-base sm:text-lg break-all"
-                                                    style={{ color: "#000" }}
+
                                                 >
 
                                                     contact@infinalpha.com
@@ -259,7 +259,7 @@ export default function ContactSection() {
                         {/* RIGHT SIDE - CONTACT FORM */}
                         <div className="lg:col-span-5">
 
-                            <div className="relative overflow-hidden rounded-[28px] sm:rounded-[36px] bg-[#0b1120] p-5 sm:p-8 lg:p-10 text-white h-full shadow-2xl">
+                            <div className="relative overflow-hidden rounded-[28px] sm:rounded-[36px] p-5 sm:p-8 lg:p-10 text-white h-full shadow-2xl">
 
                                 {/* Glow */}
                                 <div className="absolute top-0 right-0 w-72 sm:w-96 h-72 sm:h-96 bg-green-500/20 blur-3xl rounded-full"></div>

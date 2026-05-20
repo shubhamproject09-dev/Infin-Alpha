@@ -39,7 +39,7 @@ export default function ResolutionValuePage() {
 
                         </div>
 
-                        <h1 className="mt-8 text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white">
+                        <h1 className="mt-8 text-3xl sm:text-3xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white">
 
                             Resolution-led
                             <span className="block mt-2 text-green-400">
@@ -118,7 +118,7 @@ export default function ResolutionValuePage() {
                     </div>
 
                     {/* PROCESS */}
-                    <div className="mt-20 rounded-[36px] bg-[#0b1120] px-5 py-8 sm:p-8 lg:p-10 text-white">
+                    <div className="mt-20 rounded-[36px] px-5 py-8 sm:p-8 lg:p-10 text-white">
 
                         <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm text-green-700">
 

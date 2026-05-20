@@ -77,7 +77,7 @@ export default function Insights() {
 
                         </div>
 
-                        <h1 className="mt-8 text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white">
+                        <h1 className="mt-8 text-3xl sm:text-3xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white">
 
                             Market Intelligence
                             <span className="block mt-2 text-green-400">
@@ -136,7 +136,7 @@ export default function Insights() {
 
                                 </div>
 
-                                <h2 className="mt-8 text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-[-0.04em] text-white">
+                                <h2 className="mt-8 text-3xl sm:text-5xl lg:text-5xl font-bold leading-[1.05] tracking-[-0.04em] text-white">
 
                                     Institutional
                                     <span className="block mt-2 text-green-400">
@@ -191,7 +191,6 @@ export default function Insights() {
 
                                         <p
                                             className="mt-6 text-sm sm:text-base leading-8"
-                                            style={{ color: "#000000" }}
                                         >
 
                                             {item.desc}
@@ -223,7 +222,7 @@ export default function Insights() {
                             {/* RESEARCH SECTION */}
                             <div className="mt-12">
 
-                                <div className="relative overflow-hidden rounded-[36px] bg-[#0b1120] p-6 sm:p-8 lg:p-10 text-white shadow-2xl">
+                                <div className="relative overflow-hidden rounded-[36px] p-6 sm:p-8 lg:p-10 shadow-2xl">
 
                                     <div className="absolute top-0 right-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>
 
@@ -248,9 +247,9 @@ export default function Insights() {
 
                                         </div>
 
-                                        <div className="lg:col-span-7" style={{ color: "#000000" }}>
+                                        <div className="lg:col-span-7">
 
-                                            <p className="text-base sm:text-lg leading-9 text-white/90">
+                                            <p className="text-base sm:text-lg leading-9 text-black/90">
 
                                                 Access institutional-grade perspectives,
                                                 strategic commentary,
@@ -267,18 +266,18 @@ export default function Insights() {
                                                 {publications.map((item, idx) => (
                                                     <div
                                                         key={idx}
-                                                        className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 p-5"
+                                                        className="flex items-center justify-between rounded-2xl border border-white/10 bg-black/5 p-5"
                                                     >
 
                                                         <div>
 
-                                                            <h4 className="text-lg font-semibold text-white" style={{ color: "#000000" }}>
+                                                            <h4 className="text-lg font-semibold text-black">
 
                                                                 {item.title}
 
                                                             </h4>
 
-                                                            <p className="mt-2 text-sm text-white/70">
+                                                            <p className="mt-2 text-sm text-black/70">
 
                                                                 {item.type}
 
@@ -314,7 +313,7 @@ export default function Insights() {
 
                                     <h3 className="mt-6 text-4xl sm:text-5xl font-bold leading-tight">
 
-                                        <span style={{ color: "#000000" }}>
+                                        <span>
                                             Institutional Market
                                         </span>
 
@@ -369,7 +368,6 @@ export default function Insights() {
 
                                                         <p
                                                             className="text-sm"
-                                                            style={{ color: "#000000" }}
                                                         >
 
                                                             {point}

@@ -2,7 +2,7 @@
 
 export default function OverviewSection() {
     return (
-        <section className="relative overflow-hidden bg-white py-24 sm:py-28 lg:py-32">
+        <section className="relative overflow-hidden bg-white py-20 sm:py-23 lg:py-25">
 
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#000_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -26,7 +26,7 @@ export default function OverviewSection() {
 
                     {/* Heading */}
                     <h2
-                        className="mt-8 text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-[-0.04em]"
+                        className="mt-8 text-3xl sm:text-3xl lg:text-5xl font-bold leading-[1.1] tracking-[-0.04em]"
                         style={{ color: "#000" }}
                     >
 
@@ -163,7 +163,7 @@ export default function OverviewSection() {
                                     </p>
 
                                     <h3
-                                        className="mt-5 text-4xl sm:text-5xl font-bold leading-tight tracking-[-0.03em]"
+                                        className="mt-5 text-2xl sm:text-5xl font-bold leading-tight tracking-[-0.03em]"
                                         style={{ color: "#000" }}
                                     >
 

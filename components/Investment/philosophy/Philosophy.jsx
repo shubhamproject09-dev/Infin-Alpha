@@ -92,7 +92,7 @@ export default function Philosophy() {
 
                         </div>
 
-                        <h1 className="mt-8 text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white">
+                        <h1 className="mt-8 text-3xl sm:text-3xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white">
 
                             Investment
                             <span className="block mt-2 text-green-400">
@@ -153,7 +153,7 @@ export default function Philosophy() {
 
                                 </div>
 
-                                <h2 className="mt-8 text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-[-0.04em] text-white">
+                                <h2 className="mt-8 text-3xl sm:text-3xl lg:text-5xl font-bold leading-[1.05] tracking-[-0.04em] text-white">
 
                                     Resolution-focused
                                     <span className="block mt-2 text-green-400">
@@ -245,7 +245,7 @@ export default function Philosophy() {
                             {/* STRATEGY BLOCK */}
                             <div className="mt-14">
 
-                                <div className="relative overflow-hidden rounded-[40px] bg-[#07111f] p-6 sm:p-8 lg:p-12 shadow-2xl">
+                                <div className="relative overflow-hidden rounded-[40px] p-6 sm:p-8 lg:p-12 shadow-2xl">
 
                                     <div className="absolute top-0 right-0 w-96 h-96 bg-green-500/20 blur-3xl rounded-full"></div>
 
@@ -335,7 +335,7 @@ export default function Philosophy() {
 
                                     </div>
 
-                                    <h3 className="mt-6 text-4xl sm:text-5xl font-bold leading-tight">
+                                    <h3 className="mt-6 text-3xl sm:text-5xl font-bold leading-tight">
 
                                         <span style={{ color: "#000000" }}>
                                             Core Investment
@@ -398,7 +398,7 @@ export default function Philosophy() {
 
                                         </div>
 
-                                        <h3 className="mt-6 text-4xl sm:text-5xl font-bold leading-tight text-green-700">
+                                        <h3 className="mt-6 text-3xl sm:text-5xl font-bold leading-tight text-green-700">
 
                                             Institutional Expertise.
                                             Strategic Network.

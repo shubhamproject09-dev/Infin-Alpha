@@ -86,7 +86,7 @@ export default function Performance() {
 
                         </div>
 
-                        <h1 className="mt-8 text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white">
+                        <h1 className="mt-8 text-3xl sm:text-3xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white">
 
                             Performance
                             <span className="block mt-2 text-green-400">
@@ -144,7 +144,7 @@ export default function Performance() {
 
                                 </div>
 
-                                <h2 className="mt-8 text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-[-0.04em] text-white">
+                                <h2 className="mt-8 text-3xl sm:text-5xl lg:text-5xl font-bold leading-[1.05] tracking-[-0.04em] text-white">
 
                                     Institutional-grade
                                     <span className="block mt-2 text-green-400">

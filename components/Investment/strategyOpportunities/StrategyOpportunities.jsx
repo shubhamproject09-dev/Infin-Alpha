@@ -92,7 +92,7 @@ export default function StrategyOpportunities() {
 
                         </div>
 
-                        <h1 className="mt-8 text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white">
+                        <h1 className="mt-8 text-3xl sm:text-3xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white">
 
                             Strategic Investment
                             <span className="block mt-2 text-green-400">
@@ -152,7 +152,7 @@ export default function StrategyOpportunities() {
 
                                 </div>
 
-                                <h2 className="mt-8 text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-[-0.04em] text-white">
+                                <h2 className="mt-8 text-3xl sm:text-3xl lg:text-5xl font-bold leading-[1.05] tracking-[-0.04em] text-white">
 
                                     Alternative Investments
                                     <span className="block mt-2 text-green-400">
@@ -229,7 +229,7 @@ export default function StrategyOpportunities() {
                             {/* STRATEGY FLOW */}
                             <div className="mt-14" style={{ marginTop: "30px" }}>
 
-                                <div className="relative overflow-hidden rounded-[40px] bg-[#07111f] p-6 sm:p-8 lg:p-12 shadow-2xl">
+                                <div className="relative overflow-hidden rounded-[40px] p-6 sm:p-8 lg:p-12 shadow-2xl">
 
                                     <div className="absolute top-0 right-0 w-96 h-96 bg-green-500/20 blur-3xl rounded-full"></div>
 
@@ -239,7 +239,7 @@ export default function StrategyOpportunities() {
 
                                         <div className="text-center">
 
-                                            <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-semibold text-green-300">
+                                            <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-semibold text-green-700">
 
                                                 <Activity size={16} />
 

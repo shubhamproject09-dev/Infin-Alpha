@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function HeroSection() {
 
     return (
-        <section className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-green-950 text-white py-20 sm:py-24 lg:min-h-screen lg:flex lg:items-center">
+        <section className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-green-950 text-white">
 
             {/* Background Glow */}
             <div className="absolute top-0 left-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>
@@ -11,7 +11,7 @@ export default function HeroSection() {
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-400/10 blur-3xl rounded-full"></div>
 
             {/* MAIN CONTENT */}
-            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-40 w-full">
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 w-full">
 
                 <div className="grid lg:grid-cols-12 gap-14 items-center">
 
@@ -28,7 +28,7 @@ export default function HeroSection() {
                         </div>
 
                         {/* Heading */}
-                        <h1 className="mt-8 text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.02] tracking-tight">
+                        <h1 className="mt-8 text-3xl sm:text-3xl lg:text-5xl font-bold leading-[1.02] tracking-tight">
 
                             Unlocking Value
                             Through India’s

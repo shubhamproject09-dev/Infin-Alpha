@@ -167,7 +167,7 @@ export default function OpportunitySection() {
                                 Why This Matters
                             </span>
 
-                            <h3 className="mt-6 text-3xl lg:text-4xl font-bold text-white leading-tight">
+                            <h3 className="mt-6 text-3xl lg:text-4  xl font-bold text-white leading-tight">
 
                                 Traditional Institutions
                                 Cannot Fully Address

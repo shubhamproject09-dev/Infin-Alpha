@@ -68,7 +68,7 @@ export default function CaseStudy() {
 
                         </div>
 
-                        <h1 className="mt-8 text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white">
+                        <h1 className="mt-8 text-3xl sm:text-3xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white">
 
                             Case Studies &
                             <span className="block mt-2 text-green-400">
@@ -126,7 +126,7 @@ export default function CaseStudy() {
 
                                 </div>
 
-                                <h2 className="mt-8 text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-[-0.04em] text-white">
+                                <h2 className="mt-8 text-2xl sm:text-3xl lg:text-5xl font-bold leading-[1.05] tracking-[-0.04em] text-white">
 
                                     Institutional-grade
                                     <span className="block mt-2 text-green-400">
@@ -151,7 +151,7 @@ export default function CaseStudy() {
                         </div>
 
                         {/* CASE STUDIES */}
-                        <div className="relative z-10 p-5 sm:p-8 lg:p-12">
+                        <div className="relative z-10 p-5 sm:p-8 lg:p-8">
 
                             <div className="grid lg:grid-cols-3 gap-6">
 
@@ -192,19 +192,19 @@ export default function CaseStudy() {
                                                         Investment Size
                                                     </p>
 
-                                                    <h4 className="mt-2 text-3xl font-bold text-green-600">
+                                                    <h4 className="mt-2 text-2xl font-bold text-green-600">
                                                         {item.value}
                                                     </h4>
 
                                                 </div>
 
-                                                <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                                                <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
 
                                                     <p className="text-sm text-slate-600 font-medium">
                                                         Potential Return
                                                     </p>
 
-                                                    <h4 className="mt-2 text-3xl font-bold text-slate-900">
+                                                    <h4 className="mt-2 text-2xl font-bold text-slate-900">
                                                         {item.irr}
                                                     </h4>
 
@@ -270,7 +270,7 @@ export default function CaseStudy() {
                             {/* STRATEGY SECTION */}
                             <div className="mt-12">
 
-                                <div className="relative overflow-hidden rounded-[36px] bg-[#0b1120] p-6 sm:p-8 lg:p-10 text-white shadow-2xl">
+                                <div className="relative overflow-hidden rounded-[36px] p-6 sm:p-8 lg:p-10 text-white shadow-2xl">
 
                                     <div className="absolute top-0 right-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>
 
@@ -312,7 +312,7 @@ export default function CaseStudy() {
 
                                             </p>
 
-                                            <div className="mt-8 grid sm:grid-cols-2 gap-4" style={{ color: "#000" }}>
+                                            <div className="mt-8 grid sm:grid-cols-2 gap-4">
 
                                                 {[
                                                     "Acquire at deep discounts",
@@ -330,7 +330,7 @@ export default function CaseStudy() {
                                                             size={18}
                                                         />
 
-                                                        <p className="text-sm sm:text-base text-white/90">
+                                                        <p className="text-sm sm:text-base text-black/90">
 
                                                             {item}
 
@@ -362,7 +362,7 @@ export default function CaseStudy() {
 
                                     </div>
 
-                                    <h3 className="mt-6 text-4xl sm:text-5xl font-bold leading-tight">
+                                    <h3 className="mt-6 text-3xl sm:text-5xl font-bold leading-tight">
 
                                         <span style={{ color: "#000000" }}>
                                             India’s Distressed Asset
