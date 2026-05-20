@@ -180,7 +180,7 @@ export default function OverviewSection() {
 
                                     <div>
 
-                                        <h4 className="text-5xl font-bold text-green-600">
+                                        <h4 className="text-3xl sm:text-5xl font-bold text-green-600">
 
                                             500+
 
@@ -201,7 +201,7 @@ export default function OverviewSection() {
 
                                     <div>
 
-                                        <h4 className="text-5xl font-bold text-green-600">
+                                        <h4 className="text-3xl sm:text-5xl font-bold text-green-600">
 
                                             18–20%
 
