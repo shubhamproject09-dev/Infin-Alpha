@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 export default function HeroSection() {
 
     return (
@@ -50,17 +50,23 @@ export default function HeroSection() {
                         {/* Buttons */}
                         <div className="mt-10 flex flex-col sm:flex-row gap-4">
 
-                            <button className="py-4 px-4 rounded-2xl bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold transition-all duration-300 shadow-lg shadow-green-500/20 hover:scale-[1.02]">
+                            <Link
+                                href="/investment/strategy-opportunities"
+                                className="py-4 px-4 rounded-2xl bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold transition-all duration-300 shadow-lg shadow-green-500/20 hover:scale-[1.02] text-center"
+                            >
 
                                 Explore Opportunities
 
-                            </button>
+                            </Link>
 
-                            <button className="px-4 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl hover:bg-white/10 text-white font-semibold transition-all duration-300">
+                            <Link
+                                href="#"
+                                className="px-4 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl hover:bg-white/10 text-white font-semibold transition-all duration-300 text-center"
+                            >
 
                                 Download Presentation
 
-                            </button>
+                            </Link>
 
                         </div>
 

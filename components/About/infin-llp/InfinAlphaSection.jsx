@@ -10,6 +10,7 @@ import {
     Sparkles,
     CheckCircle2,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function InfinAlphaSection() {
 
@@ -316,13 +317,16 @@ export default function InfinAlphaSection() {
                                     </div>
 
                                     {/* Bottom CTA */}
-                                    <button className="mt-10 w-full py-4 rounded-2xl bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold transition-all duration-300 shadow-lg shadow-green-500/20 flex items-center justify-center gap-2">
+                                    <Link
+                                        href="/investment/strategy-opportunities"
+                                        className="mt-10 w-full py-4 rounded-2xl bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold transition-all duration-300 shadow-lg shadow-green-500/20 flex items-center justify-center gap-2"
+                                    >
 
                                         Explore Investment Strategy
 
                                         <ArrowRight size={18} />
 
-                                    </button>
+                                    </Link>
 
                                 </div>
 

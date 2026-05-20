@@ -16,6 +16,7 @@ import {
     BarChart3,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 const philosophyCards = [
     {
@@ -217,13 +218,22 @@ export default function Philosophy() {
 
                                             </p>
 
-                                            <button className="mt-10 inline-flex items-center gap-2 rounded-2xl bg-green-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-green-700 hover:gap-4">
+                                            <Link
+                                                href={
+                                                    idx === 0
+                                                        ? "/investment/philosophy/deep-discount-acquisition"
+                                                        : idx === 1
+                                                            ? "/investment/philosophy/strategic-capital"
+                                                            : "/investment/philosophy/resolution-value-creation"
+                                                }
+                                                className="mt-10 inline-flex items-center gap-2 rounded-2xl bg-green-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-green-700 hover:gap-4"
+                                            >
 
                                                 Learn More
 
                                                 <ArrowUpRight size={18} />
 
-                                            </button>
+                                            </Link>
 
                                         </div>
 
@@ -245,7 +255,7 @@ export default function Philosophy() {
 
                                         <div className="lg:col-span-5">
 
-                                            <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-semibold text-green-300">
+                                            <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-semibold text-green-700">
 
                                                 Investment Strategy
 

@@ -16,6 +16,7 @@ import {
     Users,
     PhoneCall,
 } from "lucide-react";
+import Link from "next/link";
 
 const investorCards = [
     {
@@ -209,13 +210,22 @@ export default function Investor() {
 
                                         </p>
 
-                                        <button className="mt-10 inline-flex items-center gap-2 rounded-2xl bg-green-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-green-700">
+                                        <Link
+                                            href={
+                                                idx === 0
+                                                    ? "/investor/verification"
+                                                    : idx === 1
+                                                        ? "/investor/information-security"
+                                                        : "/investor/qualified-access"
+                                            }
+                                            className="mt-10 inline-flex items-center gap-2 rounded-2xl bg-green-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-green-700"
+                                        >
 
                                             Explore More
 
                                             <ArrowUpRight size={18} />
 
-                                        </button>
+                                        </Link>
 
                                     </div>
                                 ))}

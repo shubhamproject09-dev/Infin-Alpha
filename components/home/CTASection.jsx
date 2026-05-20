@@ -57,23 +57,25 @@ export default function CTASection() {
                             {/* CTA BUTTONS */}
                             <div className="mt-10 flex flex-col sm:flex-row gap-4">
 
+                                {/* Investment Philosophy */}
                                 <Link
-                                    href="/contact"
+                                    href="/investment/philosophy"
                                     className="inline-flex items-center justify-center gap-2 rounded-2xl bg-green-500 px-6 py-4 text-white font-semibold hover:bg-green-600 transition-all duration-300"
                                 >
 
-                                    Explore Opportunities
+                                    Investment Philosophy
 
                                     <ArrowUpRight size={18} />
 
                                 </Link>
 
+                                {/* Case Studies */}
                                 <Link
-                                    href="/performance"
+                                    href="/investment/caseStudy"
                                     className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-6 py-4 text-white font-semibold hover:bg-white/10 transition-all duration-300 backdrop-blur-xl"
                                 >
 
-                                    View Investment Strategy
+                                    Case Studies
 
                                 </Link>
 

@@ -144,40 +144,82 @@ export default function LeadershipSection() {
                         <div className="relative z-10 p-5 sm:p-8 lg:p-12">
 
                             {/* LEADERSHIP GRID */}
-                            <div className="grid lg:grid-cols-12 gap-6 items-start">
+                            <div
+                                className="gap-6"
+                                style={{
+                                    display: "grid",
+                                    gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+                                    alignItems: "stretch",
+                                }}
+                            >
 
-                                {/* LEFT BIG CARD */}
-                                <div className="lg:col-span-6">
+                                {[
+                                    {
+                                        name: "Mr. Aswini Sahoo",
+                                        role: "Fund Manager - BSOF",
+                                        image:
+                                            "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1600&auto=format&fit=crop",
+                                        desc: "Mr. Aswini Sahoo, Fund Manager of BSOF, brings over 25 years of experience in private credit, special situations, and stressed asset investing.",
+                                        tags: [
+                                            "Private Credit",
+                                            "Special Situations",
+                                            "Restructuring",
+                                            "Distressed Assets",
 
-                                    <div className="group relative overflow-hidden rounded-[36px] border border-slate-200 bg-white shadow-xl hover:shadow-2xl transition-all duration-500 h-full flex flex-col">
+                                        ],
+                                    },
+
+                                    {
+                                        name: "Ms. Manisha Pathak",
+                                        role: "INFIN ALPHA LLP",
+                                        image:
+                                            "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1200&auto=format&fit=crop",
+                                        desc: "Experienced professional supporting strategic investment initiatives, institutional coordination, governance, and operational leadership functions within INFIN ALPHA LLP.",
+                                    },
+
+                                    {
+                                        name: "Ms. Karuna Sharma",
+                                        role: "INFIN ALPHA LLP",
+                                        image:
+                                            "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1200&auto=format&fit=crop",
+                                        desc: "Leadership professional contributing towards investment operations, strategic coordination, institutional communication, and execution support across key initiatives.",
+                                    },
+                                ].map((item, idx) => (
+                                    <div
+                                        key={idx}
+                                        className="group relative overflow-hidden rounded-[36px] border border-slate-200 bg-white shadow-xl hover:shadow-2xl hover:border-green-300 transition-all duration-500 flex flex-col h-full"
+                                    >
 
                                         {/* IMAGE */}
-                                        <div className="p-5 sm:p-6">
+                                        <div
+                                            className="relative overflow-hidden"
+                                            style={{
+                                                height: "320px",
+                                                minHeight: "320px",
+                                                maxHeight: "320px",
+                                            }}
+                                        >
 
-                                            <div
-                                                className="relative overflow-hidden rounded-[36px] w-full"
+                                            <img
+                                                src={item.image}
+                                                alt={item.name}
+                                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                                 style={{
-                                                    height: "420px",
+                                                    width: "100%",
+                                                    height: "100%",
+                                                    objectFit: "cover",
                                                 }}
-                                            >
+                                            />
 
-                                                <img
-                                                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1600&auto=format&fit=crop"
-                                                    alt="Aswini Sahoo"
-                                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                                                />
-
-                                                {/* OVERLAY */}
-                                                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-
-                                            </div>
+                                            {/* OVERLAY */}
+                                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
 
                                             {/* BADGE */}
-                                            <div className="mt-4 ml-2">
+                                            <div className="absolute top-5 left-5">
 
-                                                <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-50 px-5 py-2 text-sm font-semibold text-green-700">
+                                                <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-full px-5 py-2 text-sm font-semibold text-white shadow-lg">
 
-                                                    Fund Manager - BSOF
+                                                    {item.role}
 
                                                 </div>
 
@@ -186,212 +228,47 @@ export default function LeadershipSection() {
                                         </div>
 
                                         {/* CONTENT */}
-                                        <div className="px-6 pb-6 sm:px-8 sm:pb-8 flex flex-col flex-1">
+                                        <div className="flex flex-col flex-1 p-6 sm:p-8">
 
-                                            <h3 className="text-3xl sm:text-4xl font-bold text-green-600">
+                                            <h3 className="text-2xl sm:text-3xl font-bold text-green-600 leading-tight">
 
-                                                Mr. Aswini Sahoo
+                                                {item.name}
 
                                             </h3>
 
-                                            <p
-                                                className="mt-6 text-sm sm:text-base leading-8"
-                                                style={{ color: "#000000" }}
-                                            >
-
-                                                Mr. Aswini Sahoo, Fund Manager of BSOF,
-                                                brings over 25 years of experience
-                                                in private credit,
-                                                special situations,
-                                                and stressed asset investing.
-
-                                            </p>
+                                            <div className="mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-green-500 to-emerald-500"></div>
 
                                             <p
                                                 className="mt-6 text-sm sm:text-base leading-8 flex-1"
                                                 style={{ color: "#000000" }}
                                             >
 
-                                                An IIM Bangalore alumnus and Gold Medalist
-                                                from NIT Rourkela,
-                                                he has held senior leadership roles
-                                                including Chief Investment Officer at ARCL,
-                                                and managed large AUM portfolios at Edelweiss,
-                                                Samena Capital,
-                                                and Clearwater Capital.
+                                                {item.desc}
 
                                             </p>
 
-                                            {/* TAGS */}
-                                            <div className="mt-8 flex flex-wrap gap-3">
+                                            {/* TAGS ONLY FOR FIRST CARD */}
+                                            {item.tags && (
+                                                <div className="mt-8 flex flex-wrap gap-3">
 
-                                                {[
-                                                    "Private Credit",
-                                                    "Restructuring",
-                                                    "Distressed Assets",
-                                                    "Special Situations",
-                                                ].map((item, idx) => (
-                                                    <span
-                                                        key={idx}
-                                                        className="rounded-full bg-green-50 border border-green-100 px-4 py-2 text-sm font-medium text-green-700"
-                                                    >
+                                                    {item.tags.map((tag, index) => (
+                                                        <span
+                                                            key={index}
+                                                            className="rounded-full bg-green-50 border border-green-100 px-4 py-2 text-sm font-medium text-green-700"
+                                                        >
 
-                                                        {item}
+                                                            {tag}
 
-                                                    </span>
-                                                ))}
+                                                        </span>
+                                                    ))}
 
-                                            </div>
+                                                </div>
+                                            )}
 
                                         </div>
 
                                     </div>
-
-                                </div>
-
-                                {/* RIGHT SIDE */}
-                                <div className="lg:col-span-6 flex flex-col gap-6 h-full">
-
-                                    {/* MANISHA */}
-                                    <div className="group relative overflow-hidden rounded-[36px] border border-slate-200 bg-white shadow-xl hover:shadow-2xl transition-all duration-500 flex flex-col md:flex-row items-center">
-
-                                        {/* IMAGE */}
-                                        <div
-                                            className="relative overflow-hidden flex-shrink-0"
-                                            style={{
-                                                width: "180px",
-                                                height: "180px",
-                                                minWidth: "180px",
-                                                maxWidth: "180px",
-                                                minHeight: "180px",
-                                                maxHeight: "180px",
-                                                borderTopLeftRadius: "36px",
-                                                borderBottomLeftRadius: "36px",
-                                            }}
-                                        >
-
-                                            <img
-                                                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1200&auto=format&fit=crop"
-                                                alt="Manisha Pathak"
-                                                className="object-cover transition-transform duration-700 group-hover:scale-105"
-                                                style={{
-                                                    width: "180px",
-                                                    height: "180px",
-                                                    minWidth: "180px",
-                                                    maxWidth: "180px",
-                                                    minHeight: "180px",
-                                                    maxHeight: "180px",
-                                                }}
-                                            />
-
-                                            {/* OVERLAY */}
-                                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-
-                                        </div>
-
-                                        {/* CONTENT */}
-                                        <div className="flex-1 p-6 sm:p-8">
-
-                                            <div className="inline-flex items-center gap-2 rounded-full border border-green-100 bg-green-50 px-4 py-2 text-xs font-semibold text-green-700">
-
-                                                INFIN ALPHA LLP
-
-                                            </div>
-
-                                            <h3 className="mt-5 text-3xl font-bold text-green-600">
-
-                                                Ms. Manisha Pathak
-
-                                            </h3>
-
-                                            <p
-                                                className="mt-5 text-sm sm:text-base leading-8"
-                                                style={{ color: "#000000" }}
-                                            >
-
-                                                Experienced professional supporting
-                                                strategic investment initiatives,
-                                                institutional coordination,
-                                                governance,
-                                                and operational leadership functions
-                                                within INFIN ALPHA LLP.
-
-                                            </p>
-
-                                        </div>
-
-                                    </div>
-
-                                    {/* KARUNA */}
-                                    <div className="group relative overflow-hidden rounded-[36px] border border-slate-200 bg-white shadow-xl hover:shadow-2xl transition-all duration-500 flex flex-col md:flex-row items-center">
-
-                                        {/* IMAGE */}
-                                        <div
-                                            className="relative overflow-hidden flex-shrink-0"
-                                            style={{
-                                                width: "180px",
-                                                height: "180px",
-                                                minWidth: "180px",
-                                                maxWidth: "180px",
-                                                minHeight: "180px",
-                                                maxHeight: "180px",
-                                                borderTopLeftRadius: "36px",
-                                                borderBottomLeftRadius: "36px",
-                                            }}
-                                        >
-
-                                            <img
-                                                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1200&auto=format&fit=crop"
-                                                alt="Karuna Sharma"
-                                                className="object-cover transition-transform duration-700 group-hover:scale-105"
-                                                style={{
-                                                    width: "180px",
-                                                    height: "180px",
-                                                    minWidth: "180px",
-                                                    maxWidth: "180px",
-                                                    minHeight: "180px",
-                                                    maxHeight: "180px",
-                                                }}
-                                            />
-
-                                            {/* OVERLAY */}
-                                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-
-                                        </div>
-
-                                        {/* CONTENT */}
-                                        <div className="flex-1 p-6 sm:p-8">
-
-                                            <div className="inline-flex items-center gap-2 rounded-full border border-green-100 bg-green-50 px-4 py-2 text-xs font-semibold text-green-700">
-
-                                                INFIN ALPHA LLP
-
-                                            </div>
-
-                                            <h3 className="mt-5 text-3xl font-bold text-green-600">
-
-                                                Ms. Karuna Sharma
-
-                                            </h3>
-
-                                            <p
-                                                className="mt-5 text-sm sm:text-base leading-8"
-                                                style={{ color: "#000000" }}
-                                            >
-
-                                                Leadership professional contributing
-                                                towards investment operations,
-                                                strategic coordination,
-                                                institutional communication,
-                                                and execution support across key initiatives.
-
-                                            </p>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
+                                ))}
 
                             </div>
 

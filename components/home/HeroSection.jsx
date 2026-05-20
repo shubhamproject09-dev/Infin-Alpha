@@ -79,19 +79,21 @@ export default function HeroSection() {
                         {/* CTA Buttons */}
                         <div className="flex flex-wrap gap-4 mt-10">
 
+                            {/* Strategy Opportunities Button */}
                             <Link
-                                href="/contact"
+                                href="/investment/strategy-opportunities"
                                 className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-green-500/25"
                             >
                                 Explore Opportunities
                                 <ArrowRight size={18} />
                             </Link>
 
+                            {/* Performance Button */}
                             <Link
-                                href="/performance"
+                                href="/investment/performance"
                                 className="inline-flex items-center gap-2 border border-white/20 hover:border-green-400 hover:bg-white/5 px-6 py-3 rounded-xl font-semibold transition-all duration-300"
                             >
-                                View Investment Strategy
+                                View Performance
                             </Link>
 
                         </div>

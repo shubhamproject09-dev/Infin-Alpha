@@ -11,6 +11,7 @@ import {
     Podcast,
     CheckCircle2,
 } from "lucide-react";
+import Link from "next/link";
 
 const insights = [
     {
@@ -197,13 +198,22 @@ export default function Insights() {
 
                                         </p>
 
-                                        <button className="mt-10 inline-flex items-center gap-2 rounded-2xl bg-green-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-green-700">
+                                        <Link
+                                            href={
+                                                idx === 0
+                                                    ? "/thought-leadership/stressed-asset-opportunity"
+                                                    : idx === 1
+                                                        ? "/thought-leadership/alternative-investments"
+                                                        : "/thought-leadership/turnaround-resolution-trends"
+                                            }
+                                            className="mt-10 inline-flex items-center gap-2 rounded-2xl bg-green-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-green-700"
+                                        >
 
                                             Read Insight
 
                                             <ArrowUpRight size={18} />
 
-                                        </button>
+                                        </Link>
 
                                     </div>
                                 ))}
@@ -223,7 +233,7 @@ export default function Insights() {
 
                                         <div className="lg:col-span-5">
 
-                                            <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-semibold text-green-300">
+                                            <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-semibold text-green-700">
 
                                                 Research Publications
 
@@ -275,14 +285,6 @@ export default function Insights() {
                                                             </p>
 
                                                         </div>
-
-                                                        <button className="inline-flex items-center gap-2 rounded-xl bg-green-600 px-5 py-3 text-sm font-semibold text-white hover:bg-green-700 transition-all duration-300">
-
-                                                            Explore
-
-                                                            <ArrowUpRight size={16} />
-
-                                                        </button>
 
                                                     </div>
                                                 ))}

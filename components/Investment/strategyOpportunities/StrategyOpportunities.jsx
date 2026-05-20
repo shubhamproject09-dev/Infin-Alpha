@@ -219,14 +219,6 @@ export default function StrategyOpportunities() {
 
                                             </p>
 
-                                            <button className="mt-10 inline-flex items-center gap-2 rounded-2xl bg-green-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-green-700 hover:gap-4">
-
-                                                Explore Opportunity
-
-                                                <ArrowUpRight size={18} />
-
-                                            </button>
-
                                         </div>
 
                                     </div>
@@ -235,7 +227,7 @@ export default function StrategyOpportunities() {
                             </div>
 
                             {/* STRATEGY FLOW */}
-                            <div className="mt-14">
+                            <div className="mt-14" style={{ marginTop: "30px" }}>
 
                                 <div className="relative overflow-hidden rounded-[40px] bg-[#07111f] p-6 sm:p-8 lg:p-12 shadow-2xl">
 
