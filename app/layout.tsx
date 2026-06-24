@@ -1,15 +1,22 @@
 import "./globals.css";
 import Header from "@/components/Navbar";
-import { Inter } from "next/font/google";
 import Footer from "@/components/Footer";
+import { IBM_Plex_Sans } from "next/font/google";
 
-const inter = Inter({
+const ibmPlex = IBM_Plex_Sans({
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata = {
   title: "INFIN ALPHA",
   description: "Investment Platform",
+
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
@@ -19,8 +26,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gradient-to-b from-white to-gray-50 text-gray-900`}>
-
+      <body
+        className={`${ibmPlex.className} bg-white text-gray-900 antialiased`}
+      >
         <Header />
 
         <main className="min-h-screen">
@@ -28,7 +36,6 @@ export default function RootLayout({
         </main>
 
         <Footer />
-
       </body>
     </html>
   );

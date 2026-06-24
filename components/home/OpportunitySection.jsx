@@ -43,7 +43,7 @@ export default function OpportunitySection() {
         <section className="relative bg-white py-20 lg:py-28 overflow-hidden">
 
             {/* Background Glow */}
-            <div className="absolute top-0 right-0 w-80 h-80 bg-green-100 blur-3xl rounded-full opacity-40"></div>
+            <div className="absolute top-0 right-0 w-80 h-80 bg-[#D5F3F5] blur-3xl rounded-full opacity-40"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
@@ -53,14 +53,14 @@ export default function OpportunitySection() {
                     {/* LEFT SIDE */}
                     <div>
 
-                        <span className="inline-flex items-center px-4 py-2 rounded-full bg-green-50 text-green-700 text-sm font-semibold border border-green-100">
+                        <span className="inline-flex items-center px-4 py-2 rounded-full bg-[#EAF9FA] text-[#00314A] text-sm font-semibold border border-[#D5F3F5]">
                             India’s Emerging Opportunity
                         </span>
 
                         <h2 className="mt-6 text-3xl lg:text-5xl font-bold text-slate-900 leading-tight">
 
                             Reimagining Potential Across
-                            <span className="block text-green-600 mt-2">
+                            <span className="block text-[#009A9E] mt-2">
                                 India’s ₹8–12 Lakh Crore
                             </span>
 
@@ -123,10 +123,10 @@ export default function OpportunitySection() {
                         >
 
                             {/* Gradient Glow */}
-                            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-green-500/0 to-green-500/0 group-hover:from-green-500/5 group-hover:to-emerald-500/10 transition-all duration-500"></div>
+                            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#EAF9FA]0/0 to-[#EAF9FA]0/0 group-hover:from-[#EAF9FA]0/5 group-hover:to-[#7ACED4]/10 transition-all duration-500"></div>
 
                             {/* Icon */}
-                            <div className="relative w-14 h-14 rounded-2xl bg-green-50 border border-green-100 flex items-center justify-center text-green-600 group-hover:scale-110 transition duration-300">
+                            <div className="relative w-14 h-14 rounded-2xl bg-[#EAF9FA] border border-[#D5F3F5] flex items-center justify-center text-[#009A9E] group-hover:scale-110 transition duration-300">
 
                                 {item.icon}
 
@@ -153,17 +153,17 @@ export default function OpportunitySection() {
                 </div>
 
                 {/* Bottom Highlight Section */}
-                <div className="mt-20 rounded-3xl bg-gradient-to-r from-slate-950 via-slate-900 to-green-950 p-8 lg:p-12 overflow-hidden relative">
+                <div className="mt-20 rounded-3xl bg-gradient-to-r from-[#00314A] via-[#0A3635] to-[#00314A] p-8 lg:p-12 overflow-hidden relative">
 
                     {/* Glow */}
-                    <div className="absolute top-0 right-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>
+                    <div className="absolute top-0 right-0 w-72 h-72 bg-[#EAF9FA]0/20 blur-3xl rounded-full"></div>
 
                     <div className="relative z-10 grid lg:grid-cols-2 gap-10 items-center">
 
                         {/* Left */}
                         <div>
 
-                            <span className="inline-block px-4 py-2 rounded-full bg-green-500/10 text-green-300 border border-green-500/20 text-sm font-medium">
+                            <span className="inline-block px-4 py-2 rounded-full bg-[#EAF9FA]0/10 text-[#7ACED4] border border-[#EAF9FA]0/20 text-sm font-medium">
                                 Why This Matters
                             </span>
 
@@ -182,7 +182,7 @@ export default function OpportunitySection() {
 
                             <div className="flex gap-4">
 
-                                <div className="w-3 h-3 rounded-full bg-green-400 mt-2"></div>
+                                <div className="w-3 h-3 rounded-full bg-[#7ACED4] mt-2"></div>
 
                                 <p className="text-slate-300 leading-7">
                                     Most stressed assets require deep legal,
@@ -194,7 +194,7 @@ export default function OpportunitySection() {
 
                             <div className="flex gap-4">
 
-                                <div className="w-3 h-3 rounded-full bg-green-400 mt-2"></div>
+                                <div className="w-3 h-3 rounded-full bg-[#7ACED4] mt-2"></div>
 
                                 <p className="text-slate-300 leading-7">
                                     Specialized AIF structures provide patient
@@ -206,7 +206,7 @@ export default function OpportunitySection() {
 
                             <div className="flex gap-4">
 
-                                <div className="w-3 h-3 rounded-full bg-green-400 mt-2"></div>
+                                <div className="w-3 h-3 rounded-full bg-[#7ACED4] mt-2"></div>
 
                                 <p className="text-slate-300 leading-7">
                                     INFIN Alpha focuses on identifying scalable

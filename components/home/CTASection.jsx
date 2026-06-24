@@ -15,12 +15,12 @@ export default function CTASection() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* MAIN BOX */}
-                <div className="relative overflow-hidden rounded-[40px] bg-gradient-to-br from-slate-950 via-slate-900 to-green-950 p-8 sm:p-10 lg:p-16">
+                <div className="relative overflow-hidden rounded-[40px] bg-gradient-to-br from-[#00314A] via-[#0A3635] to-[#00314A] p-8 sm:p-10 lg:p-16">
 
                     {/* Background Glow */}
-                    <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-green-500/20 blur-3xl rounded-full"></div>
+                    <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-[#009A9E]/20 blur-3xl rounded-full"></div>
 
-                    <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-emerald-400/10 blur-3xl rounded-full"></div>
+                    <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#7ACED4]/10 blur-3xl rounded-full"></div>
 
                     <div className="relative z-10 grid lg:grid-cols-12 gap-12 items-center">
 
@@ -28,7 +28,7 @@ export default function CTASection() {
                         <div className="lg:col-span-6">
 
                             {/* Badge */}
-                            <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-medium text-green-300 backdrop-blur-md">
+                            <div className="inline-flex items-center gap-2 rounded-full border border-[#009A9E]/20 bg-[#009A9E]/10 px-4 py-2 text-sm font-medium text-[#7ACED4] backdrop-blur-md">
 
                                 Strategic Investment Opportunities
 
@@ -60,7 +60,7 @@ export default function CTASection() {
                                 {/* Investment Philosophy */}
                                 <Link
                                     href="/investment/philosophy"
-                                    className="inline-flex items-center justify-center gap-2 rounded-2xl bg-green-500 px-6 py-4 text-white font-semibold hover:bg-green-600 transition-all duration-300"
+                                    className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#009A9E] px-6 py-4 text-white font-semibold hover:bg-[#00314A] transition-all duration-300"
                                 >
 
                                     Investment Philosophy
@@ -89,9 +89,9 @@ export default function CTASection() {
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
 
                                 {/* CARD 1 */}
-                                <div className="rounded-[28px] border border-white/10 bg-white/[0.05] backdrop-blur-xl p-6">
+                                <div className="rounded-[28px] border border-white/10 bg-white/[0.04] backdrop-blur-xl p-6">
 
-                                    <div className="w-12 h-12 rounded-2xl bg-green-500/10 border border-green-500/20 text-green-400 flex items-center justify-center">
+                                    <div className="w-12 h-12 rounded-2xl bg-[#009A9E]/10 border border-[#009A9E]/20 text-[#7ACED4] flex items-center justify-center">
 
                                         <TrendingUp size={22} />
 
@@ -112,9 +112,9 @@ export default function CTASection() {
                                 </div>
 
                                 {/* CARD 2 */}
-                                <div className="rounded-[28px] border border-white/10 bg-white/[0.05] backdrop-blur-xl p-6">
+                                <div className="rounded-[28px] border border-white/10 bg-white/[0.04] backdrop-blur-xl p-6">
 
-                                    <div className="w-12 h-12 rounded-2xl bg-green-500/10 border border-green-500/20 text-green-400 flex items-center justify-center">
+                                    <div className="w-12 h-12 rounded-2xl bg-[#009A9E]/10 border border-[#009A9E]/20 text-[#7ACED4] flex items-center justify-center">
 
                                         <ShieldCheck size={22} />
 
@@ -135,13 +135,14 @@ export default function CTASection() {
                                 </div>
 
                                 {/* LARGE CARD */}
-                                <div className="sm:col-span-2 rounded-[32px] border border-green-500/20 bg-gradient-to-r from-green-500/10 to-emerald-500/10 p-7">
+                                <div className="sm:col-span-2 rounded-[32px] border border-[#009A9E]/20 border-[#009A9E]/20
+bg-gradient-to-r from-[#009A9E]/10 to-[#7ACED4]/10 p-7">
 
                                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
 
                                         <div>
 
-                                            <p className="text-sm font-medium text-green-300">
+                                            <p className="text-sm font-medium text-[#7ACED4]">
 
                                                 Bharat Special Opportunity Fund
 
@@ -156,7 +157,7 @@ export default function CTASection() {
 
                                         </div>
 
-                                        <div className="w-16 h-16 rounded-full bg-green-500 text-white flex items-center justify-center flex-shrink-0">
+                                        <div className="w-16 h-16 rounded-full bg-[#009A9E] text-white flex items-center justify-center flex-shrink-0">
 
                                             <ArrowUpRight size={28} />
 

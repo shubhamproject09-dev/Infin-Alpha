@@ -14,7 +14,7 @@ export default function InvestorVerificationPage() {
 
             {/* HERO */}
             <div
-                className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-green-950"
+                className="relative overflow-hidden bg-gradient-to-br from-[#00314A] via-[#0A3635] to-[#00314A]"
                 style={{
                     paddingTop: "140px",
                     paddingBottom: "140px",
@@ -22,9 +22,9 @@ export default function InvestorVerificationPage() {
             >
 
                 {/* Glow */}
-                <div className="absolute top-0 left-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>
+                <div className="absolute top-0 left-0 w-72 h-72 bg-[#EAF9FA]0/20 blur-3xl rounded-full"></div>
 
-                <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-400/10 blur-3xl rounded-full"></div>
+                <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#7ACED4]/10 blur-3xl rounded-full"></div>
 
                 {/* Pattern */}
                 <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -34,7 +34,7 @@ export default function InvestorVerificationPage() {
                     <div className="max-w-5xl mx-auto text-center">
 
                         {/* Badge */}
-                        <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-medium text-green-300 backdrop-blur-md">
+                        <div className="inline-flex items-center gap-2 rounded-full border border-[#EAF9FA]0/20 bg-[#EAF9FA]0/10 px-4 py-2 text-sm font-medium text-[#7ACED4] backdrop-blur-md">
 
                             <ShieldCheck size={16} />
 
@@ -46,7 +46,7 @@ export default function InvestorVerificationPage() {
                         <h1 className="mt-8 text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white">
 
                             Secure Investor
-                            <span className="block mt-2 text-green-400">
+                            <span className="block mt-2 text-[#7ACED4]">
                                 Verification
                             </span>
 
@@ -78,7 +78,7 @@ export default function InvestorVerificationPage() {
                         {/* CARD */}
                         <div className="rounded-[32px] border border-slate-200 p-8 shadow-sm">
 
-                            <div className="w-16 h-16 rounded-2xl bg-green-100 text-green-700 flex items-center justify-center">
+                            <div className="w-16 h-16 rounded-2xl bg-[#D5F3F5] text-[#00314A] flex items-center justify-center">
 
                                 <FileCheck2 size={30} />
 
@@ -105,7 +105,7 @@ export default function InvestorVerificationPage() {
                         {/* CARD */}
                         <div className="rounded-[32px] border border-slate-200 p-8 shadow-sm">
 
-                            <div className="w-16 h-16 rounded-2xl bg-green-100 text-green-700 flex items-center justify-center">
+                            <div className="w-16 h-16 rounded-2xl bg-[#D5F3F5] text-[#00314A] flex items-center justify-center">
 
                                 <Lock size={30} />
 
@@ -133,7 +133,7 @@ export default function InvestorVerificationPage() {
                     {/* PROCESS */}
                     <div className="mt-20 rounded-[36px] p-10 text-white">
 
-                        <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm text-green-700">
+                        <div className="inline-flex items-center gap-2 rounded-full border border-[#EAF9FA]0/20 bg-[#EAF9FA]0/10 px-4 py-2 text-sm text-[#00314A]">
 
                             <Landmark size={16} />
 
@@ -141,7 +141,7 @@ export default function InvestorVerificationPage() {
 
                         </div>
 
-                        <h2 className="mt-6 text-4xl font-bold text-green-400">
+                        <h2 className="mt-6 text-4xl font-bold text-[#7ACED4]">
 
                             Investor Verification Process
 
@@ -160,7 +160,7 @@ export default function InvestorVerificationPage() {
                                 >
 
                                     <CheckCircle2
-                                        className="text-green-600"
+                                        className="text-[#009A9E]"
                                         size={28}
                                     />
 

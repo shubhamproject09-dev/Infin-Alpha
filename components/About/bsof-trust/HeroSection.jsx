@@ -3,12 +3,12 @@ import Link from "next/link";
 export default function HeroSection() {
 
     return (
-        <section className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-green-950 text-white">
+        <section className="relative overflow-hidden bg-gradient-to-br from-[#00314A] via-[#0A3635] to-[#00314A] text-white">
 
             {/* Background Glow */}
-            <div className="absolute top-0 left-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>
+            <div className="absolute top-0 left-0 w-72 h-72 bg-[#EAF9FA]0/20 blur-3xl rounded-full"></div>
 
-            <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-400/10 blur-3xl rounded-full"></div>
+            <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#7ACED4]/10 blur-3xl rounded-full"></div>
 
             {/* MAIN CONTENT */}
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 w-full">
@@ -19,9 +19,9 @@ export default function HeroSection() {
                     <div className="lg:col-span-7">
 
                         {/* Badge */}
-                        <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-medium text-green-300 backdrop-blur-md">
+                        <div className="inline-flex items-center gap-2 rounded-full border border-[#EAF9FA]0/20 bg-[#EAF9FA]0/10 px-4 py-2 text-sm font-medium text-[#7ACED4] backdrop-blur-md">
 
-                            <div className="w-2 h-2 rounded-full bg-green-400"></div>
+                            <div className="w-2 h-2 rounded-full bg-[#7ACED4]"></div>
 
                             Bharat Special Opportunity Fund
 
@@ -52,7 +52,7 @@ export default function HeroSection() {
 
                             <Link
                                 href="/investment/strategy-opportunities"
-                                className="py-4 px-4 rounded-2xl bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold transition-all duration-300 shadow-lg shadow-green-500/20 hover:scale-[1.02] text-center"
+                                className="py-4 px-4 rounded-2xl bg-gradient-to-r from-[#EAF9FA]0 to-[#009A9E] hover:from-[#009A9E] hover:to-[#00314A] text-white font-semibold transition-all duration-300 shadow-lg shadow-[#EAF9FA]0/20 hover:scale-[1.02] text-center"
                             >
 
                                 Explore Opportunities
@@ -81,12 +81,12 @@ export default function HeroSection() {
                             <div className="relative overflow-hidden rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-2xl p-6 sm:p-8 shadow-2xl">
 
                                 {/* Glow */}
-                                <div className="absolute top-0 right-0 w-40 h-40 bg-green-500/20 blur-3xl rounded-full"></div>
+                                <div className="absolute top-0 right-0 w-40 h-40 bg-[#EAF9FA]0/20 blur-3xl rounded-full"></div>
 
                                 <div className="relative z-10">
 
                                     {/* Label */}
-                                    <div className="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/10 px-3 py-1.5 text-xs font-medium text-green-300">
+                                    <div className="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/10 px-3 py-1.5 text-xs font-medium text-[#7ACED4]">
 
                                         Institutional Strategy
 
@@ -95,7 +95,7 @@ export default function HeroSection() {
                                     {/* Stats */}
                                     <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-5">
 
-                                        <div className="rounded-2xl border border-white/10 bg-white/5 p-5 hover:border-green-500/30 transition-all duration-300">
+                                        <div className="rounded-2xl border border-white/10 bg-white/5 p-5 hover:border-[#EAF9FA]0/30 transition-all duration-300">
 
                                             <h3 className="text-3xl sm:text-4xl font-bold">
 
@@ -111,7 +111,7 @@ export default function HeroSection() {
 
                                         </div>
 
-                                        <div className="rounded-2xl border border-white/10 bg-white/5 p-5 hover:border-green-500/30 transition-all duration-300">
+                                        <div className="rounded-2xl border border-white/10 bg-white/5 p-5 hover:border-[#EAF9FA]0/30 transition-all duration-300">
 
                                             <h3 className="text-3xl sm:text-4xl font-bold">
 
@@ -130,9 +130,9 @@ export default function HeroSection() {
                                     </div>
 
                                     {/* Focus Box */}
-                                    <div className="mt-8 rounded-2xl border border-green-500/20 bg-gradient-to-r from-green-500/10 to-emerald-500/10 p-5">
+                                    <div className="mt-8 rounded-2xl border border-[#EAF9FA]0/20 bg-gradient-to-r from-[#EAF9FA]0/10 to-emerald-500/10 p-5">
 
-                                        <p className="text-sm text-green-300 font-medium">
+                                        <p className="text-sm text-[#7ACED4] font-medium">
 
                                             Focus Areas
 

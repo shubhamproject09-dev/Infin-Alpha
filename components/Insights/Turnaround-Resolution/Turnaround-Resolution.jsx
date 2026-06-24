@@ -14,16 +14,16 @@ export default function ResolutionTrendsPage() {
 
             {/* HERO */}
             <div
-                className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-green-950"
+                className="relative overflow-hidden bg-gradient-to-br from-[#00314A] via-[#0A3635] to-[#00314A]"
                 style={{
                     paddingTop: "140px",
                     paddingBottom: "140px",
                 }}
             >
 
-                <div className="absolute top-0 left-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>
+                <div className="absolute top-0 left-0 w-72 h-72 bg-[#EAF9FA]0/20 blur-3xl rounded-full"></div>
 
-                <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-400/10 blur-3xl rounded-full"></div>
+                <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#7ACED4]/10 blur-3xl rounded-full"></div>
 
                 <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:24px_24px]"></div>
 
@@ -31,7 +31,7 @@ export default function ResolutionTrendsPage() {
 
                     <div className="max-w-5xl mx-auto text-center">
 
-                        <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-medium text-green-300">
+                        <div className="inline-flex items-center gap-2 rounded-full border border-[#EAF9FA]0/20 bg-[#EAF9FA]0/10 px-4 py-2 text-sm font-medium text-[#7ACED4]">
 
                             <Building2 size={16} />
 
@@ -42,7 +42,7 @@ export default function ResolutionTrendsPage() {
                         <h1 className="mt-8 text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white">
 
                             Turnaround &
-                            <span className="block mt-2 text-green-400">
+                            <span className="block mt-2 text-[#7ACED4]">
                                 Resolution Trends
                             </span>
 
@@ -94,13 +94,13 @@ export default function ResolutionTrendsPage() {
                                 className="rounded-[32px] border border-slate-200 p-8 shadow-sm hover:shadow-xl transition-all duration-500"
                             >
 
-                                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-600 text-white flex items-center justify-center">
+                                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#009A9E] to-[#00314A] text-white flex items-center justify-center">
 
                                     <TrendingUp size={24} />
 
                                 </div>
 
-                                <h3 className="mt-8 text-3xl font-bold text-green-700">
+                                <h3 className="mt-8 text-3xl font-bold text-[#00314A]">
 
                                     {item.title}
 
@@ -120,13 +120,13 @@ export default function ResolutionTrendsPage() {
                     {/* TRENDS */}
                     <div className="mt-20 rounded-[36px] px-5 py-8 sm:p-8 lg:p-10 text-white">
 
-                        <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm text-green-700">
+                        <div className="inline-flex items-center gap-2 rounded-full border border-[#EAF9FA]0/20 bg-[#EAF9FA]0/10 px-4 py-2 text-sm text-[#00314A]">
 
                             Resolution Ecosystem
 
                         </div>
 
-                        <h2 className="mt-6 text-4xl font-bold text-green-400">
+                        <h2 className="mt-6 text-4xl font-bold text-[#7ACED4]">
 
                             Emerging Market Trends
 
@@ -143,13 +143,13 @@ export default function ResolutionTrendsPage() {
                             ].map((item, idx) => (
                                 <div
                                     key={idx}
-                                    className="group relative overflow-hidden rounded-[30px] border-2 border-green-500/30 bg-gradient-to-br from-white/[0.08] to-white/[0.03] backdrop-blur-xl p-7"
+                                    className="group relative overflow-hidden rounded-[30px] border-2 border-[#EAF9FA]0/30 bg-gradient-to-br from-white/[0.08] to-white/[0.03] backdrop-blur-xl p-7"
                                 >
 
-                                    <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-green-400 via-emerald-500 to-transparent"></div>
+                                    <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-[#7ACED4] via-emerald-500 to-transparent"></div>
 
                                     <CheckCircle2
-                                        className="text-green-400"
+                                        className="text-[#7ACED4]"
                                         size={28}
                                     />
 

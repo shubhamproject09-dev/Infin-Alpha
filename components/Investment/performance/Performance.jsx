@@ -61,16 +61,16 @@ export default function Performance() {
 
             {/* HERO SECTION */}
             <div
-                className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-green-950"
+                className="relative overflow-hidden bg-gradient-to-br from-[#00314A] via-[#0A3635] to-[#00314A]"
                 style={{
                     paddingTop: "140px",
                     paddingBottom: "140px",
                 }}
             >
 
-                <div className="absolute top-0 left-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>
+                <div className="absolute top-0 left-0 w-72 h-72 bg-[#EAF9FA]0/20 blur-3xl rounded-full"></div>
 
-                <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-400/10 blur-3xl rounded-full"></div>
+                <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#7ACED4]/10 blur-3xl rounded-full"></div>
 
                 <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:24px_24px]"></div>
 
@@ -78,7 +78,7 @@ export default function Performance() {
 
                     <div className="max-w-5xl mx-auto text-center">
 
-                        <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-medium text-green-300 backdrop-blur-md">
+                        <div className="inline-flex items-center gap-2 rounded-full border border-[#EAF9FA]0/20 bg-[#EAF9FA]0/10 px-4 py-2 text-sm font-medium text-[#7ACED4] backdrop-blur-md">
 
                             <ShieldCheck size={16} />
 
@@ -89,7 +89,7 @@ export default function Performance() {
                         <h1 className="mt-8 text-3xl sm:text-3xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white">
 
                             Performance
-                            <span className="block mt-2 text-green-400">
+                            <span className="block mt-2 text-[#7ACED4]">
                                 Investment Outlook
                             </span>
 
@@ -121,11 +121,11 @@ export default function Performance() {
 
                     <div className="relative overflow-hidden rounded-[36px] sm:rounded-[42px] border border-slate-200 bg-white shadow-2xl">
 
-                        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-green-500/10 blur-3xl rounded-full"></div>
+                        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#EAF9FA]0/10 blur-3xl rounded-full"></div>
 
                         {/* TOP SECTION */}
                         <div
-                            className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-green-950 px-6 sm:px-10 lg:px-14"
+                            className="relative overflow-hidden bg-gradient-to-br from-[#00314A] via-[#0A3635] to-[#00314A] px-6 sm:px-10 lg:px-14"
                             style={{
                                 paddingTop: "80px",
                                 paddingBottom: "80px",
@@ -136,7 +136,7 @@ export default function Performance() {
 
                             <div className="relative z-10 max-w-5xl">
 
-                                <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-medium text-green-300 backdrop-blur-md">
+                                <div className="inline-flex items-center gap-2 rounded-full border border-[#EAF9FA]0/20 bg-[#EAF9FA]0/10 px-4 py-2 text-sm font-medium text-[#7ACED4] backdrop-blur-md">
 
                                     <TrendingUp size={16} />
 
@@ -147,7 +147,7 @@ export default function Performance() {
                                 <h2 className="mt-8 text-3xl sm:text-5xl lg:text-5xl font-bold leading-[1.05] tracking-[-0.04em] text-white">
 
                                     Institutional-grade
-                                    <span className="block mt-2 text-green-400">
+                                    <span className="block mt-2 text-[#7ACED4]">
                                         Alternative Investment Fund
                                     </span>
 
@@ -175,16 +175,16 @@ export default function Performance() {
                                 {stats.map((item, idx) => (
                                     <div
                                         key={idx}
-                                        className="group rounded-[30px] border border-slate-200 bg-white p-6 shadow-sm hover:shadow-xl hover:border-green-300 transition-all duration-500"
+                                        className="group rounded-[30px] border border-slate-200 bg-white p-6 shadow-sm hover:shadow-xl hover:border-[#7ACED4] transition-all duration-500"
                                     >
 
-                                        <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center text-white">
+                                        <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#009A9E] to-[#00314A] flex items-center justify-center text-white">
 
                                             <BarChart3 size={24} />
 
                                         </div>
 
-                                        <h3 className="mt-6 text-4xl font-bold text-green-600">
+                                        <h3 className="mt-6 text-4xl font-bold text-[#009A9E]">
 
                                             {item.title}
 
@@ -210,7 +210,7 @@ export default function Performance() {
                                 {/* LEFT CARD */}
                                 <div className="rounded-[36px] border border-slate-200 bg-white p-8 shadow-lg">
 
-                                    <div className="inline-flex items-center gap-2 rounded-full border border-green-100 bg-green-50 px-4 py-2 text-sm font-semibold text-green-700">
+                                    <div className="inline-flex items-center gap-2 rounded-full border border-[#D5F3F5] bg-[#EAF9FA] px-4 py-2 text-sm font-semibold text-[#00314A]">
 
                                         <Target size={16} />
 
@@ -218,7 +218,7 @@ export default function Performance() {
 
                                     </div>
 
-                                    <h3 className="mt-6 text-4xl font-bold text-green-600">
+                                    <h3 className="mt-6 text-4xl font-bold text-[#009A9E]">
 
                                         Investment Parameters
 
@@ -239,7 +239,7 @@ export default function Performance() {
 
                                                 <CheckCircle2
                                                     size={20}
-                                                    className="text-green-500 mt-1 shrink-0"
+                                                    className="text-[#EAF9FA]0 mt-1 shrink-0"
                                                 />
 
                                                 <p
@@ -259,19 +259,19 @@ export default function Performance() {
                                 </div>
 
                                 {/* RIGHT CARD */}
-                                <div className="relative overflow-hidden rounded-[36px] bg-[#0b1120] p-8 shadow-2xl">
+                                <div className="relative overflow-hidden rounded-[36px] bg-[#00314A] p-8 shadow-2xl">
 
-                                    <div className="absolute top-0 right-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>
+                                    <div className="absolute top-0 right-0 w-72 h-72 bg-[#EAF9FA]0/20 blur-3xl rounded-full"></div>
 
                                     <div className="relative z-10">
 
-                                        <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-semibold text-green-300">
+                                        <div className="inline-flex items-center gap-2 rounded-full border border-[#EAF9FA]0/20 bg-[#EAF9FA]0/10 px-4 py-2 text-sm font-semibold text-[#7ACED4]">
 
                                             Strategic Edge
 
                                         </div>
 
-                                        <h3 className="mt-6 text-4xl font-bold leading-tight text-green-400">
+                                        <h3 className="mt-6 text-4xl font-bold leading-tight text-[#7ACED4]">
 
                                             Why Invest in BSOF AIF
 
@@ -292,7 +292,7 @@ export default function Performance() {
 
                                                     <ArrowUpRight
                                                         size={18}
-                                                        className="text-green-400 mt-1 shrink-0"
+                                                        className="text-[#7ACED4] mt-1 shrink-0"
                                                     />
 
                                                     <p className="text-sm sm:text-base leading-8 text-white/90">
@@ -317,7 +317,7 @@ export default function Performance() {
 
                                 <div className="text-center">
 
-                                    <div className="inline-flex items-center gap-2 rounded-full border border-green-100 bg-green-50 px-4 py-2 text-sm font-semibold text-green-700">
+                                    <div className="inline-flex items-center gap-2 rounded-full border border-[#D5F3F5] bg-[#EAF9FA] px-4 py-2 text-sm font-semibold text-[#00314A]">
 
                                         <Building2 size={16} />
 
@@ -331,7 +331,7 @@ export default function Performance() {
                                             Strategic Investment
                                         </span>
 
-                                        <span className="block mt-2 text-green-600">
+                                        <span className="block mt-2 text-[#009A9E]">
                                             Opportunity Segments
                                         </span>
 
@@ -344,16 +344,16 @@ export default function Performance() {
                                     {assetClasses.map((item, idx) => (
                                         <div
                                             key={idx}
-                                            className="group rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm hover:shadow-xl hover:border-green-300 transition-all duration-500"
+                                            className="group rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm hover:shadow-xl hover:border-[#7ACED4] transition-all duration-500"
                                         >
 
-                                            <div className="w-14 h-14 rounded-2xl border-2 border-green-500 text-green-600 flex items-center justify-center bg-green-50">
+                                            <div className="w-14 h-14 rounded-2xl border-2 border-[#EAF9FA]0 text-[#009A9E] flex items-center justify-center bg-[#EAF9FA]">
 
                                                 <item.icon size={24} />
 
                                             </div>
 
-                                            <h4 className="mt-6 text-2xl font-bold text-green-600 leading-tight">
+                                            <h4 className="mt-6 text-2xl font-bold text-[#009A9E] leading-tight">
 
                                                 {item.title}
 

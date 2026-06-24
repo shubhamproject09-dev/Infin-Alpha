@@ -16,7 +16,7 @@ export default function LegalSection() {
 
             {/* HERO SECTION */}
             <div
-                className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-green-950"
+                className="relative overflow-hidden bg-gradient-to-br from-[#00314A] via-[#0A3635] to-[#00314A]"
                 style={{
                     paddingTop: "140px",
                     paddingBottom: "140px",
@@ -24,9 +24,9 @@ export default function LegalSection() {
             >
 
                 {/* Glow */}
-                <div className="absolute top-0 left-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>
+                <div className="absolute top-0 left-0 w-72 h-72 bg-[#EAF9FA]0/20 blur-3xl rounded-full"></div>
 
-                <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-400/10 blur-3xl rounded-full"></div>
+                <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#7ACED4]/10 blur-3xl rounded-full"></div>
 
                 {/* Pattern */}
                 <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -39,7 +39,7 @@ export default function LegalSection() {
                         <div className="max-w-5xl mx-auto">
 
                             {/* Badge */}
-                            <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-medium text-green-300 backdrop-blur-md">
+                            <div className="inline-flex items-center gap-2 rounded-full border border-[#EAF9FA]0/20 bg-[#EAF9FA]0/10 px-4 py-2 text-sm font-medium text-[#7ACED4] backdrop-blur-md">
 
                                 <ShieldCheck size={16} />
 
@@ -51,7 +51,7 @@ export default function LegalSection() {
                             <h1 className="mt-8 text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white">
 
                                 Legal
-                                <span className="block mt-2 text-green-400">
+                                <span className="block mt-2 text-[#7ACED4]">
                                     Information
                                 </span>
 
@@ -88,12 +88,12 @@ export default function LegalSection() {
                             <div className="relative overflow-hidden rounded-[28px] sm:rounded-[36px] border border-slate-200 bg-white p-5 sm:p-8 lg:p-10 shadow-sm hover:shadow-2xl transition-all duration-500">
 
                                 {/* Glow */}
-                                <div className="absolute top-0 right-0 w-72 sm:w-96 h-72 sm:h-96 bg-green-500/10 blur-3xl rounded-full"></div>
+                                <div className="absolute top-0 right-0 w-72 sm:w-96 h-72 sm:h-96 bg-[#EAF9FA]0/10 blur-3xl rounded-full"></div>
 
                                 <div className="relative z-10">
 
                                     {/* Badge */}
-                                    <div className="inline-flex items-center gap-2 rounded-full border border-green-100 bg-green-50 px-4 py-2 text-xs sm:text-sm font-semibold text-green-700">
+                                    <div className="inline-flex items-center gap-2 rounded-full border border-[#D5F3F5] bg-[#EAF9FA] px-4 py-2 text-xs sm:text-sm font-semibold text-[#00314A]">
 
                                         <Scale size={16} />
 
@@ -102,7 +102,7 @@ export default function LegalSection() {
                                     </div>
 
                                     {/* Heading */}
-                                    <h2 className="mt-5 sm:mt-6 text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-[-0.03em] text-green-600">
+                                    <h2 className="mt-5 sm:mt-6 text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-[-0.03em] text-[#009A9E]">
 
                                         Important Legal
                                         Information
@@ -129,7 +129,7 @@ export default function LegalSection() {
 
                                             <div className="flex items-start gap-4">
 
-                                                <div className="w-12 h-12 rounded-2xl border-2 border-green-500 text-green-600 flex items-center justify-center shrink-0">
+                                                <div className="w-12 h-12 rounded-2xl border-2 border-[#EAF9FA]0 text-[#009A9E] flex items-center justify-center shrink-0">
 
                                                     <FileText size={22} />
 
@@ -137,7 +137,7 @@ export default function LegalSection() {
 
                                                 <div>
 
-                                                    <h3 className="text-xl font-bold text-green-600">
+                                                    <h3 className="text-xl font-bold text-[#009A9E]">
 
                                                         Investment Risk Disclosure
 
@@ -166,7 +166,7 @@ export default function LegalSection() {
 
                                             <div className="flex items-start gap-4">
 
-                                                <div className="w-12 h-12 rounded-2xl border-2 border-green-500 text-green-600 flex items-center justify-center shrink-0">
+                                                <div className="w-12 h-12 rounded-2xl border-2 border-[#EAF9FA]0 text-[#009A9E] flex items-center justify-center shrink-0">
 
                                                     <AlertTriangle size={22} />
 
@@ -174,13 +174,13 @@ export default function LegalSection() {
 
                                                 <div>
 
-                                                    <h3 className="text-xl font-bold text-green-600">
+                                                    <h3 className="text-xl font-bold text-[#009A9E]">
 
                                                         Forward Looking Statements
 
                                                     </h3>
 
-                                                    <p className="mt-3 leading-8 text-black text-sm sm:text-base">
+                                                    <p className="mt-3 leading-8 text-slate-700 text-sm sm:text-base">
 
                                                         Certain statements may contain
                                                         forward-looking assumptions,
@@ -204,7 +204,7 @@ export default function LegalSection() {
 
                                             <div className="flex items-start gap-4">
 
-                                                <div className="w-12 h-12 rounded-2xl border-2 border-green-500 text-green-600 flex items-center justify-center shrink-0">
+                                                <div className="w-12 h-12 rounded-2xl border-2 border-[#EAF9FA]0 text-[#009A9E] flex items-center justify-center shrink-0">
 
                                                     <Lock size={22} />
 
@@ -212,13 +212,13 @@ export default function LegalSection() {
 
                                                 <div>
 
-                                                    <h3 className="text-xl font-bold text-green-600">
+                                                    <h3 className="text-xl font-bold text-[#009A9E]">
 
                                                         Confidentiality & Privacy
 
                                                     </h3>
 
-                                                    <p className="mt-3 leading-8 text-black text-sm sm:text-base">
+                                                    <p className="mt-3 leading-8 text-slate-700 text-sm sm:text-base">
 
                                                         Any information shared through
                                                         investor communication channels
@@ -250,7 +250,7 @@ export default function LegalSection() {
                             <div className="relative overflow-hidden rounded-[28px] sm:rounded-[36px] p-5 sm:p-8 lg:p-10 shadow-2xl text-slate-300">
 
                                 {/* Glow */}
-                                <div className="absolute top-0 right-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>
+                                <div className="absolute top-0 right-0 w-72 h-72 bg-[#EAF9FA]0/20 blur-3xl rounded-full"></div>
 
                                 {/* Pattern */}
                                 <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:22px_22px]"></div>
@@ -258,14 +258,14 @@ export default function LegalSection() {
                                 <div className="relative z-10">
 
                                     {/* Badge */}
-                                    <div className="inline-flex items-center gap-2 rounded-full border border-green-100 bg-green-50 px-4 py-2 text-xs sm:text-sm font-semibold text-green-700">
+                                    <div className="inline-flex items-center gap-2 rounded-full border border-[#D5F3F5] bg-[#EAF9FA] px-4 py-2 text-xs sm:text-sm font-semibold text-[#00314A]">
 
                                         Compliance Framework
 
                                     </div>
 
                                     {/* Heading */}
-                                    <h3 className="mt-6 text-3xl sm:text-4xl font-bold leading-tight tracking-[-0.03em] text-green-700">
+                                    <h3 className="mt-6 text-3xl sm:text-4xl font-bold leading-tight tracking-[-0.03em] text-[#00314A]">
 
                                         Investor
                                         Protection &
@@ -274,7 +274,7 @@ export default function LegalSection() {
                                     </h3>
 
                                     {/* Description */}
-                                    <p className="mt-6 text-sm sm:text-base leading-8 text-black">
+                                    <p className="mt-6 text-sm sm:text-base leading-8 text-slate-700">
 
                                         INFIN ALPHA LLP maintains
                                         a governance-focused approach
@@ -290,13 +290,13 @@ export default function LegalSection() {
 
                                         <div className="rounded-2xl border border-white/10 bg-white/5 p-3">
 
-                                            <p className="text-sm text-black">
+                                            <p className="text-sm text-slate-700">
 
                                                 Regulatory Focus
 
                                             </p>
 
-                                            <h4 className="mt-2 text-xl font-bold text-green-600">
+                                            <h4 className="mt-2 text-xl font-bold text-[#009A9E]">
 
                                                 Institutional Compliance
 
@@ -306,13 +306,13 @@ export default function LegalSection() {
 
                                         <div className="rounded-2xl border border-white/10 bg-white/5 p-3">
 
-                                            <p className="text-sm text-black">
+                                            <p className="text-sm text-slate-700">
 
                                                 Communication
 
                                             </p>
 
-                                            <h4 className="mt-2 text-xl font-bold text-green-600">
+                                            <h4 className="mt-2 text-xl font-bold text-[#009A9E]">
 
                                                 Investor Transparency
 
@@ -322,13 +322,13 @@ export default function LegalSection() {
 
                                         <div className="rounded-2xl border border-white/10 bg-white/5 p-3">
 
-                                            <p className="text-sm text-black">
+                                            <p className="text-sm text-slate-700">
 
                                                 Governance
 
                                             </p>
 
-                                            <h4 className="mt-2 text-xl font-bold text-green-600">
+                                            <h4 className="mt-2 text-xl font-bold text-[#009A9E]">
 
                                                 Ethical Investment Practices
 
@@ -339,13 +339,13 @@ export default function LegalSection() {
                                     </div>
 
                                     {/* Bottom */}
-                                    <div className="mt-10 rounded-2xl border border-green-500/20 bg-green-500/10 p-5">
+                                    <div className="mt-10 rounded-2xl border border-[#EAF9FA]0/20 bg-[#EAF9FA]0/10 p-5">
 
                                         <div className="flex items-start gap-3">
 
-                                            <Building2 className="text-green-400 mt-1" size={20} />
+                                            <Building2 className="text-[#7ACED4] mt-1" size={20} />
 
-                                            <p className="text-sm leading-7 text-black">
+                                            <p className="text-sm leading-7 text-slate-700">
 
                                                 Please consult your legal,
                                                 financial,

@@ -8,7 +8,7 @@ export default function OverviewSection() {
             <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#000_1px,transparent_1px)] bg-[size:24px_24px]"></div>
 
             {/* Top Glow */}
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-green-500/10 blur-3xl rounded-full"></div>
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#EAF9FA]0/10 blur-3xl rounded-full"></div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -16,9 +16,9 @@ export default function OverviewSection() {
                 <div className="max-w-5xl mx-auto text-center">
 
                     {/* Badge */}
-                    <div className="inline-flex items-center gap-2 rounded-full border border-green-100 bg-green-50 px-5 py-2 text-sm font-semibold text-green-700">
+                    <div className="inline-flex items-center gap-2 rounded-full border border-[#D5F3F5] bg-[#EAF9FA] px-5 py-2 text-sm font-semibold text-[#00314A]">
 
-                        <div className="w-2 h-2 rounded-full bg-green-600"></div>
+                        <div className="w-2 h-2 rounded-full bg-[#009A9E]"></div>
 
                         Trust Overview
 
@@ -70,20 +70,20 @@ export default function OverviewSection() {
                         <div className="group relative overflow-hidden rounded-[32px] border border-slate-200 bg-white p-8 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
 
                             {/* Hover Glow */}
-                            <div className="absolute inset-0 bg-green-500/0 group-hover:bg-green-500/[0.03] transition-all duration-500"></div>
+                            <div className="absolute inset-0 bg-[#EAF9FA]0/0 group-hover:bg-[#EAF9FA]0/[0.03] transition-all duration-500"></div>
 
                             {/* Top Border */}
-                            <div className="absolute top-0 left-0 h-1 w-0 bg-green-500 group-hover:w-full transition-all duration-500"></div>
+                            <div className="absolute top-0 left-0 h-1 w-0 bg-[#EAF9FA]0 group-hover:w-full transition-all duration-500"></div>
 
                             {/* Icon */}
-                            <div className="relative w-16 h-16 rounded-2xl bg-white border-2 border-green-500 text-green-600 flex items-center justify-center text-2xl group-hover:scale-110 transition duration-300 shadow-sm">
+                            <div className="relative w-16 h-16 rounded-2xl bg-white border-2 border-[#EAF9FA]0 text-[#009A9E] flex items-center justify-center text-2xl group-hover:scale-110 transition duration-300 shadow-sm">
 
                                 ↗
 
                             </div>
 
                             {/* Title */}
-                            <h3 className="relative mt-8 text-2xl font-bold text-green-600 leading-snug">
+                            <h3 className="relative mt-8 text-2xl font-bold text-[#009A9E] leading-snug">
 
                                 Deep Value Investments
 
@@ -108,20 +108,20 @@ export default function OverviewSection() {
                         <div className="group relative overflow-hidden rounded-[32px] bg-white border border-slate-200 p-8 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
 
                             {/* Hover Glow */}
-                            <div className="absolute inset-0 bg-green-500/0 group-hover:bg-green-500/[0.03] transition-all duration-500"></div>
+                            <div className="absolute inset-0 bg-[#EAF9FA]0/0 group-hover:bg-[#EAF9FA]0/[0.03] transition-all duration-500"></div>
 
                             {/* Top Border */}
-                            <div className="absolute top-0 left-0 h-1 w-0 bg-green-500 group-hover:w-full transition-all duration-500"></div>
+                            <div className="absolute top-0 left-0 h-1 w-0 bg-[#EAF9FA]0 group-hover:w-full transition-all duration-500"></div>
 
                             {/* Icon */}
-                            <div className="relative w-16 h-16 rounded-2xl bg-white border-2 border-green-500 text-green-600 flex items-center justify-center text-2xl group-hover:scale-110 transition duration-300 shadow-sm">
+                            <div className="relative w-16 h-16 rounded-2xl bg-white border-2 border-[#EAF9FA]0 text-[#009A9E] flex items-center justify-center text-2xl group-hover:scale-110 transition duration-300 shadow-sm">
 
                                 ◎
 
                             </div>
 
                             {/* Title */}
-                            <h3 className="relative mt-8 text-2xl font-bold text-green-600 leading-snug">
+                            <h3 className="relative mt-8 text-2xl font-bold text-[#009A9E] leading-snug">
 
                                 Institutional Governance
 
@@ -146,7 +146,7 @@ export default function OverviewSection() {
                         <div className="sm:col-span-2 relative overflow-hidden rounded-[36px] bg-white border border-slate-200 p-8 sm:p-10 shadow-sm hover:shadow-2xl transition-all duration-500">
 
                             {/* Glow */}
-                            <div className="absolute top-0 right-0 w-96 h-96 bg-green-500/10 blur-3xl rounded-full"></div>
+                            <div className="absolute top-0 right-0 w-96 h-96 bg-[#EAF9FA]0/10 blur-3xl rounded-full"></div>
 
                             {/* Pattern */}
                             <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#000_1px,transparent_1px)] bg-[size:22px_22px]"></div>
@@ -156,7 +156,7 @@ export default function OverviewSection() {
                                 {/* LEFT */}
                                 <div className="max-w-2xl">
 
-                                    <p className="text-sm font-semibold uppercase tracking-[0.2em] text-green-600">
+                                    <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#009A9E]">
 
                                         India’s Opportunity Landscape
 
@@ -180,19 +180,15 @@ export default function OverviewSection() {
 
                                     <div>
 
-                                        <h4 className="text-3xl sm:text-5xl font-bold text-green-600">
-
+                                        <h4 className="text-3xl sm:text-5xl font-bold text-[#009A9E]">
                                             500+
-
                                         </h4>
 
                                         <p
                                             className="mt-2 text-sm"
                                             style={{ color: "#000" }}
                                         >
-
                                             Potential Cases
-
                                         </p>
 
                                     </div>
@@ -201,7 +197,7 @@ export default function OverviewSection() {
 
                                     <div>
 
-                                        <h4 className="text-3xl sm:text-5xl font-bold text-green-600">
+                                        <h4 className="text-3xl sm:text-5xl font-bold text-[#009A9E]">
 
                                             18–20%
 
@@ -248,19 +244,19 @@ export default function OverviewSection() {
                             <div className="p-8 sm:p-10">
 
                                 {/* Badge */}
-                                <div className="inline-flex items-center gap-2 rounded-full bg-green-50 border border-green-100 px-4 py-2 text-sm font-semibold text-green-700">
+                                <div className="inline-flex items-center gap-2 rounded-full bg-[#EAF9FA] border border-[#D5F3F5] px-4 py-2 text-sm font-semibold text-[#00314A]">
 
-                                    <div className="w-2 h-2 rounded-full bg-green-600"></div>
+                                    <div className="w-2 h-2 rounded-full bg-[#009A9E]"></div>
 
                                     Strategic Investment Focus
 
                                 </div>
 
                                 {/* Heading */}
-                                <h3 className="mt-7 text-4xl font-bold leading-tight tracking-[-0.03em] text-green-600">
+                                <h3 className="mt-7 text-4xl font-bold leading-tight tracking-[-0.03em] text-[#009A9E]">
 
                                     Focused on Complex
-                                    <span className="block text-green-600 mt-2">
+                                    <span className="block text-[#009A9E] mt-2">
                                         & High-Conviction
                                     </span>
 
@@ -284,7 +280,7 @@ export default function OverviewSection() {
                                 {/* STATS */}
                                 <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-5">
 
-                                    <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:border-green-300 transition duration-300">
+                                    <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:border-[#7ACED4] transition duration-300">
 
                                         <p
                                             className="text-sm"
@@ -295,7 +291,7 @@ export default function OverviewSection() {
 
                                         </p>
 
-                                        <h4 className="mt-3 text-2xl font-bold text-green-600">
+                                        <h4 className="mt-3 text-2xl font-bold text-[#009A9E]">
 
                                             Category II AIF
 
@@ -303,7 +299,7 @@ export default function OverviewSection() {
 
                                     </div>
 
-                                    <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:border-green-300 transition duration-300">
+                                    <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:border-[#7ACED4] transition duration-300">
 
                                         <p
                                             className="text-sm"
@@ -314,7 +310,7 @@ export default function OverviewSection() {
 
                                         </p>
 
-                                        <h4 className="mt-3 text-2xl font-bold text-green-600">
+                                        <h4 className="mt-3 text-2xl font-bold text-[#009A9E]">
 
                                             India Focused
 

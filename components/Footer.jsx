@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
 
@@ -50,15 +51,15 @@ export default function Footer() {
     ];
 
     return (
-        <footer className="relative overflow-hidden bg-[#020617] text-white">
+        <footer className="relative overflow-hidden bg-[#00314A] text-white">
 
             {/* Background Glow */}
-            <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-green-500/10 blur-3xl rounded-full"></div>
+            <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-[#009A9E]/10 blur-3xl rounded-full"></div>
 
-            <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-emerald-400/10 blur-3xl rounded-full"></div>
+            <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#7ACED4]/10 blur-3xl rounded-full"></div>
 
             {/* Top Border */}
-            <div className="h-px bg-gradient-to-r from-transparent via-green-500/40 to-transparent"></div>
+            <div className="h-px bg-gradient-to-r from-transparent via-[#009A9E]/40 to-transparent"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
@@ -69,29 +70,15 @@ export default function Footer() {
                     <div className="lg:col-span-4">
 
                         {/* Logo */}
-                        <Link
-                            href="/"
-                            className="inline-flex items-center gap-3"
-                        >
-
-                            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center text-xl font-bold">
-
-                                IA
-
-                            </div>
-
-                            <div>
-
-                                <h2 className="text-2xl font-bold tracking-wide">
-                                    INFIN ALPHA
-                                </h2>
-
-                                <p className="text-sm text-slate-400 mt-1">
-                                    Investment Management
-                                </p>
-
-                            </div>
-
+                        <Link href="/" className="group flex items-center gap-3">
+                            <Image
+                                src="/logo1.png"
+                                alt="INFIN ALPHA"
+                                width={120}
+                                height={60}
+                                priority
+                                className="h-7 sm:h-9 w-auto object-contain"
+                            />
                         </Link>
 
                         {/* Description */}
@@ -109,7 +96,7 @@ export default function Footer() {
 
                             <Link
                                 href="#"
-                                className="w-11 h-11 rounded-full border border-white/10 bg-white/5 flex items-center justify-center hover:bg-green-500 hover:border-green-500 hover:scale-110 hover:-translate-y-1 transition-all duration-300"
+                                className="w-11 h-11 rounded-full border border-white/10 bg-white/5 flex items-center justify-center hover:bg-[#009A9E] hover:border-[#009A9E] hover:scale-110 hover:-translate-y-1 transition-all duration-300"
                             >
 
                                 <span className="text-base font-bold tracking-tight">in</span>
@@ -118,7 +105,7 @@ export default function Footer() {
 
                             <Link
                                 href="#"
-                                className="w-11 h-11 rounded-full border border-white/10 bg-white/5 flex items-center justify-center hover:bg-green-500 hover:border-green-500 hover:scale-110 hover:-translate-y-1 transition-all duration-300"
+                                className="w-11 h-11 rounded-full border border-white/10 bg-white/5 flex items-center justify-center hover:bg-[#009A9E] hover:border-[#009A9E] hover:scale-110 hover:-translate-y-1 transition-all duration-300"
                             >
 
                                 <span className="text-lg font-bold">𝕏</span>
@@ -157,7 +144,7 @@ export default function Footer() {
                     {/* LINKS */}
                     <div className="lg:col-span-2">
 
-                        <h3 className="text-lg font-semibold text-green-400">
+                        <h3 className="text-lg font-semibold text-[#7ACED4]">
                             Quick Links
                         </h3>
 
@@ -168,7 +155,7 @@ export default function Footer() {
                                 <Link
                                     key={index}
                                     href={item.href}
-                                    className="group flex items-center gap-2 text-slate-300 hover:text-green-400 hover:translate-x-2 transition-all duration-300"
+                                    className="group flex items-center gap-2 text-slate-300 hover:text-[#7ACED4] hover:translate-x-2 transition-all duration-300"
                                 >
 
                                     <span>↗</span>
@@ -186,7 +173,7 @@ export default function Footer() {
                     {/* OTHER LINKS */}
                     <div className="lg:col-span-3">
 
-                        <h3 className="text-lg font-semibold text-green-400">
+                        <h3 className="text-lg font-semibold text-[#7ACED4]">
                             Explore
                         </h3>
 
@@ -197,7 +184,7 @@ export default function Footer() {
                                 <Link
                                     key={index}
                                     href={item.href}
-                                    className="group flex items-center gap-2 text-slate-300 hover:text-green-400 hover:translate-x-2 transition-all duration-300"
+                                    className="group flex items-center gap-2 text-slate-300 hover:text-[#7ACED4] hover:translate-x-2 transition-all duration-300"
                                 >
 
                                     <span>↗</span>
@@ -215,7 +202,7 @@ export default function Footer() {
                     {/* CONTACT */}
                     <div className="lg:col-span-3">
 
-                        <h3 className="text-lg font-semibold text-green-400">
+                        <h3 className="text-lg font-semibold text-[#7ACED4]">
                             Contact
                         </h3>
 
@@ -223,7 +210,7 @@ export default function Footer() {
 
                             <div className="group flex items-start gap-4">
 
-                                <div className="w-11 h-11 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-green-400 flex-shrink-0 group-hover:bg-green-500 group-hover:text-white transition-all duration-300">
+                                <div className="w-11 h-11 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-[#7ACED4] flex-shrink-0 group-hover:bg-[#009A9E] group-hover:text-white transition-all duration-300">
 
                                     <span>📍</span>
 
@@ -245,7 +232,7 @@ export default function Footer() {
 
                             <div className="group flex items-start gap-4">
 
-                                <div className="w-11 h-11 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-green-400 flex-shrink-0 group-hover:bg-green-500 group-hover:text-white transition-all duration-300">
+                                <div className="w-11 h-11 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-[#7ACED4] flex-shrink-0 group-hover:bg-[#009A9E] group-hover:text-white transition-all duration-300">
 
                                     <span>📞</span>
 
@@ -267,7 +254,7 @@ export default function Footer() {
 
                             <div className="group flex items-start gap-4">
 
-                                <div className="w-11 h-11 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-green-400 flex-shrink-0 group-hover:bg-green-500 group-hover:text-white transition-all duration-300">
+                                <div className="w-11 h-11 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-[#7ACED4] flex-shrink-0 group-hover:bg-[#009A9E] group-hover:text-white transition-all duration-300">
 
                                     <span>✉️</span>
 
@@ -306,7 +293,7 @@ export default function Footer() {
 
                         <Link
                             href="/privacy-policy"
-                            className="hover:text-green-400 transition-all duration-300"
+                            className="hover:text-[#7ACED4] transition-all duration-300"
                         >
 
                             Privacy Policy
@@ -315,7 +302,7 @@ export default function Footer() {
 
                         <Link
                             href="/terms"
-                            className="hover:text-green-400 transition-all duration-300"
+                            className="hover:text-[#7ACED4] transition-all duration-300"
                         >
 
                             Terms & Conditions

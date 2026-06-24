@@ -20,7 +20,7 @@ export default function ContactSection() {
 
             {/* TOP HERO SECTION */}
             <div
-                className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-green-950"
+                className="relative overflow-hidden bg-gradient-to-br from-[#00314A] via-[#0A3635] to-[#00314A]"
                 style={{
                     paddingTop: "140px",
                     paddingBottom: "140px",
@@ -28,9 +28,9 @@ export default function ContactSection() {
             >
 
                 {/* Background Glow */}
-                <div className="absolute top-0 left-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>
+                <div className="absolute top-0 left-0 w-72 h-72 bg-[#EAF9FA]0/20 blur-3xl rounded-full"></div>
 
-                <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-400/10 blur-3xl rounded-full"></div>
+                <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#7ACED4]/10 blur-3xl rounded-full"></div>
 
                 {/* Pattern */}
                 <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -44,7 +44,7 @@ export default function ContactSection() {
                         <div className="max-w-5xl mx-auto">
 
                             {/* Badge */}
-                            <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-medium text-green-300 backdrop-blur-md">
+                            <div className="inline-flex items-center gap-2 rounded-full border border-[#EAF9FA]0/20 bg-[#EAF9FA]0/10 px-4 py-2 text-sm font-medium text-[#7ACED4] backdrop-blur-md">
 
                                 <ShieldCheck size={16} />
 
@@ -57,7 +57,7 @@ export default function ContactSection() {
 
                                 Connect With
 
-                                <span className="block mt-2 text-green-400">
+                                <span className="block mt-2 text-[#7ACED4]">
                                     INFIN ALPHA LLP
                                 </span>
 
@@ -101,12 +101,12 @@ export default function ContactSection() {
                             <div className="relative overflow-hidden rounded-[28px] sm:rounded-[36px] border border-slate-200 bg-white p-5 sm:p-8 lg:p-10 shadow-sm hover:shadow-2xl transition-all duration-500 h-full">
 
                                 {/* Glow */}
-                                <div className="absolute top-0 right-0 w-72 sm:w-96 h-72 sm:h-96 bg-green-500/10 blur-3xl rounded-full"></div>
+                                <div className="absolute top-0 right-0 w-72 sm:w-96 h-72 sm:h-96 bg-[#EAF9FA]0/10 blur-3xl rounded-full"></div>
 
                                 <div className="relative z-10">
 
                                     {/* Badge */}
-                                    <div className="inline-flex items-center gap-2 rounded-full border border-green-100 bg-green-50 px-4 py-2 text-xs sm:text-sm font-semibold text-green-700">
+                                    <div className="inline-flex items-center gap-2 rounded-full border border-[#D5F3F5] bg-[#EAF9FA] px-4 py-2 text-xs sm:text-sm font-semibold text-[#00314A]">
 
                                         <Building2 size={16} />
 
@@ -117,7 +117,7 @@ export default function ContactSection() {
                                     {/* Heading */}
                                     <h2
                                         className="mt-5 sm:mt-6 text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-[-0.03em]"
-                                        style={{ color: "#16a34a" }}
+                                        style={{ color: "#009A9E" }}
                                     >
 
                                         Let’s Discuss Strategic
@@ -145,19 +145,19 @@ export default function ContactSection() {
                                 <div className="relative z-10 mt-8 sm:mt-12 grid gap-5 sm:gap-6">
 
                                     {/* ADDRESS */}
-                                    <div className="group rounded-[24px] sm:rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 hover:border-green-300 hover:shadow-lg transition-all duration-300">
+                                    <div className="group rounded-[24px] sm:rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 hover:border-[#7ACED4] hover:shadow-lg transition-all duration-300">
 
                                         <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-5">
 
-                                            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl border-2 border-green-500 text-green-600 flex items-center justify-center shrink-0">
+                                            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl border-2 border-[#EAF9FA]0 text-[#00314A] flex items-center justify-center shrink-0">
 
-                                                <MapPin size={22} />
+                                                <MapPin size={20} />
 
                                             </div>
 
                                             <div>
 
-                                                <h3 className="text-xl sm:text-2xl font-bold text-green-600">
+                                                <h3 className="text-xl sm:text-2xl font-bold text-[#00314A]">
 
                                                     Office Address
 
@@ -183,19 +183,19 @@ export default function ContactSection() {
                                     </div>
 
                                     {/* PHONE */}
-                                    <div className="group rounded-[24px] sm:rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 hover:border-green-300 hover:shadow-lg transition-all duration-300">
+                                    <div className="group rounded-[24px] sm:rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 hover:border-[#7ACED4] hover:shadow-lg transition-all duration-300">
 
                                         <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-5">
 
-                                            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl border-2 border-green-500 text-green-600 flex items-center justify-center shrink-0">
+                                            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl border-2 border-[#EAF9FA]0 text-[#00314A] flex items-center justify-center shrink-0">
 
-                                                <Phone size={22} />
+                                                <Phone size={20} />
 
                                             </div>
 
                                             <div>
 
-                                                <h3 className="text-xl sm:text-2xl font-bold text-green-600">
+                                                <h3 className="text-xl sm:text-2xl font-bold text-[#00314A]">
 
                                                     Phone Number
 
@@ -217,19 +217,19 @@ export default function ContactSection() {
                                     </div>
 
                                     {/* EMAIL */}
-                                    <div className="group rounded-[24px] sm:rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 hover:border-green-300 hover:shadow-lg transition-all duration-300">
+                                    <div className="group rounded-[24px] sm:rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 hover:border-[#7ACED4] hover:shadow-lg transition-all duration-300">
 
                                         <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-5">
 
-                                            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl border-2 border-green-500 text-green-600 flex items-center justify-center shrink-0">
+                                            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl border-2 border-[#EAF9FA]0 text-[#00314A] flex items-center justify-center shrink-0">
 
-                                                <Mail size={22} />
+                                                <Mail size={20} />
 
                                             </div>
 
                                             <div>
 
-                                                <h3 className="text-xl sm:text-2xl font-bold text-green-600">
+                                                <h3 className="text-xl sm:text-2xl font-bold text-[#00314A]">
 
                                                     Email Address
 
@@ -262,7 +262,7 @@ export default function ContactSection() {
                             <div className="relative overflow-hidden rounded-[28px] sm:rounded-[36px] p-5 sm:p-8 lg:p-10 text-white h-full shadow-2xl">
 
                                 {/* Glow */}
-                                <div className="absolute top-0 right-0 w-72 sm:w-96 h-72 sm:h-96 bg-green-500/20 blur-3xl rounded-full"></div>
+                                <div className="absolute top-0 right-0 w-72 sm:w-96 h-72 sm:h-96 bg-[#EAF9FA]0/20 blur-3xl rounded-full"></div>
 
                                 {/* Pattern */}
                                 <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:22px_22px]"></div>
@@ -270,7 +270,7 @@ export default function ContactSection() {
                                 <div className="relative z-10">
 
                                     {/* Badge */}
-                                    <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-xs sm:text-sm font-semibold text-green-700">
+                                    <div className="inline-flex items-center gap-2 rounded-full border border-[#EAF9FA]0/20 bg-[#EAF9FA]0/10 px-4 py-2 text-xs sm:text-sm font-semibold text-[#00314A]">
 
                                         Investor Enquiry Form
 
@@ -279,7 +279,7 @@ export default function ContactSection() {
                                     {/* Heading */}
                                     <h3
                                         className="mt-5 sm:mt-6 text-3xl sm:text-4xl font-bold leading-tight tracking-[-0.03em]"
-                                        style={{ color: "#16a34a" }}
+                                        style={{ color: "#009A9E" }}
                                     >
 
                                         Start A
@@ -290,7 +290,7 @@ export default function ContactSection() {
                                     {/* Description */}
                                     <p
                                         className="mt-5 sm:mt-6 leading-7 sm:leading-8 text-sm sm:text-base"
-                                        style={{ color: "#000000" }}
+                                        style={{ color: "#00314A" }}
                                     >
 
                                         Share your details and our team
@@ -308,7 +308,7 @@ export default function ContactSection() {
 
                                             <label
                                                 className="text-sm font-bold mb-2 block"
-                                                style={{ color: "#000000" }}
+                                                style={{ color: "#00314A" }}
                                             >
 
                                                 Full Name:
@@ -333,7 +333,7 @@ export default function ContactSection() {
 
                                             <label
                                                 className="text-sm font-bold mb-2 block"
-                                                style={{ color: "#000000" }}
+                                                style={{ color: "#00314A" }}
                                             >
 
                                                 Email Address:
@@ -358,7 +358,7 @@ export default function ContactSection() {
 
                                             <label
                                                 className="text-sm font-bold mb-2 block"
-                                                style={{ color: "#000000" }}
+                                                style={{ color: "#00314A" }}
                                             >
 
                                                 Phone Number:
@@ -383,7 +383,7 @@ export default function ContactSection() {
 
                                             <label
                                                 className="text-sm font-bold mb-2 block"
-                                                style={{ color: "#000000" }}
+                                                style={{ color: "#00314A" }}
                                             >
 
                                                 Message:
@@ -406,7 +406,7 @@ export default function ContactSection() {
                                         {/* Button */}
                                         <button
                                             type="submit"
-                                            className="w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-green-500 hover:bg-green-600 px-6 py-3.5 sm:py-4 text-sm font-semibold text-white transition-all duration-300 shadow-lg shadow-green-500/20"
+                                            className="w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-[#009A9E] hover:bg-[#00314A] px-6 py-3.5 sm:py-4 text-sm font-semibold text-white transition-all duration-300 shadow-lg shadow-[#EAF9FA]0/20"
                                         >
 
                                             Send Message

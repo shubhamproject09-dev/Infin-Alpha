@@ -5,11 +5,11 @@ import { ArrowRight, TrendingUp, ShieldCheck, Landmark } from "lucide-react";
 
 export default function HeroSection() {
     return (
-        <section className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-green-950 text-white">
+        <section className="relative overflow-hidden bg-gradient-to-br from-[#00314A] via-[#0A3635] to-[#00314A] text-white">
 
             {/* Background Glow Effects */}
-            <div className="absolute top-0 left-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>
-            <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-400/10 blur-3xl rounded-full"></div>
+            <div className="absolute top-0 left-0 w-72 h-72 bg-[#009A9E]/20 blur-3xl rounded-full"></div>
+            <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#7ACED4]/10 blur-3xl rounded-full"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 relative z-10">
 
@@ -19,7 +19,7 @@ export default function HeroSection() {
                     <div>
 
                         {/* Badge */}
-                        <div className="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 text-green-300 px-4 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur-md">
+                        <div className="inline-flex items-center gap-2 bg-[#009A9E]/10 border border-[#009A9E]/20 text-[#7ACED4] px-4 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur-md">
                             <TrendingUp size={16} />
                             India’s Special Situations Opportunity
                         </div>
@@ -28,7 +28,7 @@ export default function HeroSection() {
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
 
                             Unlocking Value in
-                            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-200 mt-2">
+                            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#009A9E] to-[#7ACED4] mt-2">
                                 India’s Stressed
                                 Asset Ecosystem
                             </span>
@@ -48,7 +48,7 @@ export default function HeroSection() {
                         <div className="grid grid-cols-2 sm:grid-cols-3 gap-5 mt-10">
 
                             <div className="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-sm">
-                                <h3 className="text-2xl font-bold text-green-400">
+                                <h3 className="text-2xl font-bold text-[#7ACED4]">
                                     ₹8–12L Cr
                                 </h3>
                                 <p className="text-sm text-slate-300 mt-2">
@@ -57,7 +57,7 @@ export default function HeroSection() {
                             </div>
 
                             <div className="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-sm">
-                                <h3 className="text-2xl font-bold text-green-400">
+                                <h3 className="text-2xl font-bold text-[#7ACED4]">
                                     18–20%
                                 </h3>
                                 <p className="text-sm text-slate-300 mt-2">
@@ -66,7 +66,7 @@ export default function HeroSection() {
                             </div>
 
                             <div className="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-sm col-span-2 sm:col-span-1">
-                                <h3 className="text-2xl font-bold text-green-400">
+                                <h3 className="text-2xl font-bold text-[#7ACED4]">
                                     Category II
                                 </h3>
                                 <p className="text-sm text-slate-300 mt-2">
@@ -82,7 +82,7 @@ export default function HeroSection() {
                             {/* Strategy Opportunities Button */}
                             <Link
                                 href="/investment/strategy-opportunities"
-                                className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-green-500/25"
+                                className="inline-flex items-center gap-2 bg-[#009A9E] hover:bg-[#00314A] text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-[#009A9E]/25"
                             >
                                 Explore Opportunities
                                 <ArrowRight size={18} />
@@ -91,7 +91,7 @@ export default function HeroSection() {
                             {/* Performance Button */}
                             <Link
                                 href="/investment/performance"
-                                className="inline-flex items-center gap-2 border border-white/20 hover:border-green-400 hover:bg-white/5 px-6 py-3 rounded-xl font-semibold transition-all duration-300"
+                                className="inline-flex items-center gap-2 border border-white/20 hover:border-[#7ACED4] hover:bg-white/5 px-6 py-3 rounded-xl font-semibold transition-all duration-300"
                             >
                                 View Performance
                             </Link>
@@ -117,8 +117,8 @@ export default function HeroSection() {
                                     </h3>
                                 </div>
 
-                                <div className="bg-green-500/10 border border-green-500/20 p-4 rounded-2xl">
-                                    <Landmark className="text-green-400" size={28} />
+                                <div className="bg-[#009A9E]/10 border border-[#009A9E]/20 p-4 rounded-2xl">
+                                    <Landmark className="text-[#7ACED4]" size={28} />
                                 </div>
                             </div>
 
@@ -126,8 +126,8 @@ export default function HeroSection() {
                             <div className="space-y-5">
 
                                 <div className="flex items-start gap-4 bg-white/5 border border-white/10 rounded-2xl p-5">
-                                    <div className="bg-green-500/10 p-3 rounded-xl">
-                                        <ShieldCheck className="text-green-400" size={22} />
+                                    <div className="bg-[#009A9E]/10 p-3 rounded-xl">
+                                        <ShieldCheck className="text-[#7ACED4]" size={22} />
                                     </div>
 
                                     <div>
@@ -143,8 +143,8 @@ export default function HeroSection() {
                                 </div>
 
                                 <div className="flex items-start gap-4 bg-white/5 border border-white/10 rounded-2xl p-5">
-                                    <div className="bg-green-500/10 p-3 rounded-xl">
-                                        <TrendingUp className="text-green-400" size={22} />
+                                    <div className="bg-[#009A9E]/10 p-3 rounded-xl">
+                                        <TrendingUp className="text-[#7ACED4]" size={22} />
                                     </div>
 
                                     <div>
@@ -164,7 +164,7 @@ export default function HeroSection() {
                             {/* Bottom Stats */}
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
 
-                                <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/10 border border-green-500/20 rounded-2xl p-5">
+                                <div className="bg-gradient-to-br from-[#009A9E]/20 to-[#7ACED4]/10 border-[#009A9E]/20 rounded-2xl p-5">
                                     <p className="text-sm text-slate-300">
                                         Target Corpus
                                     </p>
@@ -174,7 +174,7 @@ export default function HeroSection() {
                                     </h3>
                                 </div>
 
-                                <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/10 border border-green-500/20 rounded-2xl p-5">
+                                <div className="bg-gradient-to-br from-[#009A9E]/20 to-[#7ACED4]/10 border-[#009A9E]/20 rounded-2xl p-5">
                                     <p className="text-sm text-slate-300">
                                         Investment Horizon
                                     </p>

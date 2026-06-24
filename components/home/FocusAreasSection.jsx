@@ -78,14 +78,14 @@ export default function FocusAreasSection() {
                     <div className="lg:col-span-4">
 
                         {/* Badge */}
-                        <div className="inline-flex items-center px-4 py-2 rounded-full bg-green-50 text-green-700 text-sm font-semibold border border-green-100">
+                        <div className="inline-flex items-center px-4 py-2 rounded-full bg-[#EAF9FA] text-[#00314A] text-sm font-semibold border border-[#D5F3F5]">
 
                             Focus Areas
 
                         </div>
 
                         {/* Heading */}
-                        <h2 className="mt-5 text-3xl sm:text-4xl lg:text-4xl font-bold text-slate-900 leading-tight">
+                        <h2 className="mt-5 text-3xl sm:text-4xl lg:text-4xl font-bold text-[#000] leading-tight">
 
                             Investing Across
                             India’s Emerging
@@ -128,23 +128,23 @@ export default function FocusAreasSection() {
                                     ></div>
 
                                     {/* Overlay */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/10"></div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-[#00314A] via-[#00314A]/70 to-transparent"></div>
 
                                     {/* Glow */}
-                                    <div className="absolute top-0 right-0 w-40 h-40 bg-green-500/20 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                                    <div className="absolute top-0 right-0 w-40 h-40 bg-[#EAF9FA]0/20 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition duration-500"></div>
 
                                     {/* Content */}
                                     <div className="relative z-10 h-full flex flex-col justify-end p-6 sm:p-8">
 
                                         {/* Icon */}
-                                        <div className="w-14 h-14 rounded-2xl bg-white/10 border border-white/10 backdrop-blur-md text-slate-900 flex items-center justify-center">
+                                        <div className="w-14 h-14 rounded-2xl bg-white/10 border border-white/10 backdrop-blur-md text-[#7ACED4] flex items-center justify-center">
 
                                             {item.icon}
 
                                         </div>
 
                                         {/* Title */}
-                                        <h3 className="mt-8 text-xl sm:text-2xl font-bold text-white group-hover:text-green-400 transition-all duration-300 leading-snug">
+                                        <h3 className="mt-8 text-xl sm:text-2xl font-bold text-white group-hover:text-[#7ACED4] transition-all duration-300 leading-snug">
 
                                             {item.title}
 
@@ -169,7 +169,7 @@ export default function FocusAreasSection() {
 
                             <button
                                 onClick={() => scroll("left")}
-                                className="w-12 h-12 rounded-full border border-slate-200 bg-white text-slate-900 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all duration-300 shadow-sm"
+                                className="w-12 h-12 rounded-full border border-slate-200 bg-white text-[#00314A] flex items-center justify-center hover:bg-[#7ACED4] hover:text-white transition-all duration-300 shadow-sm"
                             >
 
                                 <ArrowLeft size={20} />
@@ -178,7 +178,7 @@ export default function FocusAreasSection() {
 
                             <button
                                 onClick={() => scroll("right")}
-                                className="w-12 h-12 rounded-full border border-slate-200 bg-white text-slate-900 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all duration-300 shadow-sm"
+                                className="w-12 h-12 rounded-full border border-slate-200 bg-white text-[#00314A] flex items-center justify-center hover:bg-[#7ACED4] hover:text-white transition-all duration-300 shadow-sm"
                             >
 
                                 <ArrowRight size={20} />

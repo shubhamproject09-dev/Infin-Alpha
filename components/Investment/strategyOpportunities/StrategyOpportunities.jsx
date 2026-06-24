@@ -67,16 +67,16 @@ export default function StrategyOpportunities() {
 
             {/* HERO SECTION */}
             <div
-                className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-green-950"
+                className="relative overflow-hidden bg-gradient-to-br from-[#00314A] via-[#0A3635] to-[#00314A]"
                 style={{
                     paddingTop: "140px",
                     paddingBottom: "140px",
                 }}
             >
 
-                <div className="absolute top-0 left-0 w-80 h-80 bg-green-500/20 blur-3xl rounded-full"></div>
+                <div className="absolute top-0 left-0 w-80 h-80 bg-[#EAF9FA]0/20 blur-3xl rounded-full"></div>
 
-                <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-400/10 blur-3xl rounded-full"></div>
+                <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#7ACED4]/10 blur-3xl rounded-full"></div>
 
                 <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:24px_24px]"></div>
 
@@ -84,7 +84,7 @@ export default function StrategyOpportunities() {
 
                     <div className="max-w-5xl mx-auto text-center">
 
-                        <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-medium text-green-300 backdrop-blur-md">
+                        <div className="inline-flex items-center gap-2 rounded-full border border-[#EAF9FA]0/20 bg-[#EAF9FA]0/10 px-4 py-2 text-sm font-medium text-[#7ACED4] backdrop-blur-md">
 
                             <ShieldCheck size={16} />
 
@@ -95,7 +95,7 @@ export default function StrategyOpportunities() {
                         <h1 className="mt-8 text-3xl sm:text-3xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white">
 
                             Strategic Investment
-                            <span className="block mt-2 text-green-400">
+                            <span className="block mt-2 text-[#7ACED4]">
                                 Opportunities
                             </span>
 
@@ -129,11 +129,11 @@ export default function StrategyOpportunities() {
                     <div className="relative overflow-hidden rounded-[40px] border border-slate-200 bg-white shadow-[0_20px_80px_rgba(15,23,42,0.08)]">
 
                         {/* GLOW */}
-                        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-green-500/10 blur-3xl rounded-full"></div>
+                        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-[#EAF9FA]0/10 blur-3xl rounded-full"></div>
 
                         {/* TOP SECTION */}
                         <div
-                            className="relative overflow-hidden bg-gradient-to-r from-slate-950 via-slate-900 to-green-950 px-6 sm:px-10 lg:px-16"
+                            className="relative overflow-hidden bg-gradient-to-r from-slate-950 via-slate-900 to-[#0A3635] px-6 sm:px-10 lg:px-16"
                             style={{
                                 paddingTop: "90px",
                                 paddingBottom: "90px",
@@ -144,7 +144,7 @@ export default function StrategyOpportunities() {
 
                             <div className="relative z-10 max-w-5xl">
 
-                                <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-semibold text-green-300">
+                                <div className="inline-flex items-center gap-2 rounded-full border border-[#EAF9FA]0/20 bg-[#EAF9FA]0/10 px-4 py-2 text-sm font-semibold text-[#7ACED4]">
 
                                     <Sparkles size={16} />
 
@@ -155,7 +155,7 @@ export default function StrategyOpportunities() {
                                 <h2 className="mt-8 text-3xl sm:text-3xl lg:text-5xl font-bold leading-[1.05] tracking-[-0.04em] text-white">
 
                                     Alternative Investments
-                                    <span className="block mt-2 text-green-400">
+                                    <span className="block mt-2 text-[#7ACED4]">
                                         Built for Value Creation
                                     </span>
 
@@ -191,20 +191,20 @@ export default function StrategyOpportunities() {
                                 {opportunities.map((item, idx) => (
                                     <div
                                         key={idx}
-                                        className="group relative overflow-hidden rounded-[36px] border border-slate-200 bg-white p-8 shadow-lg hover:shadow-2xl hover:border-green-300 transition-all duration-500"
+                                        className="group relative overflow-hidden rounded-[36px] border border-slate-200 bg-white p-8 shadow-lg hover:shadow-2xl hover:border-[#7ACED4] transition-all duration-500"
                                     >
 
-                                        <div className="absolute inset-0 bg-gradient-to-br from-green-50/0 to-green-100/0 group-hover:from-green-50 group-hover:to-white transition-all duration-500"></div>
+                                        <div className="absolute inset-0 bg-gradient-to-br from-[#EAF9FA]/0 to-[#D5F3F5]/0 group-hover:from-[#EAF9FA] group-hover:to-white transition-all duration-500"></div>
 
                                         <div className="relative z-10">
 
-                                            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center text-white shadow-lg shadow-green-500/20">
+                                            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#009A9E] to-[#00314A] flex items-center justify-center text-white shadow-lg shadow-[#EAF9FA]0/20">
 
                                                 <item.icon size={28} />
 
                                             </div>
 
-                                            <h3 className="mt-8 text-3xl font-bold text-green-700 leading-tight">
+                                            <h3 className="mt-8 text-3xl font-bold text-[#00314A] leading-tight">
 
                                                 {item.title}
 
@@ -231,7 +231,7 @@ export default function StrategyOpportunities() {
 
                                 <div className="relative overflow-hidden rounded-[40px] p-6 sm:p-8 lg:p-12 shadow-2xl">
 
-                                    <div className="absolute top-0 right-0 w-96 h-96 bg-green-500/20 blur-3xl rounded-full"></div>
+                                    <div className="absolute top-0 right-0 w-96 h-96 bg-[#EAF9FA]0/20 blur-3xl rounded-full"></div>
 
                                     <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:22px_22px]"></div>
 
@@ -239,7 +239,7 @@ export default function StrategyOpportunities() {
 
                                         <div className="text-center">
 
-                                            <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-semibold text-green-700">
+                                            <div className="inline-flex items-center gap-2 rounded-full border border-[#EAF9FA]0/20 bg-[#EAF9FA]0/10 px-4 py-2 text-sm font-semibold text-[#00314A]">
 
                                                 <Activity size={16} />
 
@@ -247,7 +247,7 @@ export default function StrategyOpportunities() {
 
                                             </div>
 
-                                            <h3 className="mt-6 text-4xl sm:text-5xl font-bold leading-tight text-green-400">
+                                            <h3 className="mt-6 text-4xl sm:text-5xl font-bold leading-tight text-[#7ACED4]">
 
                                                 Strategic Investment Lifecycle
 
@@ -263,7 +263,7 @@ export default function StrategyOpportunities() {
                                                     className="relative rounded-[30px] border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
                                                 >
 
-                                                    <div className="w-14 h-14 rounded-2xl bg-green-500/20 flex items-center justify-center text-green-400 text-xl font-bold">
+                                                    <div className="w-14 h-14 rounded-2xl bg-[#EAF9FA]0/20 flex items-center justify-center text-[#7ACED4] text-xl font-bold">
 
                                                         0{idx + 1}
 
@@ -297,7 +297,7 @@ export default function StrategyOpportunities() {
 
                                 <div className="text-center">
 
-                                    <div className="inline-flex items-center gap-2 rounded-full border border-green-100 bg-green-50 px-4 py-2 text-sm font-semibold text-green-700">
+                                    <div className="inline-flex items-center gap-2 rounded-full border border-[#D5F3F5] bg-[#EAF9FA] px-4 py-2 text-sm font-semibold text-[#00314A]">
 
                                         <Target size={16} />
 
@@ -311,7 +311,7 @@ export default function StrategyOpportunities() {
                                             High Potential
                                         </span>
 
-                                        <span className="block mt-2 text-green-600">
+                                        <span className="block mt-2 text-[#009A9E]">
                                             Investment Segments
                                         </span>
 
@@ -331,16 +331,16 @@ export default function StrategyOpportunities() {
                                     ].map((item, idx) => (
                                         <div
                                             key={idx}
-                                            className="group rounded-[30px] border border-slate-200 bg-white p-6 shadow-md hover:shadow-2xl hover:border-green-300 transition-all duration-500"
+                                            className="group rounded-[30px] border border-slate-200 bg-white p-6 shadow-md hover:shadow-2xl hover:border-[#7ACED4] transition-all duration-500"
                                         >
 
-                                            <div className="w-14 h-14 rounded-2xl border-2 border-green-500 text-green-600 flex items-center justify-center bg-green-50">
+                                            <div className="w-14 h-14 rounded-2xl border-2 border-[#EAF9FA]0 text-[#009A9E] flex items-center justify-center bg-[#EAF9FA]">
 
                                                 <Layers3 size={24} />
 
                                             </div>
 
-                                            <h4 className="mt-6 text-2xl font-bold text-green-700 leading-tight">
+                                            <h4 className="mt-6 text-2xl font-bold text-[#00314A] leading-tight">
 
                                                 Opportunity {idx + 1}
 
@@ -365,17 +365,17 @@ export default function StrategyOpportunities() {
                             {/* WHY OPPORTUNITY EXISTS */}
                             <div className="mt-16">
 
-                                <div className="rounded-[40px] border border-green-100 bg-gradient-to-br from-green-50 to-white p-8 sm:p-10 lg:p-14">
+                                <div className="rounded-[40px] border border-[#D5F3F5] bg-gradient-to-br from-[#EAF9FA] to-white p-8 sm:p-10 lg:p-14">
 
                                     <div className="max-w-4xl">
 
-                                        <div className="inline-flex items-center gap-2 rounded-full border border-green-200 bg-white px-4 py-2 text-sm font-semibold text-green-700 shadow-sm">
+                                        <div className="inline-flex items-center gap-2 rounded-full border border-green-200 bg-white px-4 py-2 text-sm font-semibold text-[#00314A] shadow-sm">
 
                                             Market Opportunity
 
                                         </div>
 
-                                        <h3 className="mt-6 text-4xl sm:text-5xl font-bold leading-tight text-green-700">
+                                        <h3 className="mt-6 text-4xl sm:text-5xl font-bold leading-tight text-[#00314A]">
 
                                             Why These Opportunities
                                             Exist in India
@@ -396,12 +396,12 @@ export default function StrategyOpportunities() {
                                         ].map((item, idx) => (
                                             <div
                                                 key={idx}
-                                                className="flex items-start gap-4 rounded-2xl border border-green-100 bg-white p-5 shadow-sm"
+                                                className="flex items-start gap-4 rounded-2xl border border-[#D5F3F5] bg-white p-5 shadow-sm"
                                             >
 
                                                 <CheckCircle2
                                                     size={22}
-                                                    className="text-green-600 shrink-0 mt-1"
+                                                    className="text-[#009A9E] shrink-0 mt-1"
                                                 />
 
                                                 <p

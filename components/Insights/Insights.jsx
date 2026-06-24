@@ -52,16 +52,16 @@ export default function Insights() {
 
             {/* HERO SECTION */}
             <div
-                className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-green-950"
+                className="relative overflow-hidden bg-gradient-to-br from-[#00314A] via-[#0A3635] to-[#00314A]"
                 style={{
                     paddingTop: "140px",
                     paddingBottom: "140px",
                 }}
             >
 
-                <div className="absolute top-0 left-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>
+                <div className="absolute top-0 left-0 w-72 h-72 bg-[#EAF9FA]0/20 blur-3xl rounded-full"></div>
 
-                <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-400/10 blur-3xl rounded-full"></div>
+                <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#7ACED4]/10 blur-3xl rounded-full"></div>
 
                 <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:24px_24px]"></div>
 
@@ -69,7 +69,7 @@ export default function Insights() {
 
                     <div className="max-w-5xl mx-auto text-center">
 
-                        <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-medium text-green-300 backdrop-blur-md">
+                        <div className="inline-flex items-center gap-2 rounded-full border border-[#EAF9FA]0/20 bg-[#EAF9FA]0/10 px-4 py-2 text-sm font-medium text-[#7ACED4] backdrop-blur-md">
 
                             <ShieldCheck size={16} />
 
@@ -80,7 +80,7 @@ export default function Insights() {
                         <h1 className="mt-8 text-3xl sm:text-3xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white">
 
                             Market Intelligence
-                            <span className="block mt-2 text-green-400">
+                            <span className="block mt-2 text-[#7ACED4]">
                                 Investment Insights
                             </span>
 
@@ -113,11 +113,11 @@ export default function Insights() {
 
                     <div className="relative overflow-hidden rounded-[36px] sm:rounded-[42px] border border-slate-200 bg-white shadow-2xl">
 
-                        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-green-500/10 blur-3xl rounded-full"></div>
+                        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#EAF9FA]0/10 blur-3xl rounded-full"></div>
 
                         {/* TOP SECTION */}
                         <div
-                            className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-green-950 px-6 sm:px-10 lg:px-14"
+                            className="relative overflow-hidden bg-gradient-to-br from-[#00314A] via-[#0A3635] to-[#00314A] px-6 sm:px-10 lg:px-14"
                             style={{
                                 paddingTop: "80px",
                                 paddingBottom: "80px",
@@ -128,7 +128,7 @@ export default function Insights() {
 
                             <div className="relative z-10 max-w-5xl">
 
-                                <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-medium text-green-300 backdrop-blur-md">
+                                <div className="inline-flex items-center gap-2 rounded-full border border-[#EAF9FA]0/20 bg-[#EAF9FA]0/10 px-4 py-2 text-sm font-medium text-[#7ACED4] backdrop-blur-md">
 
                                     <Lightbulb size={16} />
 
@@ -139,7 +139,7 @@ export default function Insights() {
                                 <h2 className="mt-8 text-3xl sm:text-5xl lg:text-5xl font-bold leading-[1.05] tracking-[-0.04em] text-white">
 
                                     Institutional
-                                    <span className="block mt-2 text-green-400">
+                                    <span className="block mt-2 text-[#7ACED4]">
                                         Thought Leadership
                                     </span>
 
@@ -174,16 +174,16 @@ export default function Insights() {
                                 {insights.map((item, idx) => (
                                     <div
                                         key={idx}
-                                        className="group rounded-[36px] border border-slate-200 bg-white p-8 shadow-xl hover:shadow-2xl hover:border-green-300 transition-all duration-500 h-full"
+                                        className="group rounded-[36px] border border-slate-200 bg-white p-8 shadow-xl hover:shadow-2xl hover:border-[#7ACED4] transition-all duration-500 h-full"
                                     >
 
-                                        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center text-white shadow-lg shadow-green-500/20">
+                                        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#009A9E] to-[#00314A] flex items-center justify-center text-white shadow-lg shadow-[#EAF9FA]0/20">
 
                                             <item.icon size={28} />
 
                                         </div>
 
-                                        <h3 className="mt-8 text-2xl font-bold text-green-600 leading-tight">
+                                        <h3 className="mt-8 text-2xl font-bold text-[#009A9E] leading-tight">
 
                                             {item.title}
 
@@ -205,7 +205,7 @@ export default function Insights() {
                                                         ? "/thought-leadership/alternative-investments"
                                                         : "/thought-leadership/turnaround-resolution-trends"
                                             }
-                                            className="mt-10 inline-flex items-center gap-2 rounded-2xl bg-green-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-green-700"
+                                            className="mt-10 inline-flex items-center gap-2 rounded-2xl bg-[#009A9E] px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-[#00314A]"
                                         >
 
                                             Read Insight
@@ -224,7 +224,7 @@ export default function Insights() {
 
                                 <div className="relative overflow-hidden rounded-[36px] p-6 sm:p-8 lg:p-10 shadow-2xl">
 
-                                    <div className="absolute top-0 right-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>
+                                    <div className="absolute top-0 right-0 w-72 h-72 bg-[#EAF9FA]0/20 blur-3xl rounded-full"></div>
 
                                     <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:22px_22px]"></div>
 
@@ -232,13 +232,13 @@ export default function Insights() {
 
                                         <div className="lg:col-span-5">
 
-                                            <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-semibold text-green-700">
+                                            <div className="inline-flex items-center gap-2 rounded-full border border-[#EAF9FA]0/20 bg-[#EAF9FA]0/10 px-4 py-2 text-sm font-semibold text-[#00314A]">
 
                                                 Research Publications
 
                                             </div>
 
-                                            <h3 className="mt-6 text-4xl sm:text-5xl font-bold leading-tight text-green-400">
+                                            <h3 className="mt-6 text-4xl sm:text-5xl font-bold leading-tight text-[#7ACED4]">
 
                                                 Strategic Market
                                                 Intelligence
@@ -303,7 +303,7 @@ export default function Insights() {
 
                                 <div className="text-center">
 
-                                    <div className="inline-flex items-center gap-2 rounded-full border border-green-100 bg-green-50 px-4 py-2 text-sm font-semibold text-green-700">
+                                    <div className="inline-flex items-center gap-2 rounded-full border border-[#D5F3F5] bg-[#EAF9FA] px-4 py-2 text-sm font-semibold text-[#00314A]">
 
                                         <Podcast size={16} />
 
@@ -317,7 +317,7 @@ export default function Insights() {
                                             Institutional Market
                                         </span>
 
-                                        <span className="block mt-2 text-green-600">
+                                        <span className="block mt-2 text-[#009A9E]">
                                             Perspectives & Commentary
                                         </span>
 
@@ -334,16 +334,16 @@ export default function Insights() {
                                     ].map((item, idx) => (
                                         <div
                                             key={idx}
-                                            className="group rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm hover:shadow-xl hover:border-green-300 transition-all duration-500"
+                                            className="group rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm hover:shadow-xl hover:border-[#7ACED4] transition-all duration-500"
                                         >
 
-                                            <div className="w-14 h-14 rounded-2xl border-2 border-green-500 text-green-600 flex items-center justify-center bg-green-50">
+                                            <div className="w-14 h-14 rounded-2xl border-2 border-[#EAF9FA]0 text-[#009A9E] flex items-center justify-center bg-[#EAF9FA]">
 
                                                 <Newspaper size={24} />
 
                                             </div>
 
-                                            <h4 className="mt-6 text-2xl font-bold text-green-600 leading-tight">
+                                            <h4 className="mt-6 text-2xl font-bold text-[#009A9E] leading-tight">
 
                                                 {item}
 
@@ -363,7 +363,7 @@ export default function Insights() {
 
                                                         <CheckCircle2
                                                             size={18}
-                                                            className="text-green-500 shrink-0"
+                                                            className="text-[#EAF9FA]0 shrink-0"
                                                         />
 
                                                         <p

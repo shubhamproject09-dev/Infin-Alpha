@@ -44,22 +44,22 @@ export default function InvestmentStrategySection() {
         <section className="relative overflow-hidden py-24 lg:py-32 bg-white">
 
             {/* Background Glow */}
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-green-100/40 blur-3xl rounded-full"></div>
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#D5F3F5]/40 blur-3xl rounded-full"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
                 {/* TOP AREA */}
-                <div className="relative overflow-hidden rounded-[40px] border border-slate-200 bg-gradient-to-br from-white via-slate-50 to-green-50/40 p-8 sm:p-10 lg:p-16 text-left lg:text-center">
+                <div className="relative overflow-hidden rounded-[40px] border border-slate-200 bg-gradient-to-br from-white via-slate-50 to-[#EAF9FA]/40 p-8 sm:p-10 lg:p-16 text-left lg:text-center">
 
                     {/* Background Glow */}
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-green-200/30 blur-3xl rounded-full"></div>
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#B8E8EC]/30 blur-3xl rounded-full"></div>
 
                     <div className="relative z-10 max-w-5xl lg:mx-auto">
 
                         {/* Badge */}
-                        <div className="inline-flex items-center gap-2 rounded-full bg-green-100 text-green-700 px-4 py-2 text-sm font-semibold">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-[#D5F3F5] text-[#00314A] px-4 py-2 text-sm font-semibold">
 
-                            <div className="w-2 h-2 rounded-full bg-green-600"></div>
+                            <div className="w-2 h-2 rounded-full bg-[#009A9E]"></div>
 
                             Investment Strategy
 
@@ -124,7 +124,7 @@ export default function InvestmentStrategySection() {
                     <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 relative">
 
                         {/* Desktop Line */}
-                        <div className="hidden lg:block absolute top-14 left-0 right-0 h-px bg-gradient-to-r from-green-200 via-green-400 to-green-200"></div>
+                        <div className="hidden lg:block absolute top-14 left-0 right-0 h-px bg-gradient-to-r from-[#B8E8EC] via-[#7ACED4] to-[#B8E8EC]"></div>
 
                         {strategySteps.map((item, index) => (
 
@@ -134,14 +134,14 @@ export default function InvestmentStrategySection() {
                             >
 
                                 {/* STEP NUMBER */}
-                                <div className="absolute -top-4 right-0 text-7xl font-bold text-slate-100 group-hover:text-green-50 transition duration-500">
+                                <div className="absolute -top-4 right-0 text-7xl font-bold text-slate-100 group-hover:text-[#EAF9FA] transition duration-500">
 
                                     0{index + 1}
 
                                 </div>
 
                                 {/* ICON */}
-                                <div className="relative z-10 w-16 h-16 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-600 text-white flex items-center justify-center shadow-xl shadow-green-100">
+                                <div className="relative z-10 w-16 h-16 rounded-2xl bg-gradient-to-br from-[#009A9E] to-[#00314A] text-white flex items-center justify-center shadow-xl shadow-[#D5F3F5]">
 
                                     {item.icon}
 
@@ -169,7 +169,7 @@ export default function InvestmentStrategySection() {
 
                                     <div className="hidden lg:flex absolute top-7 -right-4 z-20 w-8 h-8 rounded-full bg-white border border-slate-200 items-center justify-center shadow-sm">
 
-                                        <ArrowRight size={16} className="text-green-600" />
+                                        <ArrowRight size={16} className="text-[#009A9E]" />
 
                                     </div>
 
@@ -184,17 +184,17 @@ export default function InvestmentStrategySection() {
                 </div>
 
                 {/* BOTTOM HIGHLIGHT */}
-                <div className="mt-25 overflow-hidden rounded-[40px] bg-gradient-to-r from-slate-950 via-slate-900 to-green-950 p-6 lg:p-14 relative">
+                <div className="mt-25 overflow-hidden rounded-[40px] bg-gradient-to-r from-[#00314A] via-[#0A3635] to-[#00314A] p-6 lg:p-14 relative">
 
                     {/* Glow */}
-                    <div className="absolute top-0 right-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>
+                    <div className="absolute top-0 right-0 w-72 h-72 bg-[#EAF9FA]0/20 blur-3xl rounded-full"></div>
 
                     <div className="relative z-10 grid lg:grid-cols-12 gap-12 items-center">
 
                         {/* LEFT */}
                         <div className="lg:col-span-5">
 
-                            <span className="text-sm font-semibold tracking-[0.2em] uppercase text-green-300">
+                            <span className="text-sm font-semibold tracking-[0.2em] uppercase text-[#7ACED4]">
                                 Strategic Focus
                             </span>
 

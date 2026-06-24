@@ -19,7 +19,7 @@ export default function InfinAlphaSection() {
 
             {/* HERO SECTION */}
             <div
-                className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-green-950"
+                className="relative overflow-hidden bg-gradient-to-br from-[#00314A] via-[#0A3635] to-[#00314A]"
                 style={{
                     paddingTop: "140px",
                     paddingBottom: "140px",
@@ -27,9 +27,9 @@ export default function InfinAlphaSection() {
             >
 
                 {/* Glow */}
-                <div className="absolute top-0 left-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>
+                <div className="absolute top-0 left-0 w-72 h-72 bg-[#EAF9FA]0/20 blur-3xl rounded-full"></div>
 
-                <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-400/10 blur-3xl rounded-full"></div>
+                <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#7ACED4]/10 blur-3xl rounded-full"></div>
 
                 {/* Pattern */}
                 <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -42,7 +42,7 @@ export default function InfinAlphaSection() {
                         <div className="max-w-5xl mx-auto">
 
                             {/* Badge */}
-                            <div className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 text-sm font-medium text-green-300 backdrop-blur-md">
+                            <div className="inline-flex items-center gap-2 rounded-full border border-[#EAF9FA]0/20 bg-[#EAF9FA]0/10 px-4 py-2 text-sm font-medium text-[#7ACED4] backdrop-blur-md">
 
                                 <ShieldCheck size={16} />
 
@@ -54,7 +54,7 @@ export default function InfinAlphaSection() {
                             <h1 className="mt-8 text-3xl sm:text-3xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white">
 
                                 INFIN ALPHA
-                                <span className="block mt-2 text-green-400">
+                                <span className="block mt-2 text-[#7ACED4]">
                                     LLP
                                 </span>
 
@@ -93,12 +93,12 @@ export default function InfinAlphaSection() {
                             <div className="relative overflow-hidden rounded-[28px] sm:rounded-[36px] border border-slate-200 bg-white p-5 sm:p-8 lg:p-10 shadow-sm hover:shadow-2xl transition-all duration-500 h-full w-full">
 
                                 {/* Glow */}
-                                <div className="absolute top-0 right-0 w-72 sm:w-96 h-72 sm:h-96 bg-green-500/10 blur-3xl rounded-full"></div>
+                                <div className="absolute top-0 right-0 w-72 sm:w-96 h-72 sm:h-96 bg-[#EAF9FA]0/10 blur-3xl rounded-full"></div>
 
                                 <div className="relative z-10">
 
                                     {/* Badge */}
-                                    <div className="inline-flex items-center gap-2 rounded-full border border-green-100 bg-green-50 px-4 py-2 text-xs sm:text-sm font-semibold text-green-700">
+                                    <div className="inline-flex items-center gap-2 rounded-full border border-[#D5F3F5] bg-[#EAF9FA] px-4 py-2 text-xs sm:text-sm font-semibold text-[#00314A]">
 
                                         <Building2 size={16} />
 
@@ -107,7 +107,7 @@ export default function InfinAlphaSection() {
                                     </div>
 
                                     {/* Heading */}
-                                    <h2 className="mt-5 sm:mt-6 text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-[-0.03em] text-green-600">
+                                    <h2 className="mt-5 sm:mt-6 text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-[-0.03em] text-[#009A9E]">
 
                                         Specialized High Yield
                                         Investment Platform
@@ -133,13 +133,13 @@ export default function InfinAlphaSection() {
                                         {/* CARD */}
                                         <div className="rounded-3xl border border-slate-200 bg-slate-50 p-5 sm:p-6">
 
-                                            <div className="w-12 h-12 rounded-2xl border-2 border-green-500 text-green-600 flex items-center justify-center">
+                                            <div className="w-12 h-12 rounded-2xl border-2 border-[#EAF9FA]0 text-[#009A9E] flex items-center justify-center">
 
                                                 <Briefcase size={22} />
 
                                             </div>
 
-                                            <h3 className="mt-5 text-xl font-bold text-green-600">
+                                            <h3 className="mt-5 text-xl font-bold text-[#009A9E]">
 
                                                 Investment Philosophy
 
@@ -159,13 +159,13 @@ export default function InfinAlphaSection() {
                                         {/* CARD */}
                                         <div className="rounded-3xl border border-slate-200 bg-slate-50 p-5 sm:p-6">
 
-                                            <div className="w-12 h-12 rounded-2xl border-2 border-green-500 text-green-600 flex items-center justify-center">
+                                            <div className="w-12 h-12 rounded-2xl border-2 border-[#EAF9FA]0 text-[#009A9E] flex items-center justify-center">
 
                                                 <TrendingUp size={22} />
 
                                             </div>
 
-                                            <h3 className="mt-5 text-xl font-bold text-green-600">
+                                            <h3 className="mt-5 text-xl font-bold text-[#009A9E]">
 
                                                 Market Opportunity
 
@@ -185,11 +185,11 @@ export default function InfinAlphaSection() {
                                     </div>
 
                                     {/* FULL WIDTH SECTION */}
-                                    <div className="mt-8 rounded-[28px] border border-green-100 bg-green-50 p-6 sm:p-8">
+                                    <div className="mt-8 rounded-[28px] border border-[#D5F3F5] bg-[#EAF9FA] p-6 sm:p-8">
 
                                         <div className="flex items-start gap-4">
 
-                                            <div className="w-14 h-14 rounded-2xl border-2 border-green-500 text-green-600 flex items-center justify-center shrink-0">
+                                            <div className="w-14 h-14 rounded-2xl border-2 border-[#EAF9FA]0 text-[#009A9E] flex items-center justify-center shrink-0">
 
                                                 <Landmark size={24} />
 
@@ -197,7 +197,7 @@ export default function InfinAlphaSection() {
 
                                             <div>
 
-                                                <h3 className="text-2xl font-bold text-green-600">
+                                                <h3 className="text-2xl font-bold text-[#009A9E]">
 
                                                     BSOF Category II AIF
 
@@ -234,7 +234,7 @@ export default function InfinAlphaSection() {
                             <div className="relative overflow-hidden rounded-[28px] sm:rounded-[36px] p-5 sm:p-8 lg:p-10 shadow-2xl h-full w-full">
 
                                 {/* Glow */}
-                                <div className="absolute top-0 right-0 w-72 h-72 bg-green-500/20 blur-3xl rounded-full"></div>
+                                <div className="absolute top-0 right-0 w-72 h-72 bg-[#EAF9FA]0/20 blur-3xl rounded-full"></div>
 
                                 {/* Pattern */}
                                 <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:22px_22px]"></div>
@@ -242,14 +242,14 @@ export default function InfinAlphaSection() {
                                 <div className="relative z-10">
 
                                     {/* Badge */}
-                                    <div className="inline-flex items-center gap-2 rounded-full border border-green-100 bg-green-50 px-4 py-2 text-xs sm:text-sm font-semibold text-green-700">
+                                    <div className="inline-flex items-center gap-2 rounded-full border border-[#D5F3F5] bg-[#EAF9FA] px-4 py-2 text-xs sm:text-sm font-semibold text-[#00314A]">
 
                                         Strategic Advantages
 
                                     </div>
 
                                     {/* Heading */}
-                                    <h3 className="mt-6 text-3xl sm:text-4xl font-bold leading-tight tracking-[-0.03em] text-green-400">
+                                    <h3 className="mt-6 text-3xl sm:text-4xl font-bold leading-tight tracking-[-0.03em] text-[#7ACED4]">
 
                                         Why
                                         INFIN ALPHA?
@@ -261,7 +261,7 @@ export default function InfinAlphaSection() {
 
                                         <div className="flex items-start gap-3">
 
-                                            <CheckCircle2 className="text-green-400 mt-1" size={20} />
+                                            <CheckCircle2 className="text-[#7ACED4] mt-1" size={20} />
 
                                             <p className="text-sm sm:text-base leading-7 text-white/90" style={{ color: "#000000" }}>
 
@@ -275,7 +275,7 @@ export default function InfinAlphaSection() {
 
                                         <div className="flex items-start gap-3">
 
-                                            <CheckCircle2 className="text-green-400 mt-1" size={20} />
+                                            <CheckCircle2 className="text-[#7ACED4] mt-1" size={20} />
 
                                             <p className="text-sm sm:text-base leading-7 text-white/90" style={{ color: "#000000" }}>
 
@@ -290,7 +290,7 @@ export default function InfinAlphaSection() {
 
                                         <div className="flex items-start gap-3">
 
-                                            <CheckCircle2 className="text-green-400 mt-1" size={20} />
+                                            <CheckCircle2 className="text-[#7ACED4] mt-1" size={20} />
 
                                             <p className="text-sm sm:text-base leading-7 text-white/90" style={{ color: "#000000" }}>
 
@@ -303,7 +303,7 @@ export default function InfinAlphaSection() {
 
                                         <div className="flex items-start gap-3">
 
-                                            <CheckCircle2 className="text-green-400 mt-1" size={20} />
+                                            <CheckCircle2 className="text-[#7ACED4] mt-1" size={20} />
 
                                             <p className="text-sm sm:text-base leading-7 text-white/90" style={{ color: "#000000" }}>
 
@@ -319,7 +319,7 @@ export default function InfinAlphaSection() {
                                     {/* Bottom CTA */}
                                     <Link
                                         href="/investment/strategy-opportunities"
-                                        className="mt-10 w-full py-4 rounded-2xl bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold transition-all duration-300 shadow-lg shadow-green-500/20 flex items-center justify-center gap-2"
+                                        className="mt-10 w-full py-4 rounded-2xl bg-gradient-to-r from-[#00314A] to-[#009A9E] hover:from-[#009A9E] hover:to-[#00314A] text-white font-semibold transition-all duration-300 shadow-lg shadow-[#EAF9FA]0/20 flex items-center justify-center gap-2"
                                     >
 
                                         Explore Investment Strategy
