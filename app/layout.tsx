@@ -13,9 +13,9 @@ export const metadata = {
   description: "Investment Platform",
 
   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
+    icon: "/Favicon1.png",
+    shortcut: "/Favicon1.png",
+    apple: "/Favicon1.png",
   },
 };
 

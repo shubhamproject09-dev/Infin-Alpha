@@ -20,9 +20,11 @@ import {
     Scale,
     Mail,
     LogIn,
+    ShieldCheck,
 } from "lucide-react";
 import { useEffect } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
@@ -56,23 +58,58 @@ export default function Navbar() {
     };
 
     return (
-        <header className="w-full bg-white border-b border-gray-200 sticky top-0 z-30 shadow-sm">
+        <motion.header
+            initial={{
+                y: -80,
+                opacity: 0,
+            }}
+            animate={{
+                y: 0,
+                opacity: 1,
+            }}
+            transition={{
+                duration: 0.8,
+                ease: "easeOut",
+            }}
+            className="w-full bg-white border-b border-gray-200 sticky top-0 z-30 shadow-sm"
+        >
             <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4">
 
                 {/* Logo */}
-                <Link href="/" className="group flex items-center gap-3">
-                    <Image
-                        src="/logo.png"
-                        alt="INFIN ALPHA"
-                        width={120}
-                        height={60}
-                        priority
-                        className="h-7 sm:h-9 w-auto object-contain"
-                    />
-                </Link>
+                <motion.div
+                    initial={{ opacity: 0, x: -40 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.2, duration: 0.6 }}
+                >
+                    <Link href="/" className="group flex items-center gap-3">
+                        {/* IA */}
+                        <span className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-[#009A9E] to-[#00314A] text-white font-black text-2xl shadow-lg">
+                            IA
+                        </span>
+
+                        {/* Text */}
+                        <div className="flex flex-col leading-none">
+                            <span className="text-[#009A9E] font-extrabold text-xl sm:text-2xl tracking-[2px] uppercase">
+                                INFIN ALPHA
+                            </span>
+
+                            <span className="text-[#009A9E] text-[10px] sm:text-xs font-semibold tracking-[7px] sm:tracking-[7.8px] uppercase">
+                                ALTERNATIVES
+                            </span>
+                        </div>
+                    </Link>
+                </motion.div>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden lg:flex items-center gap-6 xl:gap-8 text-[15px] font-semibold text-gray-800">
+                <motion.nav
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{
+                        delay: 0.35,
+                        duration: 0.6,
+                    }}
+                    className="hidden lg:flex items-center gap-6 xl:gap-8 text-[15px] font-semibold text-gray-800"
+                >
                     <Link href="/" className="relative hover:text-[#009A9E] transition py-2 after:absolute after:left-0 after:-bottom-0 after:w-0 after:h-[2px] after:bg-gradient-to-r after:from-[#009A9E] after:to-[#009A9E] hover:after:w-full after:transition-all after:duration-300">
                         Home
                     </Link>
@@ -97,6 +134,20 @@ export default function Navbar() {
                                     <div>
                                         <p className="font-semibold text-gray-900 group-hover/item:text-[#009A9E] transition">INFIN Alpha LLP</p>
                                         <p className="text-xs text-gray-500">Core investment entity</p>
+                                    </div>
+                                </Link>
+                                <Link
+                                    href="/about/advisory-board"
+                                    className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-[#EAF9FA] transition group/item"
+                                >
+                                    <ShieldCheck size={20} className="text-[#009A9E] group-hover/item:scale-110 transition" />
+                                    <div>
+                                        <p className="font-semibold text-gray-900 group-hover/item:text-[#009A9E] transition">
+                                            Advisory Board
+                                        </p>
+                                        <p className="text-xs text-gray-500">
+                                            Industry experts & advisors
+                                        </p>
                                     </div>
                                 </Link>
                                 <Link href="/about/leadership" className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-[#EAF9FA] transition group/item">
@@ -157,15 +208,24 @@ export default function Navbar() {
                     <Link href="/thought-leadership" className="relative hover:text-[#009A9E] transition py-2 after:absolute after:left-0 after:-bottom-0 after:w-0 after:h-[2px] after:bg-gradient-to-r after:from-[#009A9E] after:to-[#009A9E] hover:after:w-full after:transition-all after:duration-300">Insights</Link>
                     <Link href="/investor" className="relative hover:text-[#009A9E] transition py-2 after:absolute after:left-0 after:-bottom-0 after:w-0 after:h-[2px] after:bg-gradient-to-r after:from-[#009A9E] after:to-[#009A9E] hover:after:w-full after:transition-all after:duration-300">Investor</Link>
                     <Link href="/legal" className="relative hover:text-[#009A9E] transition py-2 after:absolute after:left-0 after:-bottom-0 after:w-0 after:h-[2px] after:bg-gradient-to-r after:from-[#009A9E] after:to-[#009A9E] hover:after:w-full after:transition-all after:duration-300">Legal</Link>
-                </nav>
+                </motion.nav>
 
                 {/* CTA Button Desktop */}
-                <Link
-                    href="/contact"
-                    className="hidden lg:flex items-center gap-2 bg-gradient-to-r from-[#009A9E] to-[#009A9E] hover:from-[#009A9E] hover:to-[#00314A] text-white px-5 py-2.5 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 font-semibold text-sm"
+                <motion.div
+                    initial={{ opacity: 0, x: 40 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{
+                        delay: 0.5,
+                        duration: 0.6,
+                    }}
                 >
-                    Get In Touch <ArrowRight size={16} />
-                </Link>
+                    <Link
+                        href="/contact"
+                        className="hidden lg:flex items-center gap-2 bg-gradient-to-r from-[#009A9E] to-[#009A9E] hover:from-[#009A9E] hover:to-[#00314A] text-white px-5 py-2.5 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 font-semibold text-sm"
+                    >
+                        Have a Query <ArrowRight size={16} />
+                    </Link>
+                </motion.div>
 
                 {/* Mobile Menu Button */}
                 <div className="lg:hidden">
@@ -213,15 +273,22 @@ export default function Navbar() {
 
                         <div className="relative z-10">
                             <div className="flex items-center justify-between mb-4">
-                                <Link href="/" onClick={handleLinkClick} className="flex items-center gap-2">
-                                    <Image
-                                        src="/logo1.png"
-                                        alt="INFIN ALPHA"
-                                        width={100}
-                                        height={50}
-                                        className="h-8 w-auto object-contain"
-                                        priority
-                                    />
+                                <Link href="/" className="group flex items-center gap-2">
+                                    {/* IA */}
+                                    <span className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-[#009A9E] to-[#00314A] text-white font-black text-2xl shadow-lg">
+                                        IA
+                                    </span>
+
+                                    {/* Text */}
+                                    <div className="flex flex-col leading-none">
+                                        <span className="text-White font-extrabold text-xl sm:text-2xl tracking-[2px] uppercase">
+                                            INFIN ALPHA
+                                        </span>
+
+                                        <span className="text-White text-[10px] sm:text-xs font-semibold tracking-[7px] uppercase">
+                                            ALTERNATIVES
+                                        </span>
+                                    </div>
                                 </Link>
                                 <button
                                     onClick={closeDrawer}
@@ -271,6 +338,14 @@ export default function Navbar() {
                                     <Link href="/about/infin-llp" onClick={handleLinkClick} className="flex items-center gap-3 px-3 py-2.5 text-sm text-gray-600 hover:text-[#009A9E] hover:bg-[#EAF9FA] rounded-lg transition">
                                         <Briefcase size={14} />
                                         INFIN Alpha LLP
+                                    </Link>
+                                    <Link
+                                        href="/about/advisory-board"
+                                        onClick={handleLinkClick}
+                                        className="flex items-center gap-3 px-3 py-2.5 text-sm text-gray-600 hover:text-[#009A9E] hover:bg-[#EAF9FA] rounded-lg transition"
+                                    >
+                                        <ShieldCheck size={14} />
+                                        Advisory Board
                                     </Link>
                                     <Link href="/about/leadership" onClick={handleLinkClick} className="flex items-center gap-3 px-3 py-2.5 text-sm text-gray-600 hover:text-[#009A9E] hover:bg-[#EAF9FA] rounded-lg transition">
                                         <Users size={14} />
@@ -360,7 +435,7 @@ export default function Navbar() {
                             onClick={handleLinkClick}
                             className="w-full bg-gradient-to-r from-[#009A9E] to-[#009A9E] hover:from-[#009A9E] hover:to-[#00314A] text-white py-3.5 rounded-xl font-semibold text-sm flex items-center justify-center gap-2 transition-all duration-300 shadow-md"
                         >
-                            Get In Touch <ArrowRight size={16} />
+                            Have a Query <ArrowRight size={16} />
                         </Link>
                         <div className="flex items-center justify-center gap-4 mt-4 text-xs text-gray-400">
                             <span>Privacy Policy</span>
@@ -373,6 +448,6 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
-        </header>
+        </motion.header>
     );
 }

@@ -71,14 +71,21 @@ export default function Footer() {
 
                         {/* Logo */}
                         <Link href="/" className="group flex items-center gap-3">
-                            <Image
-                                src="/logo1.png"
-                                alt="INFIN ALPHA"
-                                width={120}
-                                height={60}
-                                priority
-                                className="h-7 sm:h-9 w-auto object-contain"
-                            />
+                            {/* IA */}
+                            <span className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-[#009A9E] to-[#00314A] text-white font-black text-2xl shadow-lg">
+                                IA
+                            </span>
+
+                            {/* Text */}
+                            <div className="flex flex-col leading-none">
+                                <span className="text-White font-extrabold text-xl sm:text-2xl tracking-[2px] uppercase">
+                                    INFIN ALPHA
+                                </span>
+
+                                <span className="text-White text-[10px] sm:text-xs font-semibold tracking-[7px] sm:tracking-[7.8px] uppercase">
+                                    ALTERNATIVES
+                                </span>
+                            </div>
                         </Link>
 
                         {/* Description */}
