@@ -12,7 +12,7 @@ import {
     BarChart3,
 } from "lucide-react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
 const caseStudies = [
     {
@@ -41,7 +41,7 @@ const caseStudies = [
 export default function CaseStudy() {
 
     // Animation variants
-    const fadeUp = {
+    const fadeUp: Variants = {
         hidden: {
             opacity: 0,
             y: 60,
@@ -56,7 +56,7 @@ export default function CaseStudy() {
         },
     };
 
-    const staggerContainer = {
+    const staggerContainer: Variants = {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
@@ -67,7 +67,7 @@ export default function CaseStudy() {
         },
     };
 
-    const cardVariants = {
+    const cardVariants: Variants = {
         hidden: {
             opacity: 0,
             y: 40,
@@ -84,7 +84,7 @@ export default function CaseStudy() {
         },
     };
 
-    const statVariants = {
+    const statVariants: Variants = {
         hidden: {
             opacity: 0,
             scale: 0.8,
@@ -103,7 +103,7 @@ export default function CaseStudy() {
         },
     };
 
-    const featureVariants = {
+    const featureVariants: Variants = {
         hidden: {
             opacity: 0,
             x: -20,
@@ -120,7 +120,7 @@ export default function CaseStudy() {
         },
     };
 
-    const strategyVariants = {
+    const strategyVariants: Variants = {
         hidden: {
             opacity: 0,
             y: 40,
@@ -137,7 +137,7 @@ export default function CaseStudy() {
         },
     };
 
-    const marketVariants = {
+    const marketVariants: Variants = {
         hidden: {
             opacity: 0,
             y: 40,
@@ -154,7 +154,7 @@ export default function CaseStudy() {
         },
     };
 
-    const buttonVariants = {
+    const buttonVariants: Variants = {
         hidden: {
             opacity: 0,
             y: 30,
