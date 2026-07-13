@@ -210,9 +210,7 @@ export default function WhyAIFSection() {
                             }}
                             className="mt-8 text-4xl lg:text-5xl font-bold text-white leading-tight"
                         >
-                            Why Specialized
-                            Alternative Funds
-                            Are Positioned to Lead
+                            Why INFIN Alpha
                         </motion.h2>
                     </motion.div>
 
