@@ -10,9 +10,69 @@ import {
     Building2,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function ContactSection() {
+    const [loading, setLoading] = useState(false);
 
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+    });
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+        });
+    };
+
+    const handleSubmit = async (e) => {
+
+        e.preventDefault();
+
+        setLoading(true);
+
+        try {
+
+            const res = await fetch("/api/contact", {
+
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json",
+                },
+
+                body: JSON.stringify(formData),
+
+            });
+
+            const data = await res.json();
+
+            alert(data.message);
+
+            if (data.success) {
+
+                setFormData({
+                    name: "",
+                    email: "",
+                    phone: "",
+                    message: "",
+                });
+
+            }
+
+        } catch (error) {
+
+            alert("Something went wrong.");
+
+        }
+
+        setLoading(false);
+
+    };
     // Animation variants
     const fadeUp = {
         hidden: {
@@ -572,6 +632,7 @@ export default function ContactSection() {
 
                                     {/* FORM */}
                                     <motion.form
+                                        onSubmit={handleSubmit}
                                         className="mt-8 sm:mt-10 space-y-4 sm:space-y-5"
                                         variants={staggerContainer}
                                         initial="hidden"
@@ -593,6 +654,9 @@ export default function ContactSection() {
                                                     transition: { duration: 0.2 },
                                                 }}
                                                 type="text"
+                                                name="name"
+                                                value={formData.name}
+                                                onChange={handleChange}
                                                 placeholder="Enter your name"
                                                 className="w-full rounded-2xl px-4 sm:px-5 py-3.5 sm:py-4 outline-none transition-all duration-300 placeholder-black text-sm sm:text-base"
                                                 style={{
@@ -618,6 +682,9 @@ export default function ContactSection() {
                                                     transition: { duration: 0.2 },
                                                 }}
                                                 type="email"
+                                                name="email"
+                                                value={formData.email}
+                                                onChange={handleChange}
                                                 placeholder="Enter your email"
                                                 className="w-full rounded-2xl px-4 sm:px-5 py-3.5 sm:py-4 outline-none transition-all duration-300 placeholder-black text-sm sm:text-base"
                                                 style={{
@@ -643,6 +710,9 @@ export default function ContactSection() {
                                                     transition: { duration: 0.2 },
                                                 }}
                                                 type="number"
+                                                name="phone"
+                                                value={formData.phone}
+                                                onChange={handleChange}
                                                 placeholder="Enter your Number"
                                                 className="w-full rounded-2xl px-4 sm:px-5 py-3.5 sm:py-4 outline-none transition-all duration-300 placeholder-black text-sm sm:text-base"
                                                 style={{
@@ -668,6 +738,9 @@ export default function ContactSection() {
                                                     transition: { duration: 0.2 },
                                                 }}
                                                 rows={5}
+                                                name="message"
+                                                value={formData.message}
+                                                onChange={handleChange}
                                                 placeholder="Write your message..."
                                                 className="w-full rounded-2xl px-4 sm:px-5 py-3.5 sm:py-4 outline-none transition-all duration-300 resize-none placeholder-black text-sm sm:text-base"
                                                 style={{
@@ -686,7 +759,7 @@ export default function ContactSection() {
                                             type="submit"
                                             className="w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-[#009A9E] hover:bg-[#00314A] px-6 py-3.5 sm:py-4 text-sm font-semibold text-white transition-all duration-300 shadow-lg shadow-[#EAF9FA]/20"
                                         >
-                                            Send Message
+                                            {loading ? "Sending..." : "Send Message"}
                                             <motion.span
                                                 animate={{
                                                     x: [0, 5, 0],
