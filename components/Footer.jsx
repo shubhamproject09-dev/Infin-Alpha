@@ -44,6 +44,24 @@ export default function Footer() {
         },
     ];
 
+    const regulatoryLinks = [
+        {
+            title: "Investor Charter",
+            href: "/pdf/investor-charter.pdf",
+            external: true,
+        },
+        {
+            title: "SEBI Registration",
+            href: "/pdf/sebi-registration.pdf",
+            external: true,
+        },
+        {
+            title: "SCORES SEBI Portal",
+            href: "https://scores.sebi.gov.in",
+            external: true,
+        },
+    ];
+
     // Animation variants
     const fadeUp = {
         hidden: {
@@ -193,7 +211,7 @@ export default function Footer() {
 
                 {/* TOP SECTION */}
                 <motion.div
-                    className="py-16 sm:py-20 grid lg:grid-cols-12 gap-12"
+                    className="py-16 sm:py-20 grid lg:grid-cols-12 gap-4 xl:gap-7"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: false, amount: 0.1 }}
@@ -201,7 +219,7 @@ export default function Footer() {
                 >
                     {/* LEFT CONTENT */}
                     <motion.div
-                        className="lg:col-span-4"
+                        className="lg:col-span-3"
                         variants={fadeLeft}
                     >
                         {/* Logo */}
@@ -354,7 +372,7 @@ export default function Footer() {
 
                     {/* OTHER LINKS */}
                     <motion.div
-                        className="lg:col-span-3"
+                        className="lg:col-span-2"
                         variants={fadeUp}
                     >
                         <motion.h3
@@ -385,6 +403,55 @@ export default function Footer() {
                                 >
                                     <Link
                                         href={item.href}
+                                        className="group flex items-center gap-2 text-slate-300 hover:text-[#7ACED4] hover:translate-x-2 transition-all duration-300"
+                                    >
+                                        <motion.span
+                                            whileHover={{
+                                                rotate: 45,
+                                                transition: { duration: 0.3 },
+                                            }}
+                                        >
+                                            ↗
+                                        </motion.span>
+                                        {item.title}
+                                    </Link>
+                                </motion.div>
+                            ))}
+                        </motion.div>
+                    </motion.div>
+
+                    {/* REGULATORY DISCLOSURES */}
+                    <motion.div
+                        className="lg:col-span-2"
+                        variants={fadeUp}
+                    >
+                        <motion.h3
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: false, amount: 0.1 }}
+                            transition={{ delay: 0.35, duration: 0.6 }}
+                            className="text-lg font-semibold text-[#7ACED4]"
+                        >
+                            Regulatory Disclosures
+                        </motion.h3>
+
+                        <motion.div
+                            className="mt-6 space-y-4"
+                            variants={staggerContainer}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: false, amount: 0.1 }}
+                        >
+                            {regulatoryLinks.map((item, index) => (
+                                <motion.div
+                                    key={index}
+                                    variants={linkVariants}
+                                    whileHover={{ x: 8 }}
+                                >
+                                    <Link
+                                        href={item.href}
+                                        target={item.external ? "_blank" : "_self"}
+                                        rel={item.external ? "noopener noreferrer" : undefined}
                                         className="group flex items-center gap-2 text-slate-300 hover:text-[#7ACED4] hover:translate-x-2 transition-all duration-300"
                                     >
                                         <motion.span
@@ -447,7 +514,7 @@ export default function Footer() {
                                     <p className="text-slate-400 text-sm">
                                         Office Address
                                     </p>
-                                    <p className="mt-2 text-slate-200 leading-6">
+                                    <p className="mt-2 text-slate-200 leading-6 break-words">
                                         A-3, 1st Floor South Tower, Girdhar Apartments, 28 Firozeshah Road, New Delhi – 110001, India
                                     </p>
                                 </div>
@@ -547,6 +614,9 @@ export default function Footer() {
                                 Privacy Policy
                             </Link>
                         </motion.div>
+
+                        {/* Divider */}
+                        <span className="h-4 w-px bg-white/20"></span>
 
                         <motion.div variants={linkVariants}>
                             <Link
