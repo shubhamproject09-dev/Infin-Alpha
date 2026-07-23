@@ -40,6 +40,17 @@ export default function LegalSection() {
         },
 
         {
+            title: "Investor Complaint Data",
+            description:
+                "View investor complaint statistics, complaint status, and grievance redressal information as prescribed under applicable regulatory requirements.",
+            icon: FileText,
+            slug: "investor-complaint-data",
+            button: "View Details",
+            href: "/investor-complaint-data",
+            external: false,
+        },
+
+        {
             title: "SEBI SCORES Portal",
             description:
                 "Lodge and track investor complaints through SEBI's official SCORES grievance redressal portal.",
