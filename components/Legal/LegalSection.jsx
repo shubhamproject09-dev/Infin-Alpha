@@ -31,7 +31,7 @@ export default function LegalSection() {
         {
             title: "SEBI Registration Certificate",
             description:
-                "View the official SEBI Registration Certificate issued to INFIN ALPHA LLP under applicable regulations.",
+                "View the official SEBI Registration Certificate issued to BHARAT SPECIAL OPPORTUNITY FUND which is managed by INFIN ALPHA LLP.",
             icon: BadgeCheck,
             button: "View Certificate",
             slug: "sebi-registration",
