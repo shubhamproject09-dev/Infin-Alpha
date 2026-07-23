@@ -4,13 +4,51 @@ import {
     ShieldCheck,
     Scale,
     FileText,
-    AlertTriangle,
-    Lock,
+    BadgeCheck,
+    Globe,
+    Download,
+    ExternalLink,
     Building2,
 } from "lucide-react";
+
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function LegalSection() {
+
+    const documents = [
+        {
+            title: "Investor Charter",
+            description:
+                "Investor Charter issued in accordance with SEBI guidelines outlining investor rights, responsibilities and grievance redressal mechanism.",
+            icon: FileText,
+            slug: "investor-charter",
+            button: "View Charter",
+            href: "/pdf/investor-charter.pdf",
+            external: false,
+        },
+
+        {
+            title: "SEBI Registration Certificate",
+            description:
+                "View the official SEBI Registration Certificate issued to INFIN ALPHA LLP under applicable regulations.",
+            icon: BadgeCheck,
+            button: "View Certificate",
+            slug: "sebi-registration",
+            href: "/pdf/sebi-registration.pdf",
+            external: false,
+        },
+
+        {
+            title: "SEBI SCORES Portal",
+            description:
+                "Lodge and track investor complaints through SEBI's official SCORES grievance redressal portal.",
+            icon: Globe,
+            button: "Visit Portal",
+            href: "https://scores.sebi.gov.in",
+            external: true,
+        },
+    ];
 
     // Animation variants
     const fadeUp = {
@@ -218,9 +256,9 @@ export default function LegalSection() {
                                 }}
                                 className="mt-8 text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.05] tracking-tight text-white"
                             >
-                                Legal
+                                Regulatory
                                 <span className="block mt-2 text-[#7ACED4]">
-                                    Information
+                                    Disclosures
                                 </span>
                             </motion.h1>
 
@@ -232,10 +270,11 @@ export default function LegalSection() {
                                 transition={{ delay: 0.5, duration: 0.7 }}
                                 className="mt-8 max-w-4xl mx-auto text-base sm:text-lg lg:text-xl leading-9 text-slate-300"
                             >
-                                Important disclosures, regulatory information,
-                                investor communication guidelines,
-                                and legal notices regarding INFIN ALPHA LLP
-                                and associated investment activities.
+                                Transparency, investor protection and regulatory compliance
+                                are at the core of INFIN ALPHA LLP.
+
+                                Access our Investor Charter, SEBI Registration Certificate
+                                and the official SCORES Portal for investor grievance redressal.
                             </motion.p>
                         </div>
                     </motion.div>
@@ -246,7 +285,7 @@ export default function LegalSection() {
             <div className="relative z-10 pb-20 sm:pb-24 pt-[40px] sm:pt-[70px] lg:pt-[100px]" style={{ marginTop: "80px" }}>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <motion.div
-                        className="grid lg:grid-cols-12 gap-6 lg:gap-8 items-start"
+                        className="grid lg:grid-cols-12 gap-6 lg:gap-8 items-stretch"
                         variants={staggerContainer}
                         initial="hidden"
                         whileInView="visible"
@@ -254,7 +293,7 @@ export default function LegalSection() {
                     >
                         {/* LEFT SIDE */}
                         <motion.div
-                            className="lg:col-span-8"
+                            className="lg:col-span-8 flex"
                             variants={fadeLeft}
                         >
                             <motion.div
@@ -262,7 +301,7 @@ export default function LegalSection() {
                                     boxShadow: "0 20px 60px rgba(0,0,0,0.1)",
                                     transition: { duration: 0.3 },
                                 }}
-                                className="relative overflow-hidden rounded-[28px] sm:rounded-[36px] border border-slate-200 bg-white p-5 sm:p-8 lg:p-10 shadow-sm hover:shadow-2xl transition-all duration-500"
+                                className="relative overflow-hidden rounded-[28px] sm:rounded-[36px] border border-slate-200 bg-white p-5 sm:p-8 lg:p-10 shadow-sm hover:shadow-2xl transition-all duration-500 h-full flex flex-col"
                             >
                                 {/* Glow */}
                                 <motion.div
@@ -278,7 +317,7 @@ export default function LegalSection() {
                                     className="absolute top-0 right-0 w-72 sm:w-96 h-72 sm:h-96 bg-[#EAF9FA]/10 blur-3xl rounded-full"
                                 />
 
-                                <div className="relative z-10">
+                                <div className="relative z-10 flex flex-col h-full">
                                     {/* Badge */}
                                     <motion.div
                                         initial={{ opacity: 0, scale: 0.8 }}
@@ -327,161 +366,72 @@ export default function LegalSection() {
                                         whileInView="visible"
                                         viewport={{ once: false, amount: 0.2 }}
                                     >
-                                        {/* BLOCK 1 */}
                                         <motion.div
-                                            variants={legalBlockVariants}
-                                            whileHover={{
-                                                y: -5,
-                                                borderColor: "#7ACED4",
-                                                boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
-                                                transition: { duration: 0.3 },
-                                            }}
-                                            className="rounded-3xl border border-slate-200 p-5 sm:p-6 bg-slate-50"
+                                            className="mt-10 grid gap-6"
+                                            variants={staggerContainer}
                                         >
-                                            <div className="flex items-start gap-4">
-                                                <motion.div
-                                                    whileHover={{
-                                                        rotate: [0, -10, 10, -5, 5, 0],
-                                                        scale: 1.1,
-                                                        transition: { duration: 0.5 },
-                                                    }}
-                                                    className="w-12 h-12 rounded-2xl border-2 border-[#EAF9FA] text-[#009A9E] flex items-center justify-center shrink-0"
-                                                >
-                                                    <FileText size={22} />
-                                                </motion.div>
+                                            {documents.map((doc, index) => {
+                                                const Icon = doc.icon;
 
-                                                <div>
-                                                    <motion.h3
-                                                        initial={{ opacity: 0, y: 10 }}
-                                                        whileInView={{ opacity: 1, y: 0 }}
-                                                        viewport={{ once: false, amount: 0.3 }}
-                                                        transition={{ delay: 0.2, duration: 0.5 }}
-                                                        className="text-xl font-bold text-[#009A9E]"
+                                                return (
+                                                    <motion.div
+                                                        key={index}
+                                                        variants={legalBlockVariants}
+                                                        whileHover={{
+                                                            y: -8,
+                                                            transition: { duration: 0.3 },
+                                                        }}
+                                                        className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-xl transition"
                                                     >
-                                                        Investment Risk Disclosure
-                                                    </motion.h3>
-                                                    <motion.p
-                                                        initial={{ opacity: 0, y: 10 }}
-                                                        whileInView={{ opacity: 1, y: 0 }}
-                                                        viewport={{ once: false, amount: 0.3 }}
-                                                        transition={{ delay: 0.3, duration: 0.5 }}
-                                                        className="mt-3 leading-8 text-slate-700 text-sm sm:text-base"
-                                                    >
-                                                        Investments in distressed assets,
-                                                        special situations,
-                                                        and alternative investment structures
-                                                        involve varying degrees of risk,
-                                                        including potential loss of capital.
-                                                        Past performance is not indicative
-                                                        of future results.
-                                                    </motion.p>
-                                                </div>
-                                            </div>
-                                        </motion.div>
+                                                        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
 
-                                        {/* BLOCK 2 */}
-                                        <motion.div
-                                            variants={legalBlockVariants}
-                                            whileHover={{
-                                                y: -5,
-                                                borderColor: "#7ACED4",
-                                                boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
-                                                transition: { duration: 0.3 },
-                                            }}
-                                            className="rounded-3xl border border-slate-200 p-5 sm:p-6 bg-slate-50"
-                                        >
-                                            <div className="flex items-start gap-4">
-                                                <motion.div
-                                                    whileHover={{
-                                                        rotate: [0, -10, 10, -5, 5, 0],
-                                                        scale: 1.1,
-                                                        transition: { duration: 0.5 },
-                                                    }}
-                                                    className="w-12 h-12 rounded-2xl border-2 border-[#EAF9FA] text-[#009A9E] flex items-center justify-center shrink-0"
-                                                >
-                                                    <AlertTriangle size={22} />
-                                                </motion.div>
+                                                            <div className="flex gap-5">
 
-                                                <div>
-                                                    <motion.h3
-                                                        initial={{ opacity: 0, y: 10 }}
-                                                        whileInView={{ opacity: 1, y: 0 }}
-                                                        viewport={{ once: false, amount: 0.3 }}
-                                                        transition={{ delay: 0.4, duration: 0.5 }}
-                                                        className="text-xl font-bold text-[#009A9E]"
-                                                    >
-                                                        Forward Looking Statements
-                                                    </motion.h3>
-                                                    <motion.p
-                                                        initial={{ opacity: 0, y: 10 }}
-                                                        whileInView={{ opacity: 1, y: 0 }}
-                                                        viewport={{ once: false, amount: 0.3 }}
-                                                        transition={{ delay: 0.5, duration: 0.5 }}
-                                                        className="mt-3 leading-8 text-slate-700 text-sm sm:text-base"
-                                                    >
-                                                        Certain statements may contain
-                                                        forward-looking assumptions,
-                                                        projections, or market expectations.
-                                                        Actual outcomes may differ materially
-                                                        due to market volatility,
-                                                        regulatory changes,
-                                                        economic conditions,
-                                                        and investment-specific factors.
-                                                    </motion.p>
-                                                </div>
-                                            </div>
-                                        </motion.div>
+                                                                <div className="w-14 h-14 rounded-2xl bg-[#EAF9FA] flex items-center justify-center shrink-0">
+                                                                    <Icon
+                                                                        size={28}
+                                                                        className="text-[#009A9E]"
+                                                                    />
+                                                                </div>
 
-                                        {/* BLOCK 3 */}
-                                        <motion.div
-                                            variants={legalBlockVariants}
-                                            whileHover={{
-                                                y: -5,
-                                                borderColor: "#7ACED4",
-                                                boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
-                                                transition: { duration: 0.3 },
-                                            }}
-                                            className="rounded-3xl border border-slate-200 p-5 sm:p-6 bg-slate-50"
-                                        >
-                                            <div className="flex items-start gap-4">
-                                                <motion.div
-                                                    whileHover={{
-                                                        rotate: [0, -10, 10, -5, 5, 0],
-                                                        scale: 1.1,
-                                                        transition: { duration: 0.5 },
-                                                    }}
-                                                    className="w-12 h-12 rounded-2xl border-2 border-[#EAF9FA] text-[#009A9E] flex items-center justify-center shrink-0"
-                                                >
-                                                    <Lock size={22} />
-                                                </motion.div>
+                                                                <div className="flex-1">
 
-                                                <div>
-                                                    <motion.h3
-                                                        initial={{ opacity: 0, y: 10 }}
-                                                        whileInView={{ opacity: 1, y: 0 }}
-                                                        viewport={{ once: false, amount: 0.3 }}
-                                                        transition={{ delay: 0.6, duration: 0.5 }}
-                                                        className="text-xl font-bold text-[#009A9E]"
-                                                    >
-                                                        Confidentiality & Privacy
-                                                    </motion.h3>
-                                                    <motion.p
-                                                        initial={{ opacity: 0, y: 10 }}
-                                                        whileInView={{ opacity: 1, y: 0 }}
-                                                        viewport={{ once: false, amount: 0.3 }}
-                                                        transition={{ delay: 0.7, duration: 0.5 }}
-                                                        className="mt-3 leading-8 text-slate-700 text-sm sm:text-base"
-                                                    >
-                                                        Any information shared through
-                                                        investor communication channels
-                                                        is subject to applicable confidentiality,
-                                                        compliance,
-                                                        and data privacy regulations.
-                                                        Unauthorized distribution
-                                                        or reproduction is prohibited.
-                                                    </motion.p>
-                                                </div>
-                                            </div>
+                                                                    <h3 className="text-2xl font-bold text-[#00314A]">
+                                                                        {doc.title}
+                                                                    </h3>
+
+                                                                    <p className="mt-3 text-slate-600 leading-7">
+                                                                        {doc.description}
+                                                                    </p>
+
+                                                                    {/* Button */}
+                                                                    <Link
+                                                                        href={
+                                                                            doc.external
+                                                                                ? doc.href
+                                                                                : `/pdf-viewer/${doc.slug}`
+                                                                        }
+                                                                        target={doc.external ? "_blank" : "_self"}
+                                                                        rel={doc.external ? "noopener noreferrer" : undefined}
+                                                                        className="inline-flex items-center gap-2 mt-6 bg-[#009A9E] text-white px-6 py-3 rounded-xl hover:bg-[#00314A] transition-all duration-300"
+                                                                    >
+                                                                        {doc.button}
+
+                                                                        {doc.external ? (
+                                                                            <ExternalLink size={18} />
+                                                                        ) : (
+                                                                            <FileText size={18} />
+                                                                        )}
+                                                                    </Link>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </motion.div>
+                                                );
+                                            })}
                                         </motion.div>
                                     </motion.div>
                                 </div>
@@ -490,7 +440,7 @@ export default function LegalSection() {
 
                         {/* RIGHT SIDE */}
                         <motion.div
-                            className="lg:col-span-4"
+                            className="lg:col-span-4 flex"
                             variants={fadeRight}
                         >
                             <motion.div
@@ -498,7 +448,7 @@ export default function LegalSection() {
                                     boxShadow: "0 20px 60px rgba(0,0,0,0.15)",
                                     transition: { duration: 0.3 },
                                 }}
-                                className="relative overflow-hidden rounded-[28px] sm:rounded-[36px] p-5 sm:p-8 lg:p-10 shadow-2xl text-slate-300"
+                                className="relative overflow-hidden rounded-[28px] sm:rounded-[36px] p-5 sm:p-8 lg:p-10 shadow-2xl text-slate-300 h-full flex flex-col"
                                 style={{
                                     background: "linear-gradient(135deg, #F8FCFC 0%, #FFFFFF 100%)",
                                 }}
@@ -520,7 +470,7 @@ export default function LegalSection() {
                                 {/* Pattern */}
                                 <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:22px_22px]" />
 
-                                <div className="relative z-10">
+                                <div className="relative z-10 flex flex-col h-full">
                                     {/* Badge */}
                                     <motion.div
                                         initial={{ opacity: 0, scale: 0.8 }}
@@ -529,7 +479,7 @@ export default function LegalSection() {
                                         transition={{ duration: 0.5, delay: 0.2 }}
                                         className="inline-flex items-center gap-2 rounded-full border border-[#D5F3F5] bg-[#EAF9FA] px-4 py-2 text-xs sm:text-sm font-semibold text-[#00314A]"
                                     >
-                                        Compliance Framework
+                                        Trusted & Transparent
                                     </motion.div>
 
                                     {/* Heading */}
@@ -540,9 +490,7 @@ export default function LegalSection() {
                                         transition={{ delay: 0.3, duration: 0.7 }}
                                         className="mt-6 text-3xl sm:text-4xl font-bold leading-tight tracking-[-0.03em] text-[#00314A]"
                                     >
-                                        Investor
-                                        Protection &
-                                        Transparency
+                                        Investor Confidence
                                     </motion.h3>
 
                                     {/* Description */}
@@ -553,12 +501,9 @@ export default function LegalSection() {
                                         transition={{ delay: 0.4, duration: 0.6 }}
                                         className="mt-6 text-sm sm:text-base leading-8 text-slate-700"
                                     >
-                                        INFIN ALPHA LLP maintains
-                                        a governance-focused approach
-                                        emphasizing compliance,
-                                        investor transparency,
-                                        ethical investment conduct,
-                                        and institutional discipline.
+                                        INFIN ALPHA LLP is committed to maintaining transparency and regulatory excellence.
+
+                                        We follow a structured compliance framework to ensure investor confidence, ethical practices, and adherence to applicable SEBI regulations.
                                     </motion.p>
 
                                     {/* STATS */}
@@ -569,110 +514,38 @@ export default function LegalSection() {
                                         whileInView="visible"
                                         viewport={{ once: false, amount: 0.2 }}
                                     >
-                                        <motion.div
-                                            variants={complianceCardVariants}
-                                            whileHover={{
-                                                scale: 1.05,
-                                                borderColor: "#009A9E",
-                                                boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
-                                                transition: { duration: 0.3 },
-                                            }}
-                                            className="rounded-2xl border border-white/10 bg-white/5 p-4"
-                                        >
-                                            <p className="text-sm text-slate-700">
-                                                Regulatory Focus
-                                            </p>
-                                            <motion.h4
-                                                initial={{ opacity: 0, y: 10 }}
-                                                whileInView={{ opacity: 1, y: 0 }}
-                                                viewport={{ once: false, amount: 0.3 }}
-                                                transition={{ delay: 0.3, duration: 0.5 }}
-                                                className="mt-2 text-xl font-bold text-[#009A9E]"
-                                            >
-                                                Institutional Compliance
-                                            </motion.h4>
-                                        </motion.div>
+                                        <div className="mt-5 space-y-4">
 
-                                        <motion.div
-                                            variants={complianceCardVariants}
-                                            whileHover={{
-                                                scale: 1.05,
-                                                borderColor: "#009A9E",
-                                                boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
-                                                transition: { duration: 0.3 },
-                                            }}
-                                            className="rounded-2xl border border-white/10 bg-white/5 p-4"
-                                        >
-                                            <p className="text-sm text-slate-700">
-                                                Communication
-                                            </p>
-                                            <motion.h4
-                                                initial={{ opacity: 0, y: 10 }}
-                                                whileInView={{ opacity: 1, y: 0 }}
-                                                viewport={{ once: false, amount: 0.3 }}
-                                                transition={{ delay: 0.4, duration: 0.5 }}
-                                                className="mt-2 text-xl font-bold text-[#009A9E]"
-                                            >
-                                                Investor Transparency
-                                            </motion.h4>
-                                        </motion.div>
+                                            <div className="rounded-2xl border border-[#D5F3F5] bg-[#F8FCFC] p-5">
+                                                <h4 className="font-semibold text-[#00314A]">
+                                                    Regulatory Compliance
+                                                </h4>
 
-                                        <motion.div
-                                            variants={complianceCardVariants}
-                                            whileHover={{
-                                                scale: 1.05,
-                                                borderColor: "#009A9E",
-                                                boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
-                                                transition: { duration: 0.3 },
-                                            }}
-                                            className="rounded-2xl border border-white/10 bg-white/5 p-4"
-                                        >
-                                            <p className="text-sm text-slate-700">
-                                                Governance
-                                            </p>
-                                            <motion.h4
-                                                initial={{ opacity: 0, y: 10 }}
-                                                whileInView={{ opacity: 1, y: 0 }}
-                                                viewport={{ once: false, amount: 0.3 }}
-                                                transition={{ delay: 0.5, duration: 0.5 }}
-                                                className="mt-2 text-xl font-bold text-[#009A9E]"
-                                            >
-                                                Ethical Investment Practices
-                                            </motion.h4>
-                                        </motion.div>
-                                    </motion.div>
+                                                <p className="mt-2 text-sm text-slate-600 leading-7">
+                                                    Operates in accordance with applicable SEBI regulations and compliance standards.
+                                                </p>
+                                            </div>
 
-                                    {/* Bottom */}
-                                    <motion.div
-                                        initial={{ opacity: 0, y: 30 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        viewport={{ once: false, amount: 0.3 }}
-                                        transition={{ delay: 0.6, duration: 0.7 }}
-                                        whileHover={{
-                                            scale: 1.02,
-                                            transition: { duration: 0.3 },
-                                        }}
-                                        className="mt-10 rounded-2xl border border-[#EAF9FA]/20 bg-[#EAF9FA]/10 p-5"
-                                    >
-                                        <div className="flex items-start gap-3">
-                                            <motion.div
-                                                animate={{
-                                                    scale: [1, 1.2, 1],
-                                                }}
-                                                transition={{
-                                                    duration: 2,
-                                                    repeat: Infinity,
-                                                    ease: "easeInOut",
-                                                }}
-                                            >
-                                                <Building2 className="text-[#7ACED4] mt-1" size={20} />
-                                            </motion.div>
-                                            <p className="text-sm leading-7 text-slate-700">
-                                                Please consult your legal,
-                                                financial,
-                                                and tax advisors before making
-                                                any investment decisions.
-                                            </p>
+                                            <div className="rounded-2xl border border-[#D5F3F5] bg-[#F8FCFC] p-5">
+                                                <h4 className="font-semibold text-[#00314A]">
+                                                    Investor Protection
+                                                </h4>
+
+                                                <p className="mt-2 text-sm text-slate-600 leading-7">
+                                                    Transparent disclosures and investor-first practices remain our highest priority.
+                                                </p>
+                                            </div>
+
+                                            <div className="rounded-2xl border border-[#D5F3F5] bg-[#F8FCFC] p-5">
+                                                <h4 className="font-semibold text-[#00314A]">
+                                                    Ethical Standards
+                                                </h4>
+
+                                                <p className="mt-2 text-sm text-slate-600 leading-7">
+                                                    We are committed to integrity, accountability and responsible financial practices.
+                                                </p>
+                                            </div>
+
                                         </div>
                                     </motion.div>
                                 </div>

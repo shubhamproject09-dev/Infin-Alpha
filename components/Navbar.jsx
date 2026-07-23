@@ -207,7 +207,7 @@ export default function Navbar() {
 
                     <Link href="/thought-leadership" className="relative hover:text-[#009A9E] transition py-2 after:absolute after:left-0 after:-bottom-0 after:w-0 after:h-[2px] after:bg-gradient-to-r after:from-[#009A9E] after:to-[#009A9E] hover:after:w-full after:transition-all after:duration-300">Insights</Link>
                     <Link href="/investor" className="relative hover:text-[#009A9E] transition py-2 after:absolute after:left-0 after:-bottom-0 after:w-0 after:h-[2px] after:bg-gradient-to-r after:from-[#009A9E] after:to-[#009A9E] hover:after:w-full after:transition-all after:duration-300">Investor</Link>
-                    <Link href="/legal" className="relative hover:text-[#009A9E] transition py-2 after:absolute after:left-0 after:-bottom-0 after:w-0 after:h-[2px] after:bg-gradient-to-r after:from-[#009A9E] after:to-[#009A9E] hover:after:w-full after:transition-all after:duration-300">Legal</Link>
+                    <Link href="/regulatory-disclosures" className="relative hover:text-[#009A9E] transition py-2 after:absolute after:left-0 after:-bottom-0 after:w-0 after:h-[2px] after:bg-gradient-to-r after:from-[#009A9E] after:to-[#009A9E] hover:after:w-full after:transition-all after:duration-300">Regulatory Disclosures</Link>
                 </motion.nav>
 
                 {/* CTA Button Desktop */}
@@ -223,7 +223,7 @@ export default function Navbar() {
                         href="/contact"
                         className="hidden lg:flex items-center gap-2 bg-gradient-to-r from-[#009A9E] to-[#009A9E] hover:from-[#009A9E] hover:to-[#00314A] text-white px-5 py-2.5 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 font-semibold text-sm"
                     >
-                        Have a Query <ArrowRight size={16} />
+                        Have a Query ?
                     </Link>
                 </motion.div>
 
@@ -419,12 +419,12 @@ export default function Navbar() {
 
                         {/* LEGAL */}
                         <Link
-                            href="/legal"
+                            href="/regulatory-disclosures"
                             onClick={handleLinkClick}
                             className="flex items-center gap-3 px-4 py-3.5 mb-2 font-semibold text-gray-800 bg-white rounded-xl hover:bg-[#EAF9FA] hover:text-[#009A9E] transition-all duration-200 shadow-sm border border-gray-100"
                         >
                             <Scale size={18} className="text-[#009A9E]" />
-                            Legal & Disclaimers
+                            Regulatory Disclosures
                         </Link>
                     </div>
 
