@@ -671,7 +671,7 @@ export default function Investor() {
                                 >
                                     {[
                                         "Secure investor verification mechanisms",
-                                        "Institutional-grade onboarding standards",
+                                        "Institutional-grade digital  onboarding standards",
                                         "Experienced special situations team",
                                         "Structured investor communication process",
                                         "Transparent engagement framework",
